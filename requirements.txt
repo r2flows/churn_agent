@@ -1,0 +1,21 @@
+# Dependencias principales
+prefect>=2.0.0
+streamlit>=1.28.0
+
+# Dependencias para análisis y visualización
+plotly>=5.0.0
+pandas>=1.3.0
+numpy>=1.21.0
+google-api-python-client>=2.129.0
+google-auth>=2.35.0
+google-auth-oauthlib>=1.2.0
+kaleido>=0.2.1
+
+# Dependencias opcionales (recomendadas)
+matplotlib>=3.5.0
+
+# Dependencias para desarrollo y testing
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
+mypy>=0.950

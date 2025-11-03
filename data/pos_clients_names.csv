@@ -1,0 +1,3083 @@
+pos_id,pos_name,client_name
+4,Gran Ferrari,La Santé
+14,Patricios,La Santé
+15,Lupo,La Santé
+16,Perdriel,La Santé
+17,Barcelona,La Santé
+18,Rivadavia,La Santé
+19,La Nobleza,La Santé
+20,Sanfar,La Santé
+21,Devoto,La Santé
+22,Salguero,La Santé
+23,Las Heras,La Santé
+5,Extendeal phasadad,Extendeal Demo
+10,Farmacia Flores,Extendeal Demo
+11,Extendeal Prueba 3,Extendeal Demo
+12,Extendeal Prueba 4,Extendeal Demo
+13,Extendeal Pharma prueba,Extendeal Demo
+29,QA Extendeal,Extendeal Demo
+149,Extendeal prueba 5,Extendeal Demo
+274,Extendeal - Demo Zetti,Extendeal Demo
+376,De prueba,Extendeal Demo
+391,Sala,Extendeal Demo
+428,Pepito,Extendeal Demo
+655,Farmacia Teo,Extendeal Demo
+660,Farmacia Guido,Extendeal Demo
+711,Extendeal Prueba 3 - 132,Extendeal Demo
+736,De prueba - No medicinales,Extendeal Demo
+750,Extendeal - Demo Zetti - Medicinales,Extendeal Demo
+877,ssaSsahksahjskjahskjahskjahskhaskjh,Extendeal Demo
+1062,Farmacia Teo - Pelotes,Extendeal Demo
+1277,ssaSsahksahjskjahskjahskjahskhaskjh - osvaldo,Extendeal Demo
+1396,Punto de venta de Juan,Extendeal Demo
+1406,Punto de venta de Juan,Extendeal Demo
+1410,Punto farmacia,Extendeal Demo
+1631,Farmacia de genéricos,Extendeal Demo
+1635,PDV de Juan,Extendeal Demo
+1989,Viernes20240816,Extendeal Demo
+1990,Viernes20240816_2,Extendeal Demo
+1991,Viernes20240816_3,Extendeal Demo
+2141,Solo off -QA (no modificar),Extendeal Demo
+2356,Sofi,Extendeal Demo
+2357,Sofi 2,Extendeal Demo
+2358,Sofi 3,Extendeal Demo
+2359,Sofi 4,Extendeal Demo
+2800,QA Extendeal Duplicado,Extendeal Demo
+24,Marina,Farmacias Marina
+25,Rivadavia,Farmacias Marina
+26,Farmastore,Farmastore
+27,Orien Rural,Openfarma
+28,Gran Contemporánea S.A.,Openfarma
+35,Torcuato,Openfarma
+36,Salud y belleza,Openfarma
+37,Perles,Openfarma
+38,San Telmo salud,Openfarma
+39,Martinez,Openfarma
+40,Orien,Openfarma
+41,Alfaro S.C.S.,Openfarma
+42,Orien Finochietto,Openfarma
+43,Farmapoint S.C.S.,Openfarma
+44,Daflo,Openfarma
+45,Bikaner,Openfarma
+46,Orien Beiro,Openfarma
+30,Cosmopolita,Farmagrup
+31,Gran Gallo,Farmagrup
+32,Gran Acoyte,Farmagrup
+33,Gran Liniers,Farmagrup
+34,Central Morón,Central Oeste
+60,Avenida SCS,Central Oeste
+61,Castelar SCS,Central Oeste
+62,Cravena SCS,Central Oeste
+63,Estación de Merlo SCS,Central Oeste
+64,Farma Ace,Central Oeste
+65,Funes SCS,Central Oeste
+66,Haedo SCS,Central Oeste
+67,Halpern SCS,Central Oeste
+68,Ituzaingó SCS,Central Oeste
+69,Leloir SCS,Central Oeste
+70,Mareque SCS,Central Oeste
+71,Moderna Farmacia SCS,Central Oeste
+72,Morón SCS,Central Oeste
+73,Noguera SCS,Central Oeste
+74,Parati SCS,Central Oeste
+75,Ramos SCS,Central Oeste
+76,Rossi de Castelar SCS,Central Oeste
+77,San Justo SCS,Central Oeste
+78,San Miguel SCS,Central Oeste
+79,Santa Rosa SCS,Central Oeste
+262,Boticario SCS,Central Oeste
+285,Ramos Mejia SCS,Central Oeste
+47,América,TKL
+390,Munro,TKL
+392,Etcheverry,TKL
+393,Ayacucho,TKL
+394,Galesa,TKL
+395,Naveira,TKL
+396,Quintana,TKL
+397,San Agustín,TKL
+398,San Miguel,TKL
+399,Tekiel,TKL
+400,González,TKL
+48,Farmacia Sorbas SCS,Grupo Mañas
+49,Farmacia San Martin Center SCS,Grupo Mañas
+50,Fcia Social Soyeb,Fcia Social Soyeb
+51,Went,Farmacias RP
+52,Osseg,Farmacias RP
+53,Scannapieco,Farmacias RP
+54,La Botica de Martín,Farmacias RP
+55,La Botica de Julián,Farmacias RP
+56,Viamonte,Farmacias RP
+57,Palermo I,Farmaplus
+150,Almagro,Farmaplus
+151,Palermo,Farmaplus
+152,Microcentro,Farmaplus
+153,Microcentro ||,Farmaplus
+154,Tribunales,Farmaplus
+155,Retiro |,Farmaplus
+156,Retiro II,Farmaplus
+157,Recoleta,Farmaplus
+158,Las Cañitas,Farmaplus
+159,Barrio Norte I,Farmaplus
+160,Barrio Norte II,Farmaplus
+161,Barrio Norte III,Farmaplus
+162,Barrio Norte IV,Farmaplus
+163,Nuñez,Farmaplus
+164,Belgrano,Farmaplus
+165,Belgrano I,Farmaplus
+166,Belgrano II,Farmaplus
+167,Belgrano III,Farmaplus
+168,Belgrano R,Farmaplus
+169,Caballito I,Farmaplus
+170,Caballito II,Farmaplus
+171,Caballito III,Farmaplus
+172,Flores,Farmaplus
+173,Villa del Parque,Farmaplus
+174,Villa del Parque 2,Farmaplus
+175,Devoto,Farmaplus
+176,Villa Urquiza I,Farmaplus
+177,Villa Urquiza II,Farmaplus
+178,Villa Urquiza III,Farmaplus
+179,Pompeya,Farmaplus
+180,Beccar,Farmaplus
+181,San Isidro I,Farmaplus
+182,San Isidro II,Farmaplus
+183,Berazategui I,Farmaplus
+184,Berazategui II,Farmaplus
+185,Quilmes,Farmaplus
+186,Galerías Pacifico,Farmaplus
+187,Abasto,Farmaplus
+188,Parque Patricios,Farmaplus
+58,Farmacia Añon,Farmacia Añon
+59,Guerra,Estilo Salud
+98,San Juan,Estilo Salud
+99,Zimerman,Estilo Salud
+100,Estudiantil,Estilo Salud
+101,Farmazin,Estilo Salud
+102,Libertad,Estilo Salud
+106,Moyano,Estilo Salud
+107,Aparicio,Estilo Salud
+108,Posamay,Estilo Salud
+109,Profesional,Estilo Salud
+110,Caballero,Estilo Salud
+80,Farmacia IARA,Farmacia IARA
+81,Belgrano La Franco,La Franco
+82,Palermo La Franco,La Franco
+83,E-commerce La Franco,La Franco
+84,M. Grimaldi,M. Grimaldi
+85,Farmacia del Pueblo,Farmacia del Pueblo
+300,Talar Salud,Farmacia del Pueblo
+86,Farmacia Social Victorica,Farmacias Afinidad Social
+87,Farmacia Social Moreno,Farmacias Afinidad Social
+88,Costanera,Ipharm
+97,Brisas de la costa,Ipharm
+89,Farma Lanus,Zona Farma
+123,La Paz,Zona Farma
+124,Gispert,Zona Farma
+125,Pasteur,Zona Farma
+126,Segui,Zona Farma
+90,Farmacia Caimmi,Caimmi
+91,Farmacia Mancini,Mancini
+92,Farmacia Cabildo,La Danesa
+93,Farmacia Cramer,La Danesa
+94,Farmacia Congreso,La Danesa
+122,Farmacia Juramento,La Danesa
+95,Farmacia Massaro,Massaro
+96,Farmacia Farmamas,Massaro
+103,Farmacia del Pueblo,Gigliotti
+259,Antigua Gigliotti,Gigliotti
+260,Farmacia Central,Gigliotti
+261,Farmacia Teran,Gigliotti
+104,Mundial Medicamentos,Mundial
+105,Mundial Perfumería,Mundial
+111,Euskal,Northpharm
+112,Santa Bárbara,Northpharm
+113,Larralde - Pintos,Más Farmacia
+146,Pedraza,Más Farmacia
+268,monroe,Más Farmacia
+114,Martín Rodríguez,Martín Rodríguez
+115,Nueva Farmacia Oro,Farmacias Oro
+293,Farmacia Trinidad,Farmacias Oro
+116,Boulevard,Farmilian
+189,Fradusco,Farmilian
+190,Libertad,Farmilian
+191,Romied,Farmilian
+192,San Martin,Farmilian
+193,Arco,Farmilian
+272,Campos,Farmilian
+273,Provincia,Farmilian
+1006,Casanova,Farmilian
+117,Longchamps,Punto Salud
+118,Ezeiza,Punto Salud
+119,San Vicente,Punto Salud
+120,Suarez,Punto Salud
+121,Moreno,Punto Salud
+127,Red,Punto Salud
+128,Juncal,Punto Salud
+129,Marmol,Punto Salud
+130,Korn,Punto Salud
+131,Express,Punto Salud
+132,Monte,Punto Salud
+133,Cañuelas,Punto Salud
+134,Petit,Punto Salud
+135,Franco,Punto Salud
+136,Malvinas,Punto Salud
+137,Avellaneda,Punto Salud
+138,Canning,Punto Salud
+139,Yañuk,Punto Salud
+140,Antártida,Punto Salud
+141,Pasco,Punto Salud
+142,Twenty,Punto Salud
+143,Estación Urquiza,Juan I Del Vigo
+144,Yrigoyen,Santa Ana
+595,Saavedra,Santa Ana
+596,Florida,Santa Ana
+597,Ecommerce,Santa Ana
+766,Martelli,Santa Ana
+145,Santa Catalina,Santa Catalina
+147,Melella,Top Farma
+148,Olivera,Top Farma
+199,Soberania,Top Farma
+200,Los Angeles,Top Farma
+201,Luro,Top Farma
+714,MI FARMA,Top Farma
+194,Sinni,Sinni
+195,San Luis,Siempre Farmacias
+602,Del Centro,Siempre Farmacias
+196,Crovetto,Comoga
+197,Fabris,Fabris
+198,Bedini,Bedini
+202,Traverso,Traverso
+203,Belgrano,Vassallo
+204,Olivos,Vassallo
+205,San Isidro,Vassallo
+206,Villa del Parque,Vassallo
+207,Juncal,Vassallo
+208,Caballito,Vassallo
+209,Dr Sabin,Dr Sabin
+210,Verona,Verona
+211,Recoleta,RP
+217,Porteña,RP
+218,Los Lirios,RP
+219,Botánico,RP
+212,Dameli,Dameli
+213,Del Pueblo,Del Pueblo
+2214,Del pueblo Perfumeria,Del Pueblo
+214,Soper,Suiza
+215,Rivadavia,Suiza
+216,San Juan - Medicinal,Suiza
+2219,San Juan - Perfumeria,Suiza
+2325,Farmacia Suiza,Suiza
+220,Farmacia Del Ferrocarril,Farmacia del Ferrocarril
+577,Nueva Pascual,Farmacia del Ferrocarril
+612,Nueva Libano,Farmacia del Ferrocarril
+683,San Martín,Farmacia del Ferrocarril
+684,Adelina Hue,Farmacia del Ferrocarril
+685,Billinghurst,Farmacia del Ferrocarril
+221,Superí,Grupo Superi
+297,FarmaVital,Grupo Superi
+222,Congreso,SEC
+223,Flores,SEC
+224,Peron,SEC
+226,Independencia,SEC
+225,Urquiza,Urquiza
+227,La Boca,La Boca
+228,Farmacia MB,Farmacia MB
+229,Griveo,Nueva Social Fénix
+230,Mosconi,Nueva Social Fénix
+231,Menendez,América
+232,Heredia,London
+233,Sarmiento,London
+234,Bustamante,London
+235,Lacarra,London
+236,GL Farma,London
+237,Mones,London
+238,Burzaco Sur,Burzaco Sur
+239,Lacfarm,San Pablo
+240,Acassuso,Acassuso
+241,Oggi,Franco
+242,Arfran,Franco
+243,Francarm,Franco
+244,Daneri,Daneri
+245,Mafei,Daneri
+246,Arieta,Vilela
+247,Nuevo Milenio,Vilela
+248,Plaza San Justo,Vilela
+249,Shopping Catan,Vilela
+250,La Plaza Central,Vilela
+251,Estanislao,Vilela
+252,Nueva Chenu,Vilela
+253,Bodrum,Vilela
+254,Nueva del Libertador,Vilela
+255,Luque,Vilela
+256,Empresas Farmaceuticas del Oeste,Vilela
+269,Zera,Vilela
+2329,Pasteur San Justo,Vilela
+2964,Arieta Perfu,Vilela
+2966,Bodrum - Perfu,Vilela
+2967,E. Farmac del Oeste - Perfu,Vilela
+2968,Estanislao - Perfu,Vilela
+2969,La Plaza Central - Perfu,Vilela
+2970,Luque - Perfu,Vilela
+2971,Nueva Chenu - Perfu,Vilela
+2972,Nueva del Lib - Perfu,Vilela
+2973,Nuevo Milenio - Perfu,Vilela
+2974,Pasteur San Justo - Perfu,Vilela
+2975,Plaza San Justo - Perfu,Vilela
+2976,Shopping Catan - Perfu,Vilela
+2977,Zera - Perfu,Vilela
+257,El Cazador,El Cazador
+258,Juncal,Juncal
+263,Traiber,Grupo Catan
+349,San Carlos,Grupo Catan
+350,Km 44,Grupo Catan
+264,Farma 8,Farma VIP
+265,Día y Noche,Grupo 24
+266,Nuevo Puente,Grupo 24
+267,Central Avellaneda,Central Avellaneda
+270,Lope de Vega,Farma Belen
+362,Alberdi,Farma Belen
+363,Andaser,Farma Belen
+364,Chilavert,Farma Belen
+365,Cordero,Farma Belen
+366,Corrales,Farma Belen
+367,Guaminí,Farma Belen
+368,Luro,Farma Belen
+369,Murguiondo,Farma Belen
+370,Riestra,Farma Belen
+371,Saenz,Farma Belen
+434,Belen 12,Farma Belen
+435,Andaser,Farma Belen
+1001,Vega 1000,Farma Belen
+271,Victoria,Pelman
+377,Punta Chica,Pelman
+762,Victoria - Perfumería,Pelman
+275,Gran Farmacia Constituyentes,Gran Farmacia Constituyentes
+276,La Farma Textil,La Farma
+311,Farma Del Sur,La Farma
+359,Escalada,La Farma
+360,25 de Mayo,La Farma
+277,Angelus,Angelus
+278,Dr Mihanovich,Dr Mihanovich
+279,Olsina,FarmaTodo
+280,Soria,FarmaTodo
+1065,Las Lomas,FarmaTodo
+1066,Maschwitz,FarmaTodo
+1067,La Horqueta,FarmaTodo
+1068,Martinez,FarmaTodo
+281,Garbellini,Garbellini
+282,Riadigos,Riadigos
+283,Vital,Vital
+284,Muñeira,Vital
+286,San Francisco,FarmaGreen
+474,San Cayetano,FarmaGreen
+2034,San Miguel,FarmaGreen
+287,J P Ramos,Previley
+288,Serrat Pre,Previley
+289,Cristi,Previley
+290,Rama Pre,Previley
+291,Flia Pre,Previley
+2301,Previley Kai,Previley
+292,Laprida,Laprida
+294,Scienza,Scienza
+295,Pellegrini,Scienza
+296,Pueyrredon,Scienza
+298,Guzgon,Pringles
+299,Figueiras,Pringles
+301,San Antonio,San Antonio
+302,Patred,Patred
+303,Marquez,Marquez
+304,Baretta,Grupo Farma
+305,Pilarfarma,Grupo Farma
+306,Sanguinetti,Grupo Farma
+307,Del Pueblo Express,Del Pueblo Express
+308,Pieresko,Paradiñeiro
+309,Del Paseo,Paradiñeiro
+310,Sindical STMT,Sindicato Municipales Tandil
+312,Feldman,Monica
+313,Pierristegui,Pierrestegui
+314,Behring,Behring
+315,Moscovich,Moscovich
+347,Guberman,Moscovich
+348,Sunchales,Moscovich
+316,Cattaneo,Cattaneo
+317,FarmaConecta,FarmaConecta
+318,Prueba POS,Cadena Prueba
+319,Prueba POS 2,Cadena Prueba
+320,Urbiztondo,Urbiztondo
+321,Ugarte,Sandra Selma Farmacias
+322,Walker,Sandra Selma Farmacias
+323,Walker Digital,Sandra Selma Farmacias
+324,Muscolini,Muscolini
+325,Lanús,UOMAX
+326,Moderna,UOMAX
+327,Alsina,UOMAX
+328,Escalada,UOMAX
+329,Gerli,UOMAX
+330,Avellaneda,UOMAX
+331,Del Puente,UOMAX
+332,Mitre,UOMAX
+333,Bustamante,UOMAX
+334,Delia,UOMAX
+335,Gorriti,UOMAX
+336,Temperley,UOMAX
+337,Uomax Ace,UOMAX
+338,Cloepharma,Cloepharma
+339,Guemes,Guemes
+340,Spiner,Spiner
+341,La Doce,Grupo Caruso
+573,Zorich,Grupo Caruso
+804,La Doce - PERFUMERIA,Grupo Caruso
+805,Zorich - PERFUMERIA,Grupo Caruso
+2012,Farmacia Caruso,Grupo Caruso
+2152,Farmacia Inglesa,Grupo Caruso
+342,Barcala,Farmacia Barcala
+343,JKS,JKS
+344,CEC San Nicolás,CEC San Nicolás
+345,La Trinidad,La Trinidad
+346,Guberman,GUBERMAN
+351,Pacheco Express,Farmacias Pacheco
+352,Pacheco Norte,Farmacias Pacheco
+353,General Pacheco,Farmacias Pacheco
+383,Virreyes,Farmacias Pacheco
+384,Unishop,Farmacias Pacheco
+630,Las Marías,Farmacias Pacheco
+354,Mourin,Punto Farma
+355,De La Plaza,Punto Farma
+356,Torres,Punto Farma
+808,Botta,Punto Farma
+809,Central,Punto Farma
+810,Barrial,Punto Farma
+811,Pompeo,Punto Farma
+812,Roca,Punto Farma
+816,Cabezuelo,Punto Farma
+817,Marcos Avellaneda,Punto Farma
+818,Escalada,Punto Farma
+819,Quilmes,Punto Farma
+820,Diamandy,Punto Farma
+821,Pasteur Avellaneda,Punto Farma
+822,Alsina,Punto Farma
+823,Viamonte,Punto Farma
+824,Beffa,Punto Farma
+825,Prado,Punto Farma
+826,Sbatella,Punto Farma
+827,Itatí,Punto Farma
+828,Chingolo,Punto Farma
+829,Tuyuti,Punto Farma
+830,Bio,Punto Farma
+831,Warnes,Punto Farma
+832,Monclus,Punto Farma
+833,Pasteur de Burzaco,Punto Farma
+834,Villa 31,Punto Farma
+357,Aguilar,Aguilar
+358,Lara,Lara
+361,Lo Cascio,Lara
+372,Said,Said
+375,Nueva Fulchi,Fullfarma
+860,Farmacia Ruta,Fullfarma
+861,Farmacia Berlin,Fullfarma
+862,FARMACIA FULLFARMA GLEW,Fullfarma
+863,FARMACIA CENTRAL GUERNICA,Fullfarma
+864,Farmacia central Numancia,Fullfarma
+373,Central Munro,Central Munro
+374,Kalauen,Kalauen
+378,Farmacia Mubara,Farmacia Mubara
+379,Hiperfarma,Farmanor
+380,Galenica,Farmanor
+381,San Andres 1,Farmanor
+382,San Andres 2,Farmanor
+385,Valemar,Valemar
+386,Avenida,Avenida
+387,Romo,Romo
+388,Chiti,Romo
+389,Ingeniero J. Allan,Farmanobel
+416,Rincón de Hudson,Farmanobel
+402,Farmacia Ruggeri,Farmacia Ruggeri
+401,González,TKL González
+403,Paternal,Anika
+408,La Carlota,Mutual Oñativia
+409,Córdoba,Mutual Oñativia
+404,Gasparin,Gasparin
+405,Sebastiani,Farmamix
+406,Farmamix,Farmamix
+407,Farmacia Lidia,Farmacia Lidia
+410,La Esquina Norte,Rateriy
+411,Farmacia Gelfiori,Farmacia Yañez s.c.s
+412,Central La Plata,Central La Plata
+413,Felini,Felini
+414,Inglesa,Farmacia Inglesa
+415,Farmacia del bosque,Farmacia del Bosque
+417,Farmacia Salvatto,Espacios Salud
+744,Farmacia Denevi,Espacios Salud
+745,Farmacia Mitre,Espacios Salud
+748,Farmacia San Jose,Espacios Salud
+418,Vera,Vera
+441,Cicala,Vera
+419,Badia,Farmacia Badia
+420,Farmacia Mariano,Stella Maris Benitez
+421,Farmacia Benitez,Stella Maris Benitez
+422,San Miguel,Farmacias Raspo
+893,Derqui,Farmacias Raspo
+894,Grand Bourg,Farmacias Raspo
+895,Morón,Farmacias Raspo
+896,Munro,Farmacias Raspo
+897,San Martín,Farmacias Raspo
+423,Moriconi,Moriconi
+424,Farmacia Melffi,Melffi Maria Victoria
+425,Farmajo,Farmajo
+426,Farmacia Colon,Grupo Santa Maria
+427,Farmacia Santa Maria,Grupo Santa Maria
+560,Farmacia Santa Cruz,Grupo Santa Maria
+429,Farmacia San Camilo I,Farmacia San Camilo
+430,Farmacia Batan I,Asociación Mutual Balcarce
+814,Farmacia Balcarce,Asociación Mutual Balcarce
+431,Drogueria Minerva,Farmacias Minerva
+450,Minerva,Farmacias Minerva
+451,Central,Farmacias Minerva
+452,Esquiu,Farmacias Minerva
+453,Ocampo,Farmacias Minerva
+454,Elena,Farmacias Minerva
+455,San Martín,Farmacias Minerva
+456,Del Valle,Farmacias Minerva
+459,Del Paseo,Farmacias Minerva
+461,9 de Julio,Farmacias Minerva
+432,Farmacia Sabio,Farmacia Sabio
+504,Lavalle,Farmasur
+505,Sur,Farmasur
+535,Aconcagua,Farmasur
+536,Carrefour,Farmasur
+433,Bosque Alvarez,Bosque Alvarez
+436,San Cayetano,Grupo Farmagreen
+437,Farmacia Sudiro,Isaias Liciotti
+438,Farmacia Martinez,Farmacia Martínez
+439,Alberdi,Proteger Salud
+2041,Vantage Merlo,Proteger Salud
+2042,Castelli,Proteger Salud
+2043,Alvear,Proteger Salud
+2044,Del Provincia,Proteger Salud
+2132,Farmacia Del Pueblo,Proteger Salud
+2157,Tucuman,Proteger Salud
+2158,Altos de Moreno,Proteger Salud
+2159,Axion Farma,Proteger Salud
+2160,Catedral de Moreno,Proteger Salud
+2161,Farmacia de la estacion,Proteger Salud
+2170,Proteger Shop,Proteger Salud
+2171,Farmacia Campos  de Alvarez,Proteger Salud
+2172,Sucesion de Wilke Enrique Ricardo,Proteger Salud
+2173,F del pueblo,Proteger Salud
+440,Plaza,Farmacia del Pueblo Tucumán
+457,America 5,Farmacia del Pueblo Tucumán
+1052,Jujuy,Farmacia del Pueblo Tucumán
+462,San Martin 1,Farmacia San Martin
+463,San Martin 2,Farmacia San Martin
+464,San Martin 3,Farmacia San Martin
+465,San Martin 4,Farmacia San Martin
+466,San Martin 5,Farmacia San Martin
+467,San Martin 6,Farmacia San Martin
+468,San Martin 8,Farmacia San Martin
+469,Deposito,Farmacia San Martin
+2299,San Martin 7,Farmacia San Martin
+2300,San Martin 9,Farmacia San Martin
+2354,Deposito Proveedores,Farmacia San Martin
+442,Cicala,Cicala
+443,Farmacia Babini,Farmacia Babini
+444,Mónica Martínez  II,Farmacias Mónica Martínez
+480,Silvana Martínez I,Farmacias Mónica Martínez
+871,Monica Martinez I,Farmacias Mónica Martínez
+872,Silvana Martinez II,Farmacias Mónica Martínez
+445,Farmacia del Sud 1,Rafael Fernandez
+446,Farmacia los Alamos 1,Rafael Fernandez
+593,Ecofarma I,Ecofarma
+447,Farmacia Parque,Farmacias Parque
+448,Farmacia Parque II,Farmacias Parque
+449,Farmacia Parque III,Farmacias Parque
+458,Tartagal,Farmacias Avenida
+472,Aguaray,Farmacias Avenida
+473,Salvador Mazza,Farmacias Avenida
+460,Farmacia Par,Fernando Echevarria
+470,Farmacia Cuyo,Farmacia Cuyo
+471,Farmacia Sindical Gandini,Asoc. Mutual Mercantil del Noroeste
+475,Farmacia Gade,SUPER NUEVA COLON S.R.L.
+482,Farmacia Gel,SUPER NUEVA COLON S.R.L.
+476,De miguel,Mariano de Miguel Srl
+477,Dr. Elustondo,Mariano de Miguel Srl
+478,Sm Directorio,Farmacia Sm Directorio
+479,Llanos 1,FARMACIA LLANOS S.C.S
+487,Farmacia 105,FARMACIA LLANOS S.C.S
+553,FARMACIA Barrio Norte,FARMACIA LLANOS S.C.S
+481,Farmacia del Pilar,Farmacia del Pilar
+483,Farmacia La Franco del Sur,Farmacia La Franco del Sur
+511,12 de agosto,Farmacia La Franco del Sur
+512,Aconcagua,Farmacia La Franco del Sur
+514,Piedrabuena,Farmacia La Franco del Sur
+516,Del Cerro,Farmacia La Franco del Sur
+576,Farmaexpres,Farmacia La Franco del Sur
+578,Farmaexpres Bark,Farmacia La Franco del Sur
+484,Centro,Grupo San Martin
+485,Kuanip,Grupo San Martin
+486,Farmatotal Ushuaia,Grupo San Martin
+751,Del Solier,Grupo San Martin
+752,Perito Moreno,Grupo San Martin
+753,Econofarma,Grupo San Martin
+754,Farmatotal Tolhuin,Grupo San Martin
+488,Dugraty,Farmacias Polini
+489,9 JULIO,Farmacias Polini
+490,25 de mayo,Farmacias Polini
+491,Saenz Peña,Farmacias Polini
+492,Charata,Farmacias Polini
+493,Santa Sylvina,Farmacias Polini
+494,F. Alvear Centro,Farmacias Alvear
+495,Alvear Gauss,Farmacias Alvear
+496,Alvear Valle Escondido,Farmacias Alvear
+497,Alvear Calera,Farmacias Alvear
+499,Alvear La Granja,Farmacias Alvear
+500,Alvear Allende,Farmacias Alvear
+498,Escobar,Farma 365
+645,Maschwitz,Farma 365
+898,Benavidez,Farma 365
+899,Boulogne,Farma 365
+900,Caballito,Farma 365
+901,Flores,Farma 365
+902,La Horqueta,Farma 365
+903,Las Lomas,Farma 365
+904,Loma Verde,Farma 365
+905,Martinez,Farma 365
+906,Saavedra,Farma 365
+907,San Fernando,Farma 365
+908,San Isidro,Farma 365
+909,Vicente Lopez,Farma 365
+910,Villa del parque,Farma 365
+911,Villa del parque 2,Farma 365
+912,Villa Urquiza,Farma 365
+913,Zarate,Farma 365
+914,Acassuso,Farma 365
+501,Sucursal 39,Grupo Pizzolo
+502,Allemma,Grupo Pizzolo
+503,Farma Huinco,Grupo Pizzolo
+506,Farmacia Filiberti,Farmacia Filiberti
+519,Amusim 1,Mutual Amusim
+520,Amusim 2,Mutual Amusim
+521,Amusim 3,Mutual Amusim
+522,Amusim 4,Mutual Amusim
+523,Amusim 5,Mutual Amusim
+524,Amusim 6,Mutual Amusim
+525,Amusim 7,Mutual Amusim
+526,Amusim 8,Mutual Amusim
+507,Farmacia Reali,Farmacia Reali
+508,Fátima,Farmafe
+509,Cusatis,Farmafe
+510,Hallein,Farmafe
+518,Farmafe,Farmafe
+513,Farmacia Nancy,Farmacia Nancy
+515,Farmacia Longhi,Farmacia Longhi
+517,Farmacia de la ruta,Farmacia de la ruta
+527,Farmacia Tartarelli,Farmacia Tartarelli
+528,Embon Alto Rosario Shopping,Farmacias Embon
+529,Embon Entre Ríos,Farmacias Embon
+530,Embon Pellegrini y Avellaneda,Farmacias Embon
+531,Embon Rondeau,Farmacias Embon
+532,Embon Pellegrini,Farmacias Embon
+533,Embon San Martín,Farmacias Embon
+534,Embon Tucuman,Farmacias Embon
+537,1 Baigorria y General Paz,Farmacias Grassi
+538,2 RC Constitucion 800,Farmacias Grassi
+539,3 Grassi RC Constitucion 501,Farmacias Grassi
+540,4 RC Banda Norte,Farmacias Grassi
+541,5 RC Alberdi,Farmacias Grassi
+543,6 Grassi RC Belgrano,Farmacias Grassi
+544,8 C Moldes,Farmacias Grassi
+546,9 C Alejandro Roca,Farmacias Grassi
+547,10 SL Mercedes I,Farmacias Grassi
+548,11 SL Mercedes II,Farmacias Grassi
+549,13 C R Tercero,Farmacias Grassi
+550,14 C Bv Chacabuco,Farmacias Grassi
+580,7 CDD Grassi,Farmacias Grassi
+581,7 CDD Grassi SubCuenta,Farmacias Grassi
+542,Farmacia Aramburu,Farmacia Aramburu
+545,Farmacias Salinas,Farmacia Salinas
+551,Farmacia D´Andrea Coll,Farmacia D´Andrea Coll
+552,Farmacia Rodriguez,Farmacia Rodriguez
+554,Farmacia el Boticario,Farmacia el boticario
+555,Farmacia Principal,Farmacia Principal
+557,Farmacia Gomez Arrospide,Farmacia Gomez Arrospide
+556,Naon Srl,Farmacia Naon
+570,F. Quintana scs Medicamentos,Farmacias Quintana
+571,F. Quintana srl Perfumeria,Farmacias Quintana
+575,Farmacia Quintana 3,Farmacias Quintana
+558,Farmacia Cardoso,Farmacia Cardoso
+559,Farmacia Bwell,Bwell
+561,Farmacia del Barrio,Farmacia Caltez
+562,Farmacia del Cerro,Farmacia Caltez
+563,Farmacia de la gente,Farmacia Caltez
+564,Farmacia del Pueblo,Farmacia Caltez
+565,Farmacia de la Ciudad,Farmacia Caltez
+566,Farmacia Santo Remedio,Farmacia Caltez
+567,Farmacia del Canadon,Farmacia Caltez
+568,Perfurmeria Caltez,Farmacia Caltez
+569,Farmacia Vega,Farmacia Vega
+572,Farmacia Saenz,Farmacia Saenz
+574,Farmacia Juana Koslay,Farmacia Juana Koslay
+579,Daubian,Farmacia Daubian
+582,Farmacia Señor de Renca,Farmacia Señor de Renca
+583,Miguez,Farmacia Miguez
+584,Farmacia Colon,farmacia colon
+585,Farmacia La Boca,Farmacia La Boca
+586,Sudamericana,Sudamericana
+587,Farmacia Rojas,Farmacia Rojas
+588,Farmacia Roma,Farmacia Roma
+589,Farmatina,Farmatina
+590,Farmatina 2,Farmatina
+591,Farmacia tu Farmacia,Farmacia tu farmacia
+592,Farmacia Salta,Farmacia tu farmacia
+594,Farmacia Rois,Farmacia Rois
+598,Av. Roca 1338,Estuardo Romero
+599,La Pampa 1535,Estuardo Romero
+600,Rivadavia,Líder
+601,Eva Perón,Líder
+603,Sv Farma 1,Sv Farma
+604,Sv Farma 2,Sv Farma
+617,Sv Farma 7,Sv Farma
+618,Sv Farma 6,Sv Farma
+619,Sv Farma 5,Sv Farma
+620,Sv Farma 4,Sv Farma
+621,Sv Farma 3,Sv Farma
+2384,Sv Farma 8,Sv Farma
+2385,Sv Farma 9,Sv Farma
+2386,Sv Farma 10,Sv Farma
+605,Farmacia Rivadavia,Farmacia Rivadavia
+606,De Maria,Farmacia De Maria
+607,Farmacia Dassie,Farmacia Dassie
+608,Fatmacia Manantiales,Farmacia Manantiales
+609,Sarmiento,Farmacia Dos de Enero
+610,San Matías,Farmacia San Matías
+611,Farmacia Nucci,Farmacia Nucci
+613,Farmacia Vicentin,Farmacia Vicentin
+614,Farmacia Italfarma Italiano,Farmacia Italfarma
+615,Donato,Farmacia Donato
+616,Ceschin,Ceschin
+622,Farmacia Simonella,Farmacia Simonella
+623,Perlo,Farmacia Perlo
+624,Farmacia del Valle,Farmacia Del Valle
+625,Farmacia Silva,Farmacia Silva
+626,Farmacia Alfa,Farmacia Alfa
+627,Farmacia Fiori,Farmacia Fiori
+628,Farmacia Francisco,Farmacia Francisco
+629,Farmacia Salvucci,Farmacia Salvucci
+631,Farmacia Suiza,Farmacia Suiza
+632,Tavi,Tavi
+633,Farmacia Alaniz,Farmacia Alaniz
+634,Radal,Farmacia Radal
+635,Farmacia Innocente,Farmacia Innocente
+636,OnLife,On Life
+637,Farmacia Rosso Marcos,Farmacia Rosso Marcos
+638,Farmacia Austral,Farmacia Austral
+639,Farmabus,Farmabus
+640,Farmacia Bucci,Farmacia  Bucci
+641,Farmacia Garcia,Farmacia Garcia
+642,Farmacia Pico,Farmacia Pico
+643,Farmacia Gabutti,Farmacia Gabutti
+644,Farmacia Derico,Farmacia Derico
+646,Farmacia Central,Farmacia Central
+647,Farmacia Paidon,Farmacia Paidon
+648,Farmacia Schulman,Farmacia Schulman
+649,Farmacia Sur - Colon,Farmacia Sur
+882,Farmacia Sur - Galileos Sur,Farmacia Sur
+883,Farmacia Sur - Mendeleiv,Farmacia Sur
+650,Farmacia Ichaso,Farmacia Ichaso
+651,Farmacia Urquiza 1,Farmacia Urquiza
+652,Farmacia Patagonica,Farmacia Patagonica
+653,Farmacia Maino,Farmacia Maino
+654,Farmacia Sigrist,Farmacia Sigrist
+656,Farmacia San Cristobal,Farmacia San Cristobal
+657,Farmacia Santecchia,Farmacia Santecchia
+658,Santa Cecilia,Santa Cecilia
+659,Farmacia Amadei,Farmacia Amadei
+661,Klyns,klyns
+662,Farmacia Feldman,Farmacia Feldman
+663,Farmacia Jujuy,Farmacia Jujuy
+664,Farmacia Domecq García,Farmacia Domecq Garcia
+666,Farmacia Del Alto 2,Farmacia Del Alto
+665,Farmacia farmatel,Farmacia Farmatel
+667,Farmacia del Torrión,Farmacia del Puente
+669,Droguería del Puente,Farmacia del Puente
+668,Mifarma,Mifarma
+670,Farmacia de los Andes,Farmacia de los Andes
+671,Catriel Zurita,Catriel
+841,Catriel Saenz Peña,Catriel
+843,Perfumeria Catriel,Catriel
+672,Farmacia Anika,Farmacia Anika
+673,Neofarma,Farmacia Neofarma
+674,Farmacia Calderon,Farmacia Calderon
+675,Farmacia Pizzio,Farmacia Pizzio
+677,Dasu Madryn,Farmacia Dasu Madryn
+676,Farmacia Pasteur,Farmacia Pasteur
+679,Farmacia de la Esquina,Farmacia Pasteur
+678,Farmacia VQ,Farmacia V Q S C S
+680,Avenida Olmos,Avenida Olmos
+681,Farmacia Albrecht,Farmacia Albrecht
+682,Cura Alvarez,Grupo Impronta
+1058,Magna,Grupo Impronta
+1059,Las Colonias,Grupo Impronta
+1060,Cura Álvarez Plus,Grupo Impronta
+1061,Farmacia Paraná,Grupo Impronta
+686,Farmacia del pueblo,Nueva Beccar
+687,Farmacia Penacca,Farmacia Penacca
+692,Farmacia Alemania,Farmacia Penacca
+708,Zucolillo,Zucolillo
+688,Farmacia Cucit,Farmacia Cucit
+693,La Esquina Uno,La Esquina
+694,La Esquina dos,La Esquina
+695,9 de Julio,La Esquina
+696,Mitre,La Esquina
+697,Independencia,La Esquina
+700,25 de Mayo,La Esquina
+701,Chasqui,La Esquina
+702,Bolivia,La Esquina
+703,Termas,La Esquina
+704,Avellaneda,La Esquina
+705,Fernandez,La Esquina
+706,Oeste,La Esquina
+717,Belgrano Centro,La Esquina
+718,Belgrano Policlinico,La Esquina
+737,Belgrano Cassaffousth,La Esquina
+742,Belgrano Principal,La Esquina
+746,Belgrano Ruta,La Esquina
+978,Bolivia - Perfumería,La Esquina
+980,Oeste - Perfumería,La Esquina
+981,Fernandez - Perfumería,La Esquina
+987,Avellaneda - Perfumería,La Esquina
+988,Termas - Perfumería,La Esquina
+989,Chasqui - Perfumería,La Esquina
+990,25 de Mayo - Perfumería,La Esquina
+991,Independencia - Perfumería,La Esquina
+996,Mitre - Perfumería,La Esquina
+997,9 de Julio - Perfumería,La Esquina
+998,La Esquina dos - Perfumería,La Esquina
+999,La Esquina Uno - Perfumería,La Esquina
+689,Farmacia del rio,Farmacia del Rio
+690,Cavatorta,Red Granate
+691,Farmacia CMD,Farmacia CMD
+709,Todo Farma Gran Sur,Todo Farma
+768,Todo Farma Nueva Galvagni,Todo Farma
+698,La Elena,La Elena
+699,Farmacia,Farmacia
+707,Farmacia Bollero,Farmacia Bollero
+710,Osvaldini,Osvaldini
+712,Farmacia Bertero,Farmacia Bertero
+713,Ramos,Farmacia Ramos
+715,Quan,Farmacia Quan
+716,Farmacia Morandini,Farmacia Morandini
+1234,Farmacia Morandini II,Farmacia Morandini
+719,Farmacia Fuchs,Farmacia Fuchs
+720,Farmacia Querini,Farmacia Querini
+721,Oriente 229,Santa Teresa
+722,Churubusco,Santa Teresa
+724,Ramos Millán,Santa Teresa
+725,Sur 4,Santa Teresa
+723,Farmacia Arnaldi,Farmacia Arnaldi
+726,Farmacia Fal,Farmacia Fal
+727,Nallip,Farmalife
+728,Anastasi,Farmalife
+1030,La porteña de Almagro,Farmalife
+1033,Farmalife 2 resistencia,Farmalife
+1036,Farmalife 6 Corrientes,Farmalife
+2125,Farmalife 5 Corrientes,Farmalife
+2126,San José Corrientes,Farmalife
+2127,Farmalife 14 Corrientes,Farmalife
+2128,Farmalife 2 Corrientes,Farmalife
+2224,San Agustin,Farmalife
+2225,Santa Catalina,Farmalife
+2226,San Pablo,Farmalife
+2227,Farmalife 1 CTES,Farmalife
+2228,FARMALIFE 3  CTES,Farmalife
+2229,Farmalife 4 CTES,Farmalife
+2230,FARMALIFE 9  CTES,Farmalife
+2231,FARMALIFE 8  CTES,Farmalife
+2232,FARMALIFE 10 CTES,Farmalife
+2233,FARMALIFE 11 CTES,Farmalife
+2234,FARMALIFE 12 CTES,Farmalife
+2267,FARMALIFE 18 CTES,Farmalife
+2366,Farmalife Hiper,Farmalife
+2367,Farmalife 3 resistencia,Farmalife
+2368,Farmalife 4 resistencia,Farmalife
+2456,Santa Maria,Farmalife
+2457,Farmalife 7 corrientes,Farmalife
+2458,Farmalife 16 corrientes,Farmalife
+2459,Farmalife 17 Corrientes,Farmalife
+2460,Farmacia Moderna,Farmalife
+2461,Farmacia del sol,Farmalife
+2462,Farmacia Integral 2,Farmalife
+2463,Farmacia Condor 1,Farmalife
+2465,Farmacia Condor 2,Farmalife
+2466,Farmacia Condor 3,Farmalife
+2467,Farmacia Condor 4,Farmalife
+2468,Farmacia Condor 5,Farmalife
+2469,Farmacia Pharmaco,Farmalife
+2470,Farmacia Costanera,Farmalife
+2471,Farmacia Farmalife Posadas,Farmalife
+2472,Farmacia Farmalife 2 posadas,Farmalife
+2473,Farmacia Itaembe,Farmalife
+2474,Farmacia Villafañe,Farmalife
+2475,Farmacia La plaza,Farmalife
+2476,Farmacia del Norte,Farmalife
+2477,Farmacia Farmamas,Farmalife
+2478,Farmacia Medifarma,Farmalife
+2479,Farmacia Lujan,Farmalife
+2569,Farmacia Centro,Farmalife
+2570,Farmacia Mi Farmacia,Farmalife
+2603,Farmacia Dulac,Farmalife
+2604,Farmacia Sellares,Farmalife
+2605,Farmacia Feresin,Farmalife
+2606,Farmacia Gottero,Farmalife
+2607,Farmacia Pasteur,Farmalife
+2609,Farmacia El Inca,Farmalife
+2610,Farmacia Lencinas,Farmalife
+2622,Farmacia Catedral 1 - Parana,Farmalife
+2623,Farmacia Catedral 2 - Parana,Farmalife
+2624,Farmacia Catedral 3 - Parana,Farmalife
+2645,Catedral 1 - Santiago del Estero,Farmalife
+2646,Catedral II - Santiago del Estero,Farmalife
+2647,Catedral III - Santiago del Estero,Farmalife
+2648,Catedral IV - Santiago del estero,Farmalife
+2649,Santa rosa - Santiago del Estero,Farmalife
+2650,San Francisco,Farmalife
+2651,San Juan,Farmalife
+2652,Santa Clara,Farmalife
+2653,Termas,Farmalife
+2654,Farmalife - Santiago del estero,Farmalife
+2863,Farmalife San Luis 1,Farmalife
+2864,Farmalife San Luis II,Farmalife
+2865,Farmalife San Luis III,Farmalife
+2866,Farmalife Formosa I,Farmalife
+2867,Farmalife Formosa II,Farmalife
+2868,Farmalife San Luis IV,Farmalife
+2869,Forfar,Farmalife
+2870,Pringles,Farmalife
+2871,Farmalife Moreno,Farmalife
+2872,Farmalife Moreno Anexo I,Farmalife
+2873,Farmalife 15,Farmalife
+2874,Farmalife Uruguay,Farmalife
+2875,Farmalife XX,Farmalife
+2876,Farmalife XIX Corrientes,Farmalife
+2877,Farmalife - Nueva formosa,Farmalife
+2878,Farmalife V Resistencia,Farmalife
+3021,Farmalife Pellegrini,Farmalife
+729,Farmacia Valentini,Farmacia Valentini
+734,Farmacia Karlen,Farmacia Valentini
+731,Farmacia Dantoni,Farmacia Dantoni
+730,Farmacia Alonso,Farmacia Alonso
+732,Farmacia de la Plaza off,Farmacia de la Plaza
+733,Farmacia de la Plaza,Farmacia de la Plaza
+735,Farmacia Alba,Farmacia Alba
+738,Farmacia Formia,Farmacia Formia
+739,Farmacia Lanfranchi,Farmacia Lanfranchi
+740,Lanin,Farmacia Lanin
+741,Farmacia Zentner,Farmacia Zentner
+743,Farmacia Novero,Farmacia Novero
+747,Farmacia Golf,Farmacia Golf
+749,Farmacia Seque,Farmacia Seque
+755,Farmacia La Nueva Itati SCS,Farmacia La Nueva Itati SCS
+756,Farmacia D¨Agostino,Farmacia D Agostino
+757,San Antonio,Farmacia San Antonio
+758,Mg Farma,MG Farma
+759,Farmacia de la Bahia,MG Farma
+760,Farmacia de la Bahia,Farmacia de la Bahia
+761,Farmacia de la Bahia 2,Farmacia de la Bahia
+763,Nicolino Patire,Nicolino Patire
+764,Farmacia Airasca,Farmacia Airasca
+765,Farmacia Miculan,Farmacia Miculan
+767,1 Congreso 5476,Farmacias Sanchez Antoniolli
+769,2  Av. Renault 1916,Farmacias Sanchez Antoniolli
+770,3 Mons. Pablo Cabrera,Farmacias Sanchez Antoniolli
+771,4 Av. Fuerza Aerea,Farmacias Sanchez Antoniolli
+772,5 Defensa 1753,Farmacias Sanchez Antoniolli
+773,6 Naciones Unidas,Farmacias Sanchez Antoniolli
+774,7 Donato Alvarez,Farmacias Sanchez Antoniolli
+776,8 Av. Velez Sarsfield,Farmacias Sanchez Antoniolli
+785,9 Av. Leandro N. Alem,Farmacias Sanchez Antoniolli
+786,10 Leartes 2484,Farmacias Sanchez Antoniolli
+787,11 Av. Vélez Sarsfield,Farmacias Sanchez Antoniolli
+788,12 Rosales 5395,Farmacias Sanchez Antoniolli
+794,14 Bv. Illia 417,Farmacias Sanchez Antoniolli
+795,15 Av. Fuerza Aérea 4730,Farmacias Sanchez Antoniolli
+801,16 Gauus 5904,Farmacias Sanchez Antoniolli
+813,22 Carestia,Farmacias Sanchez Antoniolli
+775,Farmacia Mitre,Farmacia Mitre
+777,VillaFarma,Villa Farma
+778,Farmacia Pasteur,Farmacia Pasteur - Arroyo
+779,Farmacia Reinaldi,Farmacia Reinaldi
+780,Farmacia Mazzola,Farmacia Mazzola
+781,Farmacia Ruiz Moreno,Farmacia Ruiz Moreno
+782,Farmacia Bacca,Farmacia Bacca
+789,Farmacia Cordillera,Farmacia Cordillera
+783,Farmacia Venier,Farmacia Venier
+784,Farmacia Gilli,Farmacia Gilli
+1046,Farmacia Aguilera,Farmacia Aguilera
+790,Farmacia Fernandez,Farmacia Fernandez
+791,Farmacias Gailhou,Farmacias Gailhou
+792,Pasteur,Dr Pasteur
+793,Pasteur 2,Dr Pasteur
+796,Colon de Carhue,Farmacia Colon de Carhue
+797,Farmabell - Ascasubi,Farmabell
+798,Farmabell - Farmabell Centro,Farmabell
+799,Farmacia del Mar,Farmacia del Mar
+800,Farmacia Santa Rita,Farmacia Santa Rita
+802,Farmacia Quillovil,Farmacia del Quillovil
+803,San Martín Concepción,Farmacia San Martín Concepción
+806,Farmacia Recalde,Farmacia Recalde
+835,Gerlero,Farmacia Gerlero
+807,Farmacia Santa Lucia,Farmacia Santa Lucia
+815,Dominico,Maga Shop
+836,Pierantoni,Pierantoni
+837,Farmacia Panacea,Farmacia Panacea
+838,Farmacia Panacea Los Frentones,Farmacia Panacea
+839,Justino Perez III,Justino Perez  III
+840,Farmacia la Capital,Farmacia la Capital
+842,Farmacia Miyoko,Farmacia Miyoko
+844,Malvetti Benitez,Farmacia Malvetti Benitez
+845,Pietribiasi,Farmacia Pietribiasi
+846,Farmacia Ituzaingo,Farmacia Ituzaingo
+847,Farmacia Centro,Farmacia Centro
+848,Farmacia Avenida,Farmacia Avenida
+944,Consumed de la Costa,Farmacia Consumed
+968,Consumed de la Costa 1,Farmacia Consumed
+849,Farmacia Benitez,Farmacia Benitez
+850,Farmacia Eandi,Farmacia Eandi
+851,Farmacia LNSM,Farmacia La Nueva Santa Maria
+852,Castagna,Farmacia Castagna
+853,Farmacia Martoglio,Farmacia Martoglio
+854,Farmacia del pueblo,Farmacia del pueblo - Entre rios
+855,Gz Farma 1,Max Zion
+856,Gz Farma 2,Max Zion
+857,Gz Farma 3,Max Zion
+858,Farmacia Bucci Fuentes,Farmacia Bucci Fuentes
+859,Farmacia Fueyo,Farmacia Fueyo
+865,Farmacia Vinuesa,Farmacia Vinuesa
+866,Mainardi,Farmacia Mainardi
+867,Farmacia Paula,Farmacia Paula
+868,Farmacia America,Farmacia America
+869,Cumbre 2,Cumbre
+870,Farmacia STMT,Farmacia STMT
+873,Centro,Farmacia Gili
+874,Mitre,Farmacia Gili
+875,Farmacia Junges,Farmacia Junges
+876,Farmacia Raiden,Farmacia Raiden
+878,Farmasun,Farmasun
+879,Farmacia Leloir 1,Farmacia Leloir
+880,Farmacia Leloir 2,Farmacia Leloir
+881,Farmacia San Jose,Farmacia San Jose
+884,Grilli,Grilli
+885,Austral,Austral
+886,Farmacia Ferrer,Farmacia Ferrer
+887,Perfumeria Ferrer,Farmacia Ferrer
+888,Farmacia Ferrer - Perfumería,Farmacia Ferrer
+889,Farmacia Dominguez,Farmacia Dominguez
+890,Obera,Farmacia Sudamericana
+2077,Sudamericana Alem,Farmacia Sudamericana
+891,Farmathenea 1,Farmathenea
+892,Farmathenea 2,Farmathenea
+915,farmacia pasteur,Farmacia Pasteur - Farmacia Pasteur
+916,Valdez,Farmacia Mar del Tuyu
+930,Farmacia Abdala,Farmacia Mar del Tuyu
+932,Farmacia Paz,Farmacia Mar del Tuyu
+917,Esencial,Farmared
+918,CONGRESO,Grupo Porteñas
+919,PUEYRREDON,Grupo Porteñas
+920,VILLA FREUD,Grupo Porteñas
+921,BALVANERA,Grupo Porteñas
+922,SAN FERNANDO,Grupo Porteñas
+923,MEDICFARM,Grupo Porteñas
+924,FARMACIA RIVADAVIA,DOC SRL
+925,FARMACIA DE LA VILLA,DOC SRL
+926,Farmacia Di Leo,Farmacia Dileo
+927,Farmatodo,Farmacia Farmatodo la Rioja
+928,Farmacia Brió,Farmacia Brió
+929,Farmacia Domeniconi,Farmacia Domeniconi
+931,Farmacia Av. Gran San Juan,Farmacia Gran San Juan
+933,Farmacia Ricca,Farmacia Ricca
+934,Farmacia Bolognesi,Farmacia Bolognesi
+935,Farmacia Ciriaci,Farmacia Ciriaci
+936,Farmacia Alquimia,Farmacia Alquimia
+937,Del Sol,Farmacia Del Sol
+938,Farmacia Del Huayco,Farmacia Del Huayco
+939,Rosa Mistica,Farmacia Rosa Mística
+940,Farmacia Orense,Farmacia Orense
+941,Varela,Farmacia Varela
+942,Farmavida,Farmavida
+943,Farmacia del Carril,Farmacias de Maipu
+963,Farmacia Ozamis,Farmacias de Maipu
+945,Colon,Red Colon
+946,Valle Viejo,Red Colon
+947,Norte,Red Colon
+948,Del Parque,Red Colon
+949,Catedral,Red Colon
+950,Misiones,Red Colon
+951,Rivadavia,Red Colon
+952,Salta,Red Colon
+953,Esquina Express,Red Colon
+954,Universitaria,Red Colon
+955,Illia,Red Colon
+956,Las Mil,Red Colon
+957,Castore,Red Colon
+958,Castore 2,Red Colon
+959,Castore 3,Red Colon
+960,Santa Rosa,Red Colon
+961,Ortiz de Ocampo,Red Colon
+962,Coronel Montes,Red Colon
+964,Farmacia Chiappero,Farmacia Chiappero
+965,Santa Rita Alvear,Santa Rita Alvear
+966,Costamagna,Costamagna
+1981,Costa-TurnoMañana,Costamagna
+1982,Costa-TurnoTarde,Costamagna
+967,Farmacia Osunlar,Farmacia Osunlar
+969,Uruguay,Tradicional
+1000,Nogoya,Tradicional
+1002,Universal,Tradicional
+970,Farmacia Orlandi,Farmacia Orlandi
+971,Jaquenod I,Farmacia Jaquenod
+972,Jaquenod II,Farmacia Jaquenod
+973,Dupraz,Farmacia Dupraz
+974,Farmacia Benvenutti,Farmacia Benvenutti
+975,Anastasini,Anastasini
+976,Farmacia Inda,Farmacia Inda
+977,Farmacia Bergero,Farmacia Bergero
+985,Social 1,Farmacia Social
+992,Social 2,Farmacia Social
+993,Social 7,Farmacia Social
+994,Social 13,Farmacia Social
+995,Social 18,Farmacia Social
+1008,Social 3,Farmacia Social
+1009,Social 4,Farmacia Social
+1010,Social 5,Farmacia Social
+1011,Social 6,Farmacia Social
+1012,Social 8,Farmacia Social
+1013,Social 9,Farmacia Social
+1014,Social 10,Farmacia Social
+1015,Social 11,Farmacia Social
+1016,Social 12,Farmacia Social
+1017,Social 14,Farmacia Social
+1018,Social 15,Farmacia Social
+1019,Social 16,Farmacia Social
+1020,Social 17,Farmacia Social
+1021,Social 19,Farmacia Social
+1022,Social 20,Farmacia Social
+1023,Social 21,Farmacia Social
+1024,Social 24,Farmacia Social
+979,A Romano,A Romano
+982,Farmacia Ledesma,Farmacia Ledesma
+983,Rutini,Rutini
+984,Cornalis,Farmacia Cornalis
+986,Acuario,Farnacia Acuario
+1003,Andrada,Farmacia Andrada
+1004,Constanzo,Farmacia y Optica Costanzo
+1082,Farmacia Moreno,Farmacia Moreno
+1005,Farmacia La Estrella,Farmacia La Estrella
+1007,Farmacia San martin,Farmacia San martin - San Martin
+1025,Farmacia Turi,Farmacia Turi
+1026,La Plaza,Farmacia La Plaza
+1027,Farmacia Herrero,Farmacia Herrero
+1028,Williner,Williner
+1029,Alejandro Senn,Farmacia Alegrandro Senn
+1031,Bahia,Farmacia Bahia
+1032,Fleming,Farmamía
+1034,Carbone,Farmacia Carbone
+1035,Inmaculada Concepción,Farmacia Inmaculada Concepción
+1037,Cristo Rey,Cristo Rey
+1038,Actis - Alesina,Farmacia Actis
+1039,Larocca,Farmacia Larocca
+1040,Perucchetti,Farmacia Perucchetti
+1041,Farmacia Bendita Farma,Farmacia Bendita Farma
+1042,Del Cueto,Farmacia del Cueto
+1043,Farmacia Ganbatte,Ganbatte
+1044,Padre Pio Uno,Padre Pio Uno
+1045,Padre Pio dos,Padre Pio Uno
+1047,Querol,Farmacias Patagónicas
+1048,Farmacia Libertad,Farmacia Libertad
+1049,Farmacia Central,Farmacia Central (General Mosconi)
+1050,Farmacia Teren,Farmacia Teren
+1051,Farmacia Maestro Vidal,Farmacia Maestro Vidal
+1053,Farmacia Monteros,Farmacia Monteros
+1054,Farmacia Ceri,Farmacia Ceri
+1055,Rebora,REBORA
+1056,Andrea Cascon,Farmacia Andrea Cascon
+1057,Farmacia El Ramal,Farmacia El Ramal
+1063,Farmacia Jacobo,Farmacia Jacobo
+1064,Crurie,Curie
+1069,Austral,Farmacia Austral Salta
+1070,Farmacia Moran,Farmacia Moran
+1071,Farmacia Sader III,Farmacia Sader
+1072,Farmacia Sader II,Farmacia Sader
+1073,Farmacia Sader I,Farmacia Sader
+1074,Depósito,Farmacias Me. Dicarlo
+1075,Farmacia Barrandeguy,Farmacia Barrandeguy
+1076,Farmacia Maturi,Farmacia Maturi
+1077,Farmacia Berli,Farmacia Berli
+1078,Mariana D´Auro,Farmacia Mariana D´Auro
+1079,Fittipaldi,Farmacia Fittipaldi
+1080,Farmacia Forte,Farmacia Forte
+1084,Farmacia Las Lomitas I,Farmacia TYB
+1085,Farmacia las Lomitas II,Farmacia TYB
+1086,Farmacia Laguna Yema,Farmacia TYB
+1087,Farmacia Formosa I,Farmacia TYB
+1088,Farmacia Juarez,Farmacia TYB
+1089,Farmacia Pirane,Farmacia TYB
+1090,Farmacia Fontana,Farmacia TYB
+1091,Farmacia Juarez II,Farmacia TYB
+1081,Farmacia Kohler,Farmacia Kohler
+1083,Farmacia Santa Fe,Farmacia Santa Fe
+1092,FARMACIA SMAUNSE (CASA CENTRAL),Farmacia Smaunse
+1093,FCIA. UNIVERSITARIA S. ESTERO,Farmacia Smaunse
+1094,FARMACIA UNIVERSITARIA I LA BANDA,Farmacia Smaunse
+1095,Farmacia Farmanexus,Farmanexus
+1096,Farmacia Cussati,Farmacia Cussati
+1097,Club Campestre,WeCare Pharma
+1098,Tezal,WeCare Pharma
+1099,Altamirano,WeCare Pharma
+1100,Mi Plaza,WeCare Pharma
+1101,Universidad,WeCare Pharma
+1102,Zákia,WeCare Pharma
+1422,Centro Sur,WeCare Pharma
+1446,Fisher,WeCare Pharma
+1103,Gogo Farma I,Gogo Farma
+1104,León,Isana Health Tech
+1106,CDMX,Isana Health Tech
+1105,San Francisco I,Farmacia Carrillo
+1107,Depósito,Red Medicarlo - Cordoba
+1144,Medicarlo Red suc 1,Red Medicarlo - Cordoba
+1108,El Prado,Farmacia el Prado
+1109,Laguzzi,Farmacia Laguzzi
+1110,Giofarma I,Giofarma
+1627,Farmalike,Giofarma
+1628,Giofarma II,Giofarma
+1111,Punilla,Farmacia Punilla
+1112,Noya Cosquín,Farmacia Noya
+1596,Noya Bialet Masse,Farmacia Noya
+1597,Noya Santa Maria,Farmacia Noya
+1598,Noya Parque Siquiman,Farmacia Noya
+1113,Farmacia Obregon,Farmacia Obregon
+1114,Farmacia Jana,Farmacia Jana
+1115,Farmacia Don Bosco,Farmacia Don Bosco
+1116,Lozano,Farmacia Lozano
+1117,Farmacia Stacchiotti S.C.S,Farmacia Stacchiotti S.C.S
+1118,Farmacia Ciancia de Depetris,Farmacia Ciancia de Depetris
+1119,Tihuatlan,Farmacia San Francisco
+1120,Córdoba,Farmacia San Francisco
+1121,San Gil Pharma,San Gil Pharma
+1122,MC-24 Farmacia,MC-24 Farmacia
+1123,Farmapronto,Farmapronto
+1124,Farmaplus,Farmacia Farmaplus
+1243,Sucusal Mariano Escobedo,Farmacia Satvpafc
+2221,Sucursal Luis Procuna,Farmacia Satvpafc
+2222,Sucursal Flores,Farmacia Satvpafc
+1125,Farmacia Callegari,Farmacia Callegari
+1126,Farmacia Ocampo,Farmacia Ocampo
+1127,De La Paz,Farmacia de la Paz
+1128,Farmadar,Farmacia Farmadar
+1129,Farmacia AgosPrueba,Extendeal Demo-MX
+1398,Punto de venta mexicano de Juan,Extendeal Demo-MX
+1565,Farmacia Extendeal México,Extendeal Demo-MX
+1739,Farmacia de Eka CS MX,Extendeal Demo-MX
+1880,MX Sofii,Extendeal Demo-MX
+1405,Farmacia colombiana de Juan,Extendeal Demo Col
+1131,Farmacia San Agustin,Farmacia San Agustin
+1130,Farmacia Aimar,Farmacia Aimar
+1132,Farmacia Cavallero,Farmacia Cavallero
+1133,Farmacia Genesis II,Farmacia Genesis
+1134,Farmacia Genesis I,Farmacia Genesis
+1135,Roma Norte,Farmacia Herbopharma - Roma Norte
+1136,Farmacia Piccili,Farmacia Piccili
+1137,Farmacia la Fe,Farmacia La Fe
+1138,Farmacia Salud Plus,Farmacia Salud Plus
+1139,Mas Cerca Salud,Farmacia Mas Cerca de tu Salud
+1140,Farmacia Beri,Farmacia Beri
+1141,Farmacia del Angel,Farmacia del Angel
+1142,11 de julio,Farmacia 11 de Julio
+1143,Farmacia de la Luz,Farmacia de la Luz
+1145,Farmapaz,Farmapaz
+1146,Farmacia Yacomi I,Farmacia Yacomi
+1147,Altimed San Gaspar,Atimed
+1148,Altimed Echeverria,Atimed
+1149,Farmacia Loyola,Farmacia Loyola
+1150,Simas farmacia Amador,Simas farmacia Amador
+1151,Farmacia Medical plus,Farmacia Medical plus
+1152,Pharmacie,Farmacia Pharmacie
+1153,Infonavit Iztacalco,Farmacia Econofarma
+1154,San Jose MX,Farmacia San Jose MX
+1155,MB Lazaro,MB Servicios Medicos Amplificados
+1156,MB Libertad,MB Servicios Medicos Amplificados
+1157,MB Santa Mónica,MB Servicios Medicos Amplificados
+1158,Gayosso,Farmacia Gayosso
+1159,Farmacia Cortemilia,Farmacia Cortemilia
+1160,Farmacia Elim,Farmacia Elim
+1161,Farmacia Johefsa,Farmacia Johefsa
+1162,Farmacias Bell,Farmacias Bell
+1163,Farmacia 24/7,Farmacia 24/7
+1164,Farmacia Ponso,Farmacia Ponso
+1165,CeluFarmaOnline,Celu Farma
+1166,Arteaga,Arteaga
+1167,Alser,Alser Medica
+1168,IMR I,Farmacia IMR
+1210,Clínica,Farmacia IMR
+1169,Farmacia Camila,Farmacia Camila
+1170,Digsa Medica,Farmacias Digsa
+1176,Sucursal Progreso,Farmacias Digsa
+1244,Sucursal Tlaxcoapan,Farmacias Digsa
+1245,Sucursal Tezontepec,Farmacias Digsa
+1437,Sucursal Mixquiahuala,Farmacias Digsa
+1172,Farmacia Estación Pilara,Farmacia Estación Pilara
+1171,Farmacia Santa Eleno,Farmacia Santa Eleno
+1173,Farmaahorro,Farmaahorro
+1174,Farmacia Difarmel,Farmacia Difarmel
+1175,Farmacia Shanics,Farmacia Shanics
+1177,Farmacia Vital,Farmacia Vital
+1178,Farmacia Cofradia,Farmacia Cofradia
+1179,Ascension,Farmacias Hospital
+1180,Pasteur,Farmacias Pasteur
+1181,Merced,Farmacias Pasteur
+1447,CEDIS,Farmacias Pasteur
+1182,Farmacia Drdi,Farmacia Drdi
+1183,Mazal Stim,Farmacia Mazal
+1278,Farmacia Mazal Tlalpan,Farmacia Mazal
+1184,Farmacia Guadalupana,Farmacia Guadalupana
+1185,Farmacia Altimed zaragoza,Farmacia Altimed - Farmacia Altimed
+1186,Farmacia Altimed - Jesus,Farmacia Altimed - Farmacia Altimed
+1187,Farmacia Dajosi,Farmacia Dajosi
+1188,Farmacia Moctezuma,Farmacia Moctezuma
+1189,Farmacia Guimael,Farmacia Guimael
+1190,El Carmen farmacia,El Carmen farmacia
+1191,Etrueba Distribuciones,Farmacia Etrueba
+1192,Tlaco,Farmaenvios
+1193,Tellez,Nestares
+1194,Yimmo,Farmacia Yimmo
+1195,Almacen General,Vilamed
+1216,Cap Culiacan,Vilamed
+1217,Cap Tijuana,Vilamed
+1220,Almacen General - CAP CULIACAN,Vilamed
+1196,De La Cruz,Farmacia De La Cruz
+1197,Farmacias Bell KM 80,Farmacias Bell Quintana Roo
+1198,Farmacias Bell Xcan,Farmacias Bell Quintana Roo
+1199,Farmacias Bell Xcan 2,Farmacias Bell Quintana Roo
+1200,Farmacias Bell Popolnah,Farmacias Bell Quintana Roo
+1201,Farmacias Bell Río Lagartos,Farmacias Bell Quintana Roo
+1202,Farmacias Bell Agua Azul,Farmacias Bell Quintana Roo
+1203,Farmacias Bell San Francisco,Farmacias Bell Quintana Roo
+2903,Farmacias Bell Tzonot,Farmacias Bell Quintana Roo
+2904,Farmacias Bell Xcatzin,Farmacias Bell Quintana Roo
+1204,Farmacia Osle,Farmacia Osle
+1205,Econofarmacia Central,Fcia. Econofarmacia (tlayacapan)
+1206,Central Médica Guadiana,Guadiana
+1213,Sucursal Fatima,Guadiana
+1214,Sucursal Victoria,Guadiana
+1218,Sucursal Lomas,Guadiana
+1219,Sucursal Madero,Guadiana
+1207,fcia. Fatima,Farmacia fatima
+1208,Fcia. Rubbiani,Farmacia fatima
+1209,Andres Molina,Acero
+1211,Sananton,San Antonio farmacia
+1212,Sana Sana Sanfalife,Sanfalife
+1215,Farmacia Morelia,Farmacia Morelia
+2820,Estación Salud,Farmacia Morelia
+1221,Entregafarma,Entregafarma
+1222,Pharmalli SMA,Farmacia Pharmalli
+1223,Pharmalli Qro,Farmacia Pharmalli
+1224,Farmacia de la Caridad,Farmacia de la Caridad
+1225,Mi luz,Mi luz
+1226,Ermita,Farmacia Ermita
+1227,Farmacia Santa Elena,Farmacia Santa Elena
+1228,Sagrado Corazon,Sagrado Corazon
+1229,Farmacia La central,Farmacia La central
+1230,Farmacia Dr. Enrique Garcia,Farmacia Dr. Enrique Garcia
+1231,MC Medical,MC Medical
+1232,Independencia,SIMAS Farmacia Independencia
+1233,San Angel,Farmacia San Angel
+1235,Farmacia Requena,Farmacia Requena
+1236,Outlet Atotonilco,Outlet Medicamentos
+1449,Outlet CEDIS,Outlet Medicamentos
+1237,Farmacia Aschly,Farmacia Aschly
+1238,Farmacia San Angel Hidalgo,Farmacia San Angel (Hidalgo)
+1239,Abastecedora Farmaceútica,Farmacias ABC
+1250,Uni Modelo,Farmacias ABC
+1251,F. Galvan,Farmacias ABC
+1252,Joya II,Farmacias ABC
+1253,Valle Verde,Farmacias ABC
+1254,Loma Linda,Farmacias ABC
+1255,Serafin P.,Farmacias ABC
+1256,Ruperto Martinez,Farmacias ABC
+1257,Colon Nueva,Farmacias ABC
+1240,Sucursal Monterrey,Farmacia Conexion Oncologica
+1241,CEDIS Farmacentro,Grupo Farmacentro
+1242,Farmacia insumor para la vida,Farmacia insumos para la vida
+1246,CDIS F01,CDIS Farmacias
+1247,CDIS F02,CDIS Farmacias
+1248,Fcia. Alvarez Loiza,Farmacia Alvarez Loiza
+1249,Pharmai,Farmacia Pharmai
+1258,La Surtidita,Farmacia Simas
+1259,Farmacia Central MX,Farmacia Central MX
+1260,Farmacia Dr Freud,Farmacia Dr Freud
+1261,Farmatotal Almacen,Farmatotal
+1262,Farmatotal San Diego,Farmatotal
+1263,Cedifa,Farmapronto farmacias
+1264,MEDICINA LABORAL CARMEN SA DE CV,Farmacia medicina laboral carmen
+1265,Gendifar,Gendifar
+1266,Santa Cruz,Farmacia Santa Cruz
+1267,Maria Guadalupe,Farmatop
+1268,Impulsora,Farmatop
+1269,Yatziri,Farmatop
+1270,Vergel,Farmatop
+1271,Acolman,Farmatop
+1272,Prov_metepec,Farmacia Divina Providencia
+1273,Prov_Tepotzotlan,Farmacia Divina Providencia
+1274,San Rafael _ Huejotzingo,Super Farmacias San Rafael
+1275,San Rafael_chiuauzingo,Super Farmacias San Rafael
+1276,Farmacia Gadal,Farmacia Gadal
+1279,Farmaexpress,Pharmaexpress
+1280,Farmacias Acero,Farmacias Acero
+1281,Farmacia Solis,Farmacia Solis
+1282,FP 1 sucursal,Farmacia Farmapronto
+1283,Teabo,Doctor Pez
+2240,Chumayel,Doctor Pez
+2241,MAYAPAN,Doctor Pez
+2243,Mama,Doctor Pez
+1284,Bodega  General,Farma Total
+1288,san diego,Farma Total
+1285,Santa Elena,Santa Elena
+1286,Farmangie,Farmacia Farmangie
+1287,Castañeda,Castañeda
+1289,Ceracom,Farmacia Ceracom
+1290,Valencia (San Pablo),Farmacia Valencia
+1291,Farmacia Cristo Rey Progreso,Farmacia Cristo Rey
+1292,Farmacia del Valle Tepatepec,Farmacia Cristo Rey
+1293,Afganistán,Medi Farmacias
+1300,Ebanos,Medi Farmacias
+1294,Ads Medical,Farmacia ADS Medical
+1295,Famevaem,Farmacia Chiquinquira
+1315,Bogotá,Colombia
+1296,Ozanets,Farmacia Ozanets
+1297,Farmatico,Farmatico
+1298,Huatulco,Farmacias Ariel
+1299,Pochutla,Farmacias Ariel
+1301,San Agustin,San Agustin
+1302,El Angel,El Angel
+1303,Del Carmen,Farmacia Del Carmen
+1304,Farmacia Ortiz,Farmacia Ortiz
+1305,San Judas Tadeo,Serv. Medicos San Judas Tadeo
+1306,Santa Cecilia Farma,Santa Cecilia Farma
+1307,Aida,Farmacia Aida
+1308,Tienda UNAM,Tienda UNAM
+1309,FarmaCid,FarmaCid
+1310,Farmacia Zakai,Farmacia Zakai
+1311,Verdux Ciudad Lago,Verdux
+2913,Verdux Oriente,Verdux
+1312,Farmasana,Farmasana
+1313,Farmacia Vive,Farmacia Vive
+1314,Farmacia La Fe,Farmacia La Fe Teoselo
+1316,Mejor Salud,Farmacia Mejor Salud
+1317,Santa Ana,Santa Ana Juarez
+1318,Farmacia UPE,Farmacias UPE
+1319,Zaragoza,Farmacia Kent
+1320,Libertad 15,Farmacia Kent
+1321,Libertad 34,Farmacia Kent
+1322,Traxcala,Farmacia Kent
+1323,Sinaloa,Farmacia Kent
+1324,Farmacia WGH,Farmacia WGH
+1325,Juquilita,Farmacia Juquilita
+1326,Ecofarma Via Alcorta,Farmacia ECOFARMA
+1365,Ecofarma Sucursal Mexico,Farmacia ECOFARMA
+1327,Simas - 5 de mayo,Farmacia Simas (Heroes 5 de mayo)
+1328,Leon de Juda,Farmacia Leon de Juda
+1329,Ti Farmacias,Farmacia FarmaSana
+1330,Sanchez 1,Farmacia y Abarrotes Sanchez
+1331,Cisabi,Cisabi
+1332,San Javier,Farmacia San Javier
+1333,Chiapa de Corzo,Esquivar
+1334,Teran,Esquivar
+1336,Cruz Roja,Esquivar
+1337,Matriz Villaflores,Esquivar
+1338,Ancianos,Esquivar
+1339,Jaltenango,Esquivar
+1340,Villa Corzo,Esquivar
+1341,Malpaso,Esquivar
+1342,Mercado Escobar,Esquivar
+1343,Centro Huixtla,Esquivar
+1344,Villa Comaltitlán,Esquivar
+1345,Escuintla,Esquivar
+1346,Cacahuatán,Esquivar
+1347,Cd. Hidalgo,Esquivar
+1348,Tonala,Esquivar
+1349,Pijijiapan,Esquivar
+1350,Mazatán,Esquivar
+1351,Acapetahua,Esquivar
+1352,Costera Huixtla,Esquivar
+1353,Motozintla,Esquivar
+1354,Las Rosas,Esquivar
+1355,Comitán Catedral,Esquivar
+1356,Frontera Comalapa,Esquivar
+1357,Comitán Abastos,Esquivar
+1358,Ocozocoautla,Esquivar
+1359,Chicomuselo,Esquivar
+1335,Farmacia Axoxuca,Farmacia Axoxuca
+1360,Cedis de Medicamentos,Farmacia Bali
+1361,Provida,Farmacia Provida
+1362,Provida II,Farmacia Provida
+1363,Apoteko,Apoteko
+1364,Evolucion,Farmacia Evolución
+1366,Farmamundo,Farmacia Farmamundo
+1367,Integral Care,Integral Care
+1368,Sofi,Farmacia Sofi
+1369,Central Turanchingo,Farmacia Central Turanchingo
+1370,Distribuciones Famar,Distribuciones Famar
+1371,Drogueria Minimarket Farmandy Plus,Drogueria Minimarket Farmandy Plus
+1372,Inversiones Amado SAS,Inversiones Amado SAS
+1373,Farmacia del Angel,Farmacia del angel - MX
+1374,Matriz,Farmacia Santa Maria Gidavi
+1375,San Juan,Farmacia Santa Maria Gidavi
+1376,Trebol,Farmacia Santa Maria Gidavi
+1377,San Jose,Farmacia Santa Maria Gidavi
+1381,Matriz,Farmacia Santa Maria Gidavi
+1378,Bosques,Farmacias Bosques
+1397,Tapatias,Farmacia Tapatias
+1379,Farmacia Mayoreo Ppal,Farmacia Mayoreo
+1380,MEDICSTAT Medica Santa Teresita,MEDICSTAT Medica Santa Teresita
+1382,Koala Farmaceuticos,Koala Farmaceuticos
+1383,Rodmon,Rodmon
+1391,Farmacia Rodmon,Rodmon
+1384,Farmacia Immedica GI,Farmacia Immedica GI
+1385,Farmacia el Descuento,Farmacia el Descuento
+1386,Farmacia Ifarma,Farmacia Ifarma
+1387,Farmacia la Providencia 1,Farmacias la Providencia
+1388,Triple Enlace,Grupo Triple Enlace
+1389,San Jose,Farmacia San Jose Tlaxcala
+1390,capsula,Farmacia Capsula
+1392,Navarro,El Núcleo
+1393,Policlínica,El Núcleo
+1394,MEDICALMAR FARMACIA SAS,MEDICALMAR FARMACIA SAS
+1395,Ecopharma,Ecopharma
+1399,Economax CYH Drogueria,Economax CYH Drogueria
+1400,Aliento de Vida,Farmacia Aliento de Vida
+1401,Drogueria Vital Farma,Drogueria Vital Farma
+1402,Favorita,Favorita
+1403,Farmacia Galenus,Farmacia Galenus
+1404,Farmacia Farba,Farmacia Farba
+1407,FarmaLeon,FarmaLeon
+1408,M Farma 1,Farmacia Medicine Farma
+1409,Samogi,Farmacia Samogi
+1411,4 Angeles,4 Angeles
+1412,Balance Farma,Balance Farma
+1413,Focus NS,Focus NS
+1414,Koty,Koty
+1415,La + Barata,La + Barata
+1416,Farmacia Santa María,Farmacia Santa María
+1417,San Rafael,De la Colonia
+1418,Farmacia Zacatlan,Farmacia Zacatlan
+1419,TUFARMA DROGUERIAS,TUFARMA DROGUERIAS
+1556,TUFARMA SAN MATEO,TUFARMA DROGUERIAS
+1420,Somos Drogueria,Somos Drogueria
+1421,Farmacia Amiga H MUJER,Farmacia Amiga
+1445,Farmacia Amiga suc. auditorio,Farmacia Amiga
+1423,Docfarma,Farmacia Docfarma
+1424,Drogueria Vitality,Drogueria Vitality
+1425,Samedi,Grupo Distribuidor  Samedi
+1426,ARRJJES MEDICA,Farmacia AARJJES MEDICA
+1427,Todo drogas RC,Todo drogas RC
+1428,Berenice,Farmacias MBC
+1429,Drogas Comfamiliar y Servicios,Drogas Comfamiliar y Servicios
+1430,Farmacia Jade,Farmacia Jade
+1431,Farmacia NUMA,Farmacia NUMA
+1432,La Especial de la 97,La Especial
+1670,La Especial de la 95,La Especial
+1691,La Especial,La Especial
+1433,Dolmec,Dolmec
+1434,Efer,Efer
+1435,Farmacia Fortamedic,Farmacia Fortamedic
+1436,Vitfarma,Vitfarma
+1438,Guadalajara,Eliminar
+1439,Super farmacia Anita,Super farmacia Anita
+1440,Farma y Mas,Farma y Mas
+1441,Farma Miami JBB,Farma Miami JBB
+1442,Farmadeiss,Farmadeiss
+1443,Farmacia de Dios Zaragoza,Farmacia de Dios
+1444,Santa Helena 1,Santa Helena 1
+1448,Farmacia Mas salud,Farmacia Mas salud Mexico
+1450,Farmacia carioca,Extendeal Brasil demo
+1451,Souza Comércio de Medicamentos,Souza Comércio de Medicamentos  Ltd
+1528,Farmacia Essenciavitts,Souza Comércio de Medicamentos  Ltd
+1529,Farmácia FarmaGui,Souza Comércio de Medicamentos  Ltd
+1452,Ciudad Real,Ciudad Real
+1453,genericos equivalentes san pedro,Genericos equivalentes San Pedro
+1454,Farmacia Sante,Farmacia Sante
+1455,Drogueria unionsalud,Drogueria unionsalu
+1456,Droguerias Proxifarma,Droguerias Proxifarma
+1457,Hiperdrogueria mi julies,hiperdrogueria mi julies
+1458,Las Pildoritas,Farmacia Las Pildoritas
+1459,Farmalatir,Farmalatir
+1460,Farmacia Sofía,Farmacia Sofía
+1461,Farmacia De Jesús,Farmacia De Jesús
+1462,Luis Marín Rodrigues,Drogueria marin
+1463,Farmacia Sagrado Corazón,Farmacia Sagrado Corazón
+1464,Orlando Murcia Diaz,Drogas Gaitan
+1465,Senior Care,Farmacia Senior Care
+1466,Farmaolimpica,Farmaolimpica
+1467,D&S Arbelaez,D&S Arbelaez
+1468,Queretaro,Farmacia Queretaro
+1469,Los Angeles,Los Angeles
+1470,Feliciano Buitrago,Drogueria capi express
+1856,capiexpress principal,Drogueria capi express
+2000,Capiexpress PPL,Drogueria capi express
+1471,Drogueria General Pharmaceutica,Drogueria General Pharmaceutica
+1472,Nicolas zamudio,Drogueria economia y calidad
+1473,Mas Droguerías,Mas Droguerías
+1474,Drogueria Domo Pharma,Drogueria Domo Pharma
+1475,Distribuidora Medimat,Farmacia distribuidora Medimat MX
+1476,Mafher _Mifarma,Mi Farma Farmacia Mafher
+1477,Farmacia San Ángel Medery,Farmacia San Ángel Medery
+1478,Farmacia Libano Qro,Farmacia Libano QRO
+1479,Shely,Shely
+1480,Express Pharma,Express Farma
+1481,Pharmalujo,Pharmalujo
+1485,Pharmalujo 2,Pharmalujo
+1482,Kimdrogas,Kimdrogas
+1483,Distrifarma  caqueta plus,Distrifarma del caqueta plus
+1484,Farmacia M&G,Farmacia M6G
+1486,Farmacias Brio,Farmacias Brio
+1487,Ages farmacia de Especialidad,Ages farmacia de Especialidad
+1488,California Dream,Demo Estados Unidos
+1489,Farmacias Del Sol,Farmacias Del Sol
+1490,Sukasa,Sukasa
+1491,Farmacia Los Precios Bajos,Farmacia Los Precios Bajos
+1492,Multimedica del Sur,Multimedica del sur
+1493,Distrifenix,Distrifenix
+1494,Boston Health,Farmacia Boston Health
+1495,Madero,Farmacias Econofarma
+1496,Zaragoza,Farmacias Econofarma
+1497,Americas,Farmacias Econofarma
+1498,Salud Familia,Rita Sanchez
+1499,Drogueria el olimpo je,Drogueria el olimpo je
+1500,Drogueria El Macal,Drogueria El Macal
+1501,Farmacia Medioax,Farmacia Medioax Flor
+1502,Danils,Danils
+1503,Farmacia Febriz Naucalpan,Farmacia Febriz Naucalpan
+1504,Mi Farma,Mi Farma
+1505,Megaspharma,Megaspharma
+1520,De Todos,Megaspharma
+1506,San Angel Tianguistenco,Farmacia San Angel Santiago
+1507,Farmacia martinez de la torre,Javier Arteaga
+1508,Distribuciones Sarit,Distribuciones Sarit
+1509,Drogueria Economix,Drogueria Economix
+1510,Drogueria Zaragoza,Drogueria Zaragoza
+1511,Divemed,Divemed
+1512,Shaddai,Farmacia Shaddai
+1513,Drogueria Farma Grande,Drogueria Farma Grande
+1514,Dannypharma,Dannypharma
+1515,Drogueria Hospitalaria del Occident,Drogueria Hospitalaria del Occident
+1516,Drogueria vitality.,Drogueria vitality.
+1517,Farmacia Santa Elena Xochimilco,Farmacia Santa Elena MX
+1518,Farmacia Santa Elena San Pedro,Farmacia Santa Elena MX
+1519,Farmafe 201,Farmacia Santa Elena MX
+1696,FARMAFE XOCHIMILCO,Farmacia Santa Elena MX
+2198,Farmafe Xochimilco,Farmacia Santa Elena MX
+2199,Farmafe Odette,Farmacia Santa Elena MX
+1521,Drogueria Maxifarma TyV,Drogueria Maxifarma TyV
+1522,Farmacia Arcoiris,Farmacias Arcoiris
+1523,Farmacia Arcoiris 2,Farmacias Arcoiris
+1524,Almaba Farma,Almada Farma
+1525,Farmacia Cemydi,Farmacia Cemydi
+1526,Gran Depósito,Gran Depósito
+1527,Farmacia New Pharma Multiservicio,MERCASAVI SA DE CV
+1530,La Victoria,La Victoria
+1531,Farmacia CMHG,Farmacia CMHG
+1532,Yuliana J.M,Yuliana J.M
+1533,Farmacia El mante,Jose Oscar Vazquez
+1534,Servidinamic,Servidinamic
+1535,Drogueria farma Arjona,Droguería farma  ahorro arjona
+1536,Drogueria Superpharma th,Drogueria Superpharma th
+1537,Maria Jose al Servicio,Maria Jose al Servicio
+1538,La Economica,La Economica
+1539,Farmagolden,Farmagolden
+1540,Medical 1,Medical 1
+1541,Centro,Distrisalud
+1542,Drogueria Supermercado Medica,Drogueria Supermercado Medica
+1543,Drogueria Vita Familiar,Drogueria Vita Familiar
+1544,Yuzeth,Bernardo Enguelberth
+1545,Farmacia del Hospital Santa Fe,Farmacia del Hospital Santa Fe
+1546,Farmacia Mi Niño,Yolanda Medina Vargas
+1547,Drogueria farma market,Drogueria farma market
+1548,Linea Azul,Linea Azul
+1549,Fcia GN 2,Farmacias GN y del SOl
+1550,Santa Lucia,Santa Lucia
+1551,Farmacia niño de belen,Farmacia San Judas tadeo
+1552,Farmacia Anefar,Pilar Serrania
+1553,Farmacia Colosio,Guillermo Charazo
+1554,Farmacia la Generosa Queretaro,Farmacia la Generosa Queretaro
+1555,Doxa,Genéricos y Similares
+1557,Farmapronto Amanalco,Sarahi Jimenez
+1558,Droguería Nápoles,Droguería Nápoles
+1559,Farmacia de Dios,Farmacia de Dios (CDMX)
+1560,Nutriven Tijuana,Loris Slim
+1562,Farmacia San Miguel,Farmacia San Miguel
+1561,Drogueria Prosalud JC,Drogueria Prosalud JC
+1564,Farmavida,Farmavida Misiones
+1563,Farmacias San Mateo,Farmacias San Mateo
+1566,Farmagu,Farmagu
+1567,Katypharma,Katypharma
+1568,Farmametropolis,Farmametropolis
+1569,Farmacia Cristo Rey Fanny,Farmacia Cristo Rey Fanny
+1570,Farma´s Ahorro,Farma´s Ahorro
+1571,Aros Medicamentos,Aros Medicamentos
+1572,Farmacia San Andres,Farmacia Medery
+1575,Farmacia Valladolid,Farmacia Medery
+1576,Farmacia Santa Cecilia,Farmacia Medery
+1577,Farmacia San Antonio,Farmacia Medery
+1573,La Botica del Doc,La Botica del Doc
+1574,La Esmeralda,La Esmeralda
+1578,Droguería la popular inirida,Drogueria la popular inirida
+1579,Sinergia Pharma,Sinergia Pharma
+1580,Drogueria farmaplus samore,Drogueria farmaplus samore
+1581,¿,Alfa
+1617,1,Alfa
+1625,2,Alfa
+1986,Alfa Milán,Alfa
+2006,4,Alfa
+2047,3,Alfa
+1582,Farmacia Grecia,Farmacia Grecia
+1583,San Javier,Drogueria Maxidrogas
+1584,Farmacia Possiel,Farmacia Possiel
+1585,Mediya,Mediya
+1586,Medikors,Medikors
+1587,Farmaymas Monroy,Emmanuel Tapia Monroy
+1588,Farma Plus Fontanas,Farma Plus
+1589,Farma Plus Avandaro,Farma Plus
+1590,Farma Plus  Fresno,Farma Plus
+1591,drogueria castillo rosales,Droguería el castillo Rosales
+1592,Farmacia Sifarma Obregon,Farmacia Sifarma
+1593,Blive,Farmacia Blive
+1594,San Martín Principal,San Martin
+1595,Dam,San Martin
+1639,Villa Suaita,San Martin
+1640,San Jose,San Martin
+1641,MJ 1 La Mesa,San Martin
+1599,ROMA NORTE,Farma 360
+2154,CASTORENA,Farma 360
+2269,ROMA SUR,Farma 360
+2562,LADERA,Farma 360
+2563,NICOLAS ROMERO,Farma 360
+1600,Farma servicios de Dios,Isidro Sánchez Salvador
+1601,Farmacia Nueva San Juan,Farmacia Nueva San Juan - Artemio
+1602,Drogueria farma.salud,Drogueria farma. salud
+1603,Viridaypharma,Viridaypharma
+1604,Farmacia Libano,Farmacia Libano MX
+1605,La Botica de Versalles,La Botica de Versalles
+1606,SFarma,SFarma
+1803,Droguerías SFarma N° 32 VICTORIA,SFarma
+1804,Droguerías SFarma N °15 ALCALA,SFarma
+1805,Droguerías SFarma N° 22 CEDRITOS,SFarma
+1806,Droguerías SFarma N° 6 CIPRIANO,SFarma
+1807,Droguerías SFarma N° 20 LUCERO,SFarma
+1808,Droguerías SFarma N° 2 PATIO BONITO,SFarma
+1809,Droguerías SFarma N° 33 ENGATIVA,SFarma
+1810,Droguerías SFarma N° 8 LA VICTORIA,SFarma
+1811,Droguerías SFarma N° 3 FUNZA,SFarma
+1812,Droguerías SFarma N° 12 LA GLORIA,SFarma
+1813,Droguerías SFarma N° 24 RESTREPO,SFarma
+1814,Droguerías SFarma N° 17 BELEN,SFarma
+1815,Droguerías SFarma N°4 SANTAFÉ,SFarma
+1816,Droguerías SFarma N° 11 GALERIAS,SFarma
+1817,Droguerías SFarma N° 18 SOACHA,SFarma
+1818,Droguerías SFarma N° 16 MOLINOS,SFarma
+1819,Droguerías SFarma N° 28 NORMANDIA,SFarma
+1820,Droguerías SFarma N° 39 MADRID Drog,SFarma
+1821,Droguerías SFarma N° 29 ZIPAQUIRA,SFarma
+1822,Droguerías SFarma N° 10 VILLA CLAUD,SFarma
+1826,Droguerías SFarma N° 36 LA VICTORIA,SFarma
+1827,Droguerías SFarma N° 5 C. MONTES,SFarma
+1828,Droguerías SFarma N° 37 CASTILLA,SFarma
+1829,Droguerías SFarma N° 21 TREBOLIS,SFarma
+1830,Droguerías SFarma N° 13 VERAGUAS,SFarma
+1831,Droguerías SFarma Nª 19 GRAN GRANAD,SFarma
+1832,Droguerías SFarma N° 25 MONTERREY,SFarma
+1833,Droguerías SFarma - Carrera 71c - E,SFarma
+1834,Droguerías SFarma Nª 34 SAN TERESIT,SFarma
+1835,Droguerías SFarma N° 38 NIZA IX,SFarma
+1836,Droguerías SFarma Calle 167 #62-6 -,SFarma
+1837,Droguerías SFarma N° 30 SUBA,SFarma
+1838,Droguerías SFarma N° 1 SPRINT,SFarma
+1839,Droguerías SFarma Calle 140 #1387 -,SFarma
+1840,Droguerías SFarma - Principal,SFarma
+1841,Droguerías SFarma N° 7 SANTA LIBRAD,SFarma
+1842,Droguerías SFarma N° 9 ASUNCION,SFarma
+1843,Droguerías SFarma N° 14 STA ISABEL,SFarma
+1844,Droguerías SFarma N° 26 MILANESA,SFarma
+1845,Droguerías SFarma N° 27 FARMACENTER,SFarma
+1846,Droguerías SFarma N° 31 VICTORIA,SFarma
+1852,s farma Droguerias # 23,SFarma
+1854,Drogueria s farma # 19 gran granada,SFarma
+1855,Drogueria sfarma # 34 santa teresa,SFarma
+1607,Farmacia de Francia,Farmacia de Francia
+1608,Real de Drogas #5,Real de Drogas #5
+1609,Farma funza,Farma funza
+1610,CEDIS Monterrey Vitau,Vitau
+1611,Farmacias Leyva,Farmacias Leyva
+1612,Nubia 1,Nubia 1
+1613,Iriart,Farmacia Iriart
+1614,Farmacia Gagliardi,Farmacia Gagliardi
+1615,Farmacia 3 de febrero,Farmacia Gagliardi
+1616,Farmacia Nueva San Juan Santa María,Farmacia Nueva San Juan Santa María
+1618,Caratti,Farmacia Caratti
+1619,Farmacia Frontino,Farmacia Frontino
+1620,Farmacia Jalil,Farmacia Jalil
+1621,Sucursal Central,Sagrada Familia
+1622,Junin,Sagrada Familia
+1623,Candelaria,Droguería Candelaria
+1624,Farmagenezi,Farmagenezi
+1626,Farmacia del siglo S.A,Farmacia del siglo S.A
+1629,Bios Centro Medico,Joseph Esquivel
+1630,Reforma,Reforma
+1632,Farmacia Especializada Valles,Farmacia Especializada Valles
+1633,Sulka Store,Cesar Gonzalez
+1634,Farmacia Sastre,Farmacia Sastre
+1636,Drogueria David,Drogueria David
+1637,Super Elite,Drogueria Super Elite
+1638,Hiperdrogueria Abicasur,Hiperdrogueria Abicasur
+1642,Farmacia Rawson,Farmacia Rawson
+1643,FARMACIAS JOSEL,FARMACIAS JOSEL
+1644,Aragón,Farmacia San Juditas
+1645,Maravillas,Farmacia San Juditas
+1646,Farmacia Valentini 1,Farmacia Valentini Colinizadores
+1647,Farmacia Karlen,Farmacia Valentini Colinizadores
+1648,La Giovo,La Giovo
+1649,Mares,Farmacia Mares
+1650,BioFarmacias - Cedis,BioFarmacias
+1741,Sucursal Centro,BioFarmacias
+1747,Sucursal Norte,BioFarmacias
+1748,Sucursal Mercado 01,BioFarmacias
+1749,Sucursal Periferico,BioFarmacias
+1750,Sucursal mercado 02,BioFarmacias
+1651,Droguería y Minimarket puerto López,Droguería y Minimarket puerto López
+1652,Pharma Humanos,Drogueria pharma humanos
+1653,Farmacia Sepp,Farmaser
+1654,Farmacia Lagunilla,Efren Gil Azuara
+1655,prueba brasil,Prueba de Brasil - no usar
+1656,Unifarma LR,Drogueria unifarma lr
+1663,FarmaFilSB,FARMAFIL
+1664,Farmacia Filgueira,FARMAFIL
+1665,Farmacia Filgueira Fernández,FARMAFIL
+1666,Farmacia Andriola,FARMAFIL
+1667,Farmacia Birreci,FARMAFIL
+2163,Filgueira Fernandez PERFU,FARMAFIL
+2165,Birreci PERFU,FARMAFIL
+2166,Andriola Perfu,FARMAFIL
+2167,FarmafilSB PERFU,FARMAFIL
+1657,Mi Farmacia N.L.M,Mi Farmacia NLM
+1658,xailon,Drogueria xailon
+1659,Medina Virtual,F. MEDINA PUEBLA
+1660,San Camilo I,Farmacia San Camilo -
+1661,Sucursal Güemes,Farmacia Bancaria
+1662,Farmacia San Antonio,Farmacia San Antonio Esquivel
+1668,Farmacia Atenea,Farmacia Atenea
+1669,Farmacia Mayo,FARMACIA MAYO
+1671,Farmacia M&M Petatlan,Emmanuel Ulises Morales Diaz
+1672,Farmacia Familifarma,Farmacia Familifarma
+1673,Farmacia Zamora,Farmacia Zamora
+1674,Unidas de la 56 D.N.S,Unidas de la 56 D.N.S
+1675,Arifarma,Arifarma
+1743,Limar,Arifarma
+1676,Zafiro,Zafiro
+1677,Libano Queretaro,Farmacia Libano Queretaro
+1678,Farmacia D'Salinas,José Salinas
+1679,Matriz,Farmacia Herrera
+1680,Boulevard,Farmacia Herrera
+1681,Arboledas,Farmacia Herrera
+1682,Tecnológico,Farmacia Herrera
+2067,Virtual no ejecutar pedidos,Farmacia Herrera
+1683,Farmacorp Belgrano,Farmacorp
+1730,Farmacop Plaza,Farmacorp
+1684,Farmacia del Valle XVIII,Farmacia del Valle Salta
+1867,Farmacia del Valle XII,Farmacia del Valle Salta
+1685,Framacia de Tito,Héctor Garcia
+1686,Farmacia Yorbandi,Farmacia Yorbandi
+1687,Farmacia Prat,Farmacia Prat
+1688,Labrador-Tucuman,Juan Pablo Dos Santos
+1689,Farmacia Balassi,Farmacia Balassi
+1690,Farmacia Cutis,Farmacia Cutis
+1692,Cedis,Farmacias Regia
+1693,Aquapharm,Aquapharm
+1694,Farmacia G3,Farmacias Del Eje Sucursal G 3
+1695,Kafarma,Kafarma
+1697,Farmacia Roma,Farmacia Roma Argentina
+1698,A Mitad de Precio,A Mitad de Precio
+1699,Riomed Ppal.,Farmacia Riomed
+1700,La Especial Rionegro,La Especial Rionegro
+1705,La Especial de la 94,La Especial Rionegro
+1728,La Especial Villas,La Especial Rionegro
+1732,Drogueria la especial suba,La Especial Rionegro
+1744,La Especial Ferias,La Especial Rionegro
+1780,La Especial de la 27,La Especial Rionegro
+1798,La Especial de la 59,La Especial Rionegro
+1850,Punto Especial,La Especial Rionegro
+1701,Durand,Farmacia Durand
+1702,drogueria la provincia,Drogueria la provincia
+1703,Farmacia Union,Ivonne Yañez
+1704,Farmacia Farmás Colon,Farmacia Farmás Colon
+1706,Matriz,SUFACEN
+1707,Farmaplus,Farmaplus Ar
+1708,Sucursal Leon,Farmacias del Eje Sucursal Leon
+1709,Farmacia Santa Maria,Farmacia SantaMaria
+1710,Matriz,Farmacias GP
+1711,FarmaLoop,FarmaLoop
+1712,Farmacias del Eje sucursal La Luz,Farmacias del Eje sucursal La Luz
+1713,Celu Farma 2,Celu Farma 2
+1714,fuxion salud,fuxion salud
+1715,Pino Suárez,Farmacias Purex
+1716,MGM Echeverria,Farmacia MGM
+1717,Framacia Los portales,Farmacia Los portales
+1718,Matriz,SUPERFARMA
+1719,Sucursal 1,Dermopolis
+1720,Matriz,Farmacia Regis
+1870,Centro de Salud,Farmacia Regis
+1871,Puente Internacional,Farmacia Regis
+1872,centro,Farmacia Regis
+1878,Juárez,Farmacia Regis
+1721,Farmacias del Eje sucursal CI Hogar,Farmacias del Eje sucursal CI Hogar
+1722,Farmacias del Eje sucursal Linares,Farmacias del Eje sucursal Linares
+1723,Matriz,Distribuidora Farmacéutica DISALFA
+1724,La Confiable,La Confiable
+1725,Auxisur A S,Auxisur A S
+1726,Marquez Moron,Marquez Moron
+1727,Farmacias Del Eje Sucursal Sante,Farmacias Del Eje Sucursal Sante
+1729,Del Eje Suc Arcangel San Rafael,Del Eje Suc Arcangel San Rafael
+2020,Sucursal Arcangel San Gabriel,Del Eje Suc Arcangel San Rafael
+1731,Plata,Farmacia Plata
+1733,Farma Family,Farma Family
+1734,Colfarma y minimarket Pasto,Colfarma
+1735,Sucursal Reyes,Farmacias Providencia
+1736,Sucursal Medrano,Farmacias Providencia
+1737,Farma Occidente Mosquera,Farma Occidente Mosquera
+1738,Farmacia Yaly,Farmacia Yaly
+1740,Farmacia Varela,Farmacia  Varela
+1742,Sucursal Don de Dios,Farmacias del Eje Suc Don de Dios
+1745,Drogueria al cuidado de la salud jd,Al cuidado de la salud jd
+1746,La Roca,Farmacia Biox La Roca
+1751,Farmacia Previta,Farmacia Previta
+1752,FarmaloopDemo,Demo Farmaloop
+1753,Famipharma Bodega,Famipharma
+1765,Famipharma calle 64,Famipharma
+1754,Tu Farma,Tu Farma
+1755,Farmacia Lelisa,Farmacias Bienestar
+1756,Farmacia Castro,Farmacia Castro
+1757,Farmacia Salud y Vida,Farmacia Salud y Vida
+1758,Rabellino,Farmacia Rabellino
+1759,Vital salud Minimarket,Vital Salud Minimarket
+1760,Sucursal Ave,Farmacias Del Eje Suc Ave
+1761,Farma etica  otc,Farma etica  otc
+1762,Llanofarma JDJ,Llanofarma JDJ
+1763,La Especial de la 100,La Especial de la 100
+1764,Giocar,Giocar
+1767,MAQUÉZ SUPER FARMACIAS,MAQUÉZ SUPER FARMACIAS
+1766,Farmacia Cristal,Farmacia Cristal
+1768,Farmacia Camila,Farmacia Camila I
+1769,Farmacia Fatima,Farmacia Fatima Argentina
+1770,Farmacia Fleming,FARMACIA FLEMING
+1771,Matriz,Farmacia Santo Toribio
+1772,Inversiones ADN Acero SAS,Inversiones ADN Acero SAS
+1773,MEDICA UNION,MEDICA UNION
+1774,Suarez,Suarez
+1775,Almacén,Farmacias Económicas FE
+1776,Bertero,Farmacia Bertero I
+1777,Drog La Esmeralda,Drog La Esmeralda
+1778,Farmacia Virgen de la salud,Farmacia Virgen de la salud
+1779,Sucursal x,Test
+1781,San Isidro,San Isidro
+1782,Almacén,Legal Drag MX
+1788,SOMA FIRST,Distribuidora Medica SOMA Firts
+1783,Farmagreen,Farmagreen Arg
+1786,Centro logístico Aurora I,Audifarma
+1787,Celta Cehosdin,Audifarma
+1789,CEDI Pendientes Bogotá,Audifarma
+1881,CEDI AUDIFARMA PEREIRA,Audifarma
+1882,ARMENIA ESPECIALIZADO MAC,Audifarma
+1883,PLAZA 51,Audifarma
+1884,VERSALLES,Audifarma
+1885,MANIZALES ESPECIALIZADO M,Audifarma
+1886,CACERES,Audifarma
+1887,PEREIRA MAC,Audifarma
+1888,CARTAGO ESPECIALIZADO MAC,Audifarma
+1889,FOLDERAMA OTUN,Audifarma
+1890,ALTOS DEL PRADO MAC,Audifarma
+1891,METROPOLITANO,Audifarma
+1892,CARTAGENA,Audifarma
+1893,PEDRO DE HEREDIA,Audifarma
+1894,SINU,Audifarma
+1895,BILBAO,Audifarma
+1896,SANTA MARTA ESPECIALIZADO,Audifarma
+1897,VALLEDUPAR,Audifarma
+1898,NAPOLES,Audifarma
+1899,LA HEROICA,Audifarma
+1900,AUSTIN,Audifarma
+1901,PLAZOLETA,Audifarma
+1902,FORD,Audifarma
+1903,PLAZA SEVILLA,Audifarma
+1904,TAYRONA,Audifarma
+1905,CALLE 30,Audifarma
+1906,SAN CARLOS,Audifarma
+1907,AVENIDA QUINTA,Audifarma
+1908,SAF ALCAZARES,Audifarma
+1909,ALKARAWI,Audifarma
+1910,NUEVO CENTRO LOPERENA,Audifarma
+1911,CENTRO LOPERENA,Audifarma
+1912,ALFONSO LOPEZ,Audifarma
+1913,PROVIDENCIA,Audifarma
+1914,# 1 LAURELES,Audifarma
+1915,MEDELLIN ESPECIALIZADO MA,Audifarma
+1916,CENTRO MEDELLIN,Audifarma
+1917,BELEN NUTIBARA,Audifarma
+1918,BOLIVIA,Audifarma
+1919,ITAGUI,Audifarma
+1920,LAURELES,Audifarma
+1921,TEQUENDAMA,Audifarma
+1922,VICTORIA,Audifarma
+1923,CALIMA,Audifarma
+1924,LA FLORA,Audifarma
+1925,BUENAVENTURA,Audifarma
+1926,CENTRO HISTORICO,Audifarma
+1927,PUERTO TEJADA,Audifarma
+1928,CRISTALES,Audifarma
+1929,BUGA,Audifarma
+1930,EL ROBLE,Audifarma
+1931,CALINORTE,Audifarma
+1932,PANAMERICANA,Audifarma
+1933,COMPOSTELA,Audifarma
+1934,ALICANTE,Audifarma
+1935,CENTRO EMPRESARIAL,Audifarma
+1936,CORFERIAS,Audifarma
+1937,EL GRECO,Audifarma
+1938,IBAGUE,Audifarma
+1939,SAN JUAN,Audifarma
+1940,CHAPINERO,Audifarma
+1941,CEDRITOS,Audifarma
+1942,ALHAMBRA,Audifarma
+1943,LA DORADA,Audifarma
+1944,S.A BARZAL,Audifarma
+1945,PADUA,Audifarma
+1946,ASTURIAS,Audifarma
+1947,LA CALLEJA,Audifarma
+1948,GIRARDOT,Audifarma
+1949,PALENQUE,Audifarma
+1950,POLICLINICO ESPECIALIZADO,Audifarma
+1951,QUINTA PAREDES,Audifarma
+1952,SANTA RITA,Audifarma
+1953,SANTO TOMAS,Audifarma
+1954,TEUSAQUILLO,Audifarma
+1955,RESTREPO,Audifarma
+1956,PASADENA,Audifarma
+1957,ATENAS,Audifarma
+1958,CASA BLANCA,Audifarma
+1959,SALITRE,Audifarma
+1960,OLAYA,Audifarma
+1961,SAN CAMILO,Audifarma
+1962,SOGAMOSO,Audifarma
+1963,FUSAGASUGA,Audifarma
+1964,ZIPAQUIRA,Audifarma
+1965,CHIA LOS SAUCES,Audifarma
+1966,CENTRO SUBA,Audifarma
+1967,LA VORAGINE,Audifarma
+1968,HOSPITALARIO,Audifarma
+1969,BOGOTA LO NUESTRO,Audifarma
+1970,POLICLINICO,Audifarma
+1971,EL SOCIEGO,Audifarma
+1972,COMBEIMA,Audifarma
+1973,BARZAL,Audifarma
+1974,NOVA,Audifarma
+1975,BARRANCABERMEJA,Audifarma
+1976,BUCARAMANGA MAC,Audifarma
+1977,PUERTO WILCHES,Audifarma
+1978,CUCUTA,Audifarma
+1979,BUCARAMANGA CABECERA,Audifarma
+1980,CABECERA,Audifarma
+1784,Farmacia GI Barts,Farmacias GI barts
+1785,El Sol- Popular,Farmacia del Sol- Popular
+1790,Farmacia Canaria,Farmacia Canaria
+1791,TheoPharma,TheoPharma
+1792,FARMACIA LA VIDA,FARMACIA LA VIDA
+1793,Sucursal Centella,Distribuidora Farmac del Angel
+1794,Protec,Farmacia Protec
+1795,Valenti plus,Valenti plus
+1796,Entrenubes,Entrenubes
+1797,Aquidrogas facatativa,Aquidrogas facatativa
+1799,Sucursal Providencia,Farmacias del eje Suc Providencia
+1800,Almacén,Farmacias San Jorge
+1801,Farmacia Bio X Sagitario,Farmacia Bio X Sagitario
+1802,FARMACIA VCTORIA,FARMACIA VCTORIA
+1823,Sucursal Division,Farmacien
+1824,Sucursal Valle,Farmacien
+1825,Sucursal Forestal,Farmacien
+1847,Farmacia Avellaneda,Farmacia Avellaneda
+1848,Sonifarma,Sonifarma
+1849,Farmacia descuento,Farmacia descuento
+1851,Dimarca Sanz,Dimarca Sanz
+1853,Santafe Norte,Santafe Norte
+1857,Matriz,F. LOS MARINOS
+1858,Los altos,F. LOS MARINOS
+1859,Manzanillo,F. LOS MARINOS
+1860,F. Joca Aguascalientes,Grupo Farmacéutico Joca
+1861,F. Joca Culiacán,Grupo Farmacéutico Joca
+1862,NEOFARMA,NEOFARMA
+1863,La Camila Jr,La Camila Jr
+1864,Distribuidora y Droguerias Botica,Distribuidora y Droguerias Botica
+1865,POS Fulano,Cliente202400805
+1866,Rencoret  de Rossi,Farmacia Rencoret de Rossi
+1868,Farmacia Sur Mendoza,Farmacia Sur Mendoza
+1869,Pesado,Farmacia Pesado
+1873,distribuciones farmaceuticas phia,distribuciones farmaceuticas phia
+1874,Matriz,Distribuidora Farmacéutica Ängel
+1875,Farmacia del Carmen Salta,Farmacia del Carmen Salta
+1876,Fcia. Principal,Farmacia del Sanatorio
+1877,Garcia,Farmacia Garcia Varela
+1879,Cedis,Farmacias San Camilo
+1983,FARMACIA SAN PEDRO,FARMACIA SAN PEDRO
+1984,Farmacia Bonetto,Farmacia Bonetto
+1985,Oriente,Farmacia Oriente
+1987,Farmacia Alvarez,Farmacia Alvarez
+1988,Farmacia Nueva,Farmacia Nueva
+1992,Farmacia Asfarma,Farmacia Asfarma
+1993,Farmacia La Mutual,Farmacia La mutual
+1994,Farma y Mas Corporativo,Grupo Farma y Mas.
+1995,"Farma y Mas Zócalo, Chilapa de Álva",Grupo Farma y Mas.
+2008,Mercado Chilpancingo,Grupo Farma y Mas.
+2190,Farma y Mas Zapata Cuernavaca,Grupo Farma y Mas.
+1996,Farmacia Puricelli,Farmacia Puricelli
+1997,Farmacia San Martin de Aguilares,Farmacia San Martin de Aguilares
+1998,Farmacia Reis,Demo Brasil Reis
+1999,Farmacia San Jose SCS,Farmacia San Jose SCS
+2001,Ubino,Farmacia Ubino
+2002,Nueva Directorio,Farmacia Nueva Directorio
+2003,FARMACIAS CALZADA,FARMACIAS CALZADA
+2004,Farmacia Xager,Farmacia Xager
+2005,Farmacia Xager 2,Farmacia Xager
+2007,Farmacia Farma Uno,Farma Uno
+2009,Galenica Patricias,Farmacia Galenica
+2010,FARMACIA GRUNBEIN,FARMACIA GRUNBEIN
+2011,Medica Santa Fe,MEDICA SANTE FE
+2013,Matriz,DIMEFA
+2014,JM Alfa,JM alfa
+2015,Farmacia Del Carmen APG,Farmacia del Carmen APG
+2016,FARMACIA Y CONSULTORIO EL CUBANO,FARMACIA Y CONSULTORIO EL CUBANO
+2017,Danielle III,Danielle
+2018,Matriz,Farmacia Fany
+2019,FARMACIA GALENO,FARMACIA GALENO
+2021,DROGUERIA FARMA URIBE,DROGUERIA FARMA URIBE
+2022,Farmacia Magna,Farmacia Magna
+2023,Valentini Mar del Plata,Valentini
+2024,ECO FAR-MAS,ECO FAR-MAS
+2025,Farmacia Prieto Santiago,Farmacia Prieto
+2026,Farmacia Prieto Mosconi,Farmacia Prieto
+2027,Farmacia La Vacuna,Grupo Farmagrana
+2035,Farmacia Farmagrana,Grupo Farmagrana
+2028,Districlub Operador Logistico,Districlub Operador Logistico
+2029,DISTRIBUIDORA DIMSS,DISTRIBUIDORA DIMSS
+2030,Farmacia Las Bases,Farmacia Las Bases
+2031,Farmadoc,Farmadoc
+2032,San Cayetano,Farmacia San Cayetano
+2033,FARMACIA SAHUAYO,FARMACIA SAHUAYO
+2036,Farmacia Ciudad II,Farmacia Ciudad
+2037,Farmacia Disval,Farmacia Disval
+2038,La Farmaxcia,La Farmaxcia
+2039,Farmacia Teillagorry,Farmacia Teillagorry
+2040,Internacional,Farmacia Internacional
+2045,BERNAL MEDICA SUPPLY,BERNAL MEDICA SUPPLY
+2046,Alfa avenida,Alfa avenida
+2048,Farmacia Del Cerro,Farmacia Del cerro
+2049,Farma Azteca Suc El Marques,Farma Azteca Suc El Marques
+2050,Farmacia La Familia,Farmacia La Familia
+2051,Cruz Roja,Farmacia Cruz Roja
+2052,Gobierno 1,J3A Comercial
+2053,Sucursal farma ahorro,Farma ahorro
+2054,VITAL B,VITAL B
+2055,Sucursal 1,Zentria
+2056,Sucursal Cedis,GRUPO FARMACOS Y ABARROTES PADILLA
+2062,Zamo II,Zamo
+2057,Farmacia Galeno,Farmacia Galeno Alanis
+2058,FARMACIA MEDERY NEZA,FARMACIA MEDERY NEZA
+2059,Farmacia Yguazu,Farmacia Yguazu
+2060,Farmacia Lavalle,Farmacia Lavalle
+2061,Hygeia,Farmacia Hygeia
+2063,Sucursal CentralFarma tlaxcala,CentralFarma
+2064,Sucursal CentralFarma Apizaco,CentralFarma
+2065,SG FARMA,SG Farma
+2066,Farmacia Bellafarma,Farmacia Bellafarma
+2068,Sucursal Trebol,Farmacia Trebol
+2069,Sucursal CDMX,Ahorramas
+2070,Evamar,Evamar
+2071,La principal,Farmacia la Principal
+2072,Farmacia Calcagno,Farmacia Calcagno
+2073,Santa María Tucuman,Farmacia Santa María Tucuman
+2074,F. NUEVA SAN JUAN TULTEPEC 1,F. NUEVA SAN JUAN TULTEPEC
+2076,F. Nueva San Juan Tultepec 2,F. NUEVA SAN JUAN TULTEPEC
+2075,FARMACIA SUPER ESTRELLA,FARMACIA SUPER ESTRELLA
+2078,FARMACIAS LAGO,FARMACIA LIBANO
+2079,Almacén,Mercfarma Distribuidora
+2080,Medanos,Farmacia Medanos
+2081,Suc Jojutla,Farma tuya Suc Jojutla
+2082,VILLA SEÑOR,FARMACIA VILLA SEÑOR
+2083,FARMACIA JAMAICA,FARMACIA JAMAICA
+2084,Farmacia la Paz SCS,Farmacia la Paz
+2085,FARMAGIL,FARMAGIL
+2086,CEDIS,MDS Medical Distribution
+2087,Suc. De la Fuente,F. San José
+2089,F. San José Hospital,F. San José
+2090,F. San José Matriz,F. San José
+2088,Farmacia Legion,Farmacia Legion
+2091,Almacén,Comercializadora FNSJ
+2092,Super Farmacia Guadalupana 2,Super Farmacia Guadalupana
+2093,Mas Vida I,Farmacia Mas Vida
+2095,Mas Vida III,Farmacia Mas Vida
+2270,Mas Vida II,Farmacia Mas Vida
+2094,BUSACCA,BUSACCA
+2096,CEDIFAR,Farmacias Iguales
+2097,F. Iguales CEDIS,Farmacias Iguales
+2691,Mineral,Farmacias Iguales
+2098,F. San Lucas 1,Farmacia San Lucas Cuautitáln Izc
+2099,De la Bahia,Farmacia de la Costa
+2100,Farmacia Alberdi - Rivadavia,Farmacia Alberdi
+2106,Farmacia Alberdi - Alberdi,Farmacia Alberdi
+2107,Farmacia Alberdi - Avellaneda,Farmacia Alberdi
+2108,Farmacia Alberdi - Nazca,Farmacia Alberdi
+2109,Farmacia Alberdi - Libertador,Farmacia Alberdi
+2101,FARMACIA MARQUEZ,FARMACIA MARQUEZ
+2102,Del Mar,Farmacia Virgen del Mar
+2103,Farmapronto San José Tlahuac 1,Farmapronto San José
+2104,Farmarpronto San José Iztapalapa 2,Farmapronto San José
+2105,Farmacia Madras,Farmacia Madras
+2110,Farmacia Monarca,Farmacia Monarca
+2111,Ozumba,Farmacia Monarca EdoMex
+2112,TODO SALUD,FARMACIA TODO SALUD
+2113,Leiva,Farmacia Leiva
+2114,Farmaceutica Health,Farmaceutica Health
+2115,Farmacia Cravero,Farmacia Cravero
+2116,Los Andes,Farmacia los Andes
+2117,MEDIMAS,MEDIMAS
+2118,Lopez Fariña I,Farmacia Lopez Fariña
+2119,Farmacia Nueva San Juan Ensueños,Farmacia Nueva San Juan Ensueños
+2120,Farmacia Psifarma,Farmacia Psifarma
+2121,Droguería Farmateo,Droguería Farmateo
+2122,Farmacia España,Farmacia España
+2123,FARMACIA COZUMEL FARMACY,FARMACIA COZUMEL FARMACY
+2124,MedicaDent,MedicaDent
+2129,Krause,Farmacia Krause
+2327,Nueva España,Farmacia Krause
+2130,Farmacias Masalud - Sucursal Cedis,Farmacias Masalud
+2131,Farmacia de la vega,Farmacias de la Vega
+2133,Farmacia del Boulevard,Farmacia Del Boulevard
+2134,Farmacima,Farmacima
+2135,FNSJ del Carmen 1,FNSJ del Carmen
+2136,FNSJ Del Carmen 2,FNSJ del Carmen
+2137,Sampharma,Sampharma
+2138,Farmacia 01 Banco,Farmacias de Genericos
+2139,Farmacia 02 Puente,Farmacias de Genericos
+2140,Farmacia Laborda,Farmacia Laborda
+2142,PHARMALIFE,FARMACIA PHARMALIFE
+2143,Arrayanes,Droguerías Copifam
+2144,Farmacetto,Farmacetto
+2145,Cedis,Farmacia Sanamex
+2146,Fenoclio,Farmacia Fenoclio
+2147,FARMACIA COYOACÁN,FARMACIA COYOACÁN
+2148,Drogueria Javidrogas,Drogueria Javidrogas
+2149,Farmacia Poet,Farmacia Poet
+2150,CEDIS,Farmacias Sana Sana
+2360,Casa Aleman,Farmacias Sana Sana
+2485,Via Morelos,Farmacias Sana Sana
+2505,Zumpango,Farmacias Sana Sana
+2506,Tecamac Presidencia,Farmacias Sana Sana
+2512,Granjas de Guadalupe,Farmacias Sana Sana
+2513,Distribuidora Ciudad Cuautemoc,Farmacias Sana Sana
+2514,Distribuidora Ciudad Neza,Farmacias Sana Sana
+2515,Coacalco,Farmacias Sana Sana
+2550,Distribuidora Ojo de agua,Farmacias Sana Sana
+2712,Centro Historico,Farmacias Sana Sana
+2713,Azteca,Farmacias Sana Sana
+2714,Rioja,Farmacias Sana Sana
+2715,Nuevo Laredo,Farmacias Sana Sana
+2716,Tecamac Centro,Farmacias Sana Sana
+2997,Azteca 2,Farmacias Sana Sana
+2998,Tecamac Principal,Farmacias Sana Sana
+2999,Tecamac 4,Farmacias Sana Sana
+3000,Izcalli,Farmacias Sana Sana
+3001,Jardines 1,Farmacias Sana Sana
+3002,Jardines 2,Farmacias Sana Sana
+3003,San Cristobal,Farmacias Sana Sana
+3004,San Agustin,Farmacias Sana Sana
+3005,San Pablo,Farmacias Sana Sana
+3006,Tezontepec,Farmacias Sana Sana
+2151,Evapharma,Farmacia Evapharma
+2153,Acuario,Farmacia Acuario
+2155,Farmacia la Esperanza,Farmacia la Esperanza
+2156,Cedis,Distribuidora de medicamentos Vihgo
+2162,Matrailler,Farmacia Metrailler
+2164,Mi ahorro,Farmacia mi ahorro
+2168,Matriz,Farmacias Farmavida
+2169,Farmalap 1,Farmalap
+2174,Aurosant,Aurosant
+2175,ALMACEN DFVS,Farmaceutica Vida Sana
+2176,Altimed Don Pancho,Altimed Don Pancho
+2177,Farmafy,Farmafy
+2178,Farmacia Fatima Roca,Farmacia Fatima Roca
+2179,Sauces,Distribuidora Comeca
+2180,Etla,Distribuidora Comeca
+2181,Puebla,Distribuidora Comeca
+2182,Farmacia Gutnisky,Farmacia Gutnisky
+2183,F. Santa Elena Sonora,F. Santa Elena Sonora
+2184,San Jeronimo,Farmacia Libano - San Jeronimo
+2185,Cedis,Inmedicz
+2186,Lofrano,Lofrano
+2187,Sucursal Arenal,FarmaStore cdmx
+2188,Cedis,Farmavida cdmx
+2189,Morlus,Morlus
+2191,Sucursal Real Granada,Farmacias San Lazaro
+2192,Sucursal villa del Real,Farmacias San Lazaro
+2193,Mutual Bahia,Farmacia Mutual Bahia Blanca
+2194,Costanera,Farmacia Mitre Catamarca
+2195,Belgrano,Farmacia Mitre Catamarca
+2196,Virgen Morena,Farmacia Mitre Catamarca
+2197,Farmacia 9 de Julio IV,Farmacias 9 de julio
+2257,Farmacia 9 de julio - San Martin 1798,Farmacias 9 de julio
+2258,Farmacia 9 de julio III,Farmacias 9 de julio
+2259,Nueva Farmacia 9 de julio - Puerto rico,Farmacias 9 de julio
+2260,Farmacia Bienestar,Farmacias 9 de julio
+2261,Farmacia 9 de julio - San Antonio,Farmacias 9 de julio
+2200,VINCIGUERRA,VINCIGUERRA
+2201,Farmacia Bautista,Farmacia Bautista
+2202,Almacen,Ryu farmaceutica
+2203,Salud express,Ryu farmaceutica
+2204,Macro Plaza,Ryu farmaceutica
+2205,Farmacia la D,Farmacia la D
+2206,Farmedica SCS,Farmedica SCS
+2207,Matriz Tangancicuaro,Fundacion MF
+2208,Purepero,Fundacion MF
+2209,Daruich,Daruich
+2210,Farmacia Santa Rosa,Farmacia Santa Rosa
+2211,Federico,Farmacia Federico
+2212,Farmablanca,Farmablanca
+2213,Farmablanca Valladolid,Farmablanca
+2215,Sofifarma II,SofiFarma
+2216,Sofifarma I,SofiFarma
+2217,Sofifarma III,SofiFarma
+2218,Kennedy,Farmacia Keneddy
+2220,Montes de Oca,Farmalivio
+2223,Dermapp,Dermapp
+2235,Farmacia Sanchez,Farmacia Sanchez
+2236,Para eliminar,FARMACIAS GM
+2237,MERCADO,FARMACIAS GM
+2279,ALTAMIRANO,FARMACIAS GM
+2280,MINA,FARMACIAS GM
+2295,TINGUINDIN,FARMACIAS GM
+2296,BARRIO FUERTE,FARMACIAS GM
+2297,TERMINAL,FARMACIAS GM
+2238,Farmacia Gloria,Farmacia Gloria
+2239,CONCENTRO,DRAKE MEDICAL
+2242,Farmasan,Drogueria Farmasan
+2244,100% Farma Morelia Matríz,100% Farma Tacámbaro
+2245,100% Farma Apatzingan Babilonia,100% Farma Tacámbaro
+2246,100% Farma Apatzingan Constitución,100% Farma Tacámbaro
+2247,100% Farma Apatzingán Mercado,100% Farma Tacámbaro
+2248,100% Farma Benito Mendoza,100% Farma Tacámbaro
+2249,100% Farma Los Reyes Centro,100% Farma Tacámbaro
+2250,100% Farma Morelia Chapultepec,100% Farma Tacámbaro
+2251,100% Farma portales Pátzcuaro,100% Farma Tacámbaro
+2252,100% Farma Puruándiro Mercado,100% Farma Tacámbaro
+2253,Drogas Exito I,Drogas Exito
+2254,Farmacia Vital Care,Farmacia Independencia
+2255,Farmacia Central,Farmacia Central - Formosa
+2256,Genefarm,Genefarm
+2262,Obispado,Alivia
+2263,Cedis,DJ Novo Farma
+2265,Las Americas MK,Drogueria LAs AMericas Mk
+2264,Gassmann,Farmacia Gassmann
+2782,Farmacia Gassmann Luciana,Farmacia Gassmann
+2784,PERFUMERIA GASSMANN,Farmacia Gassmann
+2266,Gjurisich,Gjurisich
+2268,Farmacia Guzman,Farmacia Guzmán
+2271,Drogueria Mi Salud Betania,Drogueria Mi Salud Betania
+2272,ARAMI,ARAMI
+2273,Central,Privarez
+2274,Sucursal U2,Farmacias de mas ahorro
+2304,Sucursal Arena,Farmacias de mas ahorro
+2305,Sucursal Centro,Farmacias de mas ahorro
+2306,Tangolunda,Farmacias de mas ahorro
+2307,Sucursal Samahua,Farmacias de mas ahorro
+2275,Almacén Secundario,Medicinas Rosario C
+2276,Anestésicos y productos farmaceútic,Anestésicos y productos farmaceútic
+2277,FNSJ PRINCIPAL,FNSJ PRINCIPAL
+2278,FNSJ  SAGRADO CORAZÓN DE JESÚS,FNSJ  SAGRADO CORAZÓN DE JESÚS
+2281,Magna,Farmacia Magna Mza
+2282,Matriz,Farmacias Perla Negra
+2283,F. Baruc Sagitario,Farmacias Baruc
+2284,F. Baruc Muzquiz,Farmacias Baruc
+2285,Avenida,Farmacia Avenida MP
+2286,Damifarma,DamiFar
+2287,Santa Isabel,Farmacia Santa Isabel
+2288,Drogueria Unifarma Pereira,Drogueria Unifarma Pereira
+2289,Farmacia Gari,Farmacia Gari
+2290,Rodcar,Farmacia Gimenez
+2291,Farmacia Martinez Rio Negro,Farmacia Martinez Rio Negro
+2292,Drogueria Farmamed,Drogueria  Farmamed SAS
+2293,Drogueria Epava,Drogueria Epava
+2294,Farmacia Bonini,Bonini
+2298,Farmacia Mendivil,Farmacia Mendivil
+2302,Farmacenter Circunvalar,Farmacenter Circunvalar
+2527,Farmacenter de Occidente,Farmacenter Circunvalar
+2303,Drago Central,Farmacia Drago
+2310,Drago Pinedo,Farmacia Drago
+2308,F. Doctiva,F. Doctiva
+2309,Boticfarma,Boticfarma
+2311,Boticfarma II,Boticfarma
+2312,Distribuidora la asunción,Distribuidora la asunción
+2313,On skin,On skin
+2314,Farmacia el Angel,Farmacia el Angel
+2315,F. EXPRESS,F. EXPRESS
+2316,Farmacia Medica & Boutique Santo Tomás,Farmacia Medica & Boutique Sto Tomá
+2317,F. BIENESTAR,F. BIENESTAR
+2318,Medical Doctor,Medical Doctor
+2319,Farmacia Moscovich,Farmacia Moscovich
+2320,Farmacia Cesar,Farmacia Cesar
+2321,FARMACIA SALUD Y VIDA,SALUD Y VIDA
+2322,CON SALUD,CON SALUD
+2323,SANATORIO SAN JOSÉ GALENO,SANATORIO SAN JOSÉ GALENO
+2324,Farmacia plateros,Farmacis Plateros
+2326,Nuestra Farmacia,Farmacia Nuestra
+2330,Distribuidora Palmer,Distribuidora Palmer
+2328,Health Corner,Health Corner
+2331,Centro,Farmacia de Apoyo
+2335,F Apoyo Suc. 3,Farmacia de Apoyo
+2336,F. Apoyo Suc. 10,Farmacia de Apoyo
+2332,Suc. San Rafael Morelia,100% Farma Michoacán
+2510,Suc. Babilonia Apatzingán,100% Farma Michoacán
+2659,100 Farma Apatzingán Constitución,100% Farma Michoacán
+2663,Suc. Mercado Apatzingán,100% Farma Michoacán
+2693,100 Farma Puruándiro Centro,100% Farma Michoacán
+2699,100 Farma Puruándiro Mercado,100% Farma Michoacán
+2911,Tacámbaro Centro,100% Farma Michoacán
+2333,Dimec,Dimec
+2334,Farmacia el Pueblo,Farmacia el Pueblo
+2337,Droguerias El Farmaceuta,Droguerias El Farmaceuta
+2338,SODHI FARMACIAS MATRIZ SAHUATOBA,SODHI FARMACIAS
+2339,SODHI FARMACIAS PRIMO DE VERDAD,SODHI FARMACIAS
+2340,Sucursal 2,Farmacias de Descuento Canadá
+2390,F. Matriz,Farmacias de Descuento Canadá
+2403,Sucursal 3,Farmacias de Descuento Canadá
+2404,Lombardo,Farmacias de Descuento Canadá
+2405,Nigromante,Farmacias de Descuento Canadá
+2406,Rio Manzo,Farmacias de Descuento Canadá
+2407,Abasolo,Farmacias de Descuento Canadá
+2408,Jalapa,Farmacias de Descuento Canadá
+2409,Isla,Farmacias de Descuento Canadá
+2947,Veracruz,Farmacias de Descuento Canadá
+2341,Drogueria Rexal Rio Negro,Drogueria Rexal Rio Negro
+2342,Drogueria Farmacosta CZU,Drogueria Farmacosta CZU
+2343,Farmacia Castelo Suc Ajuchitlán,Grupo Castelo
+2425,Farmacia MX Tolimán,Grupo Castelo
+2434,Farmacia MX San Pablo,Grupo Castelo
+2435,Farmacia Castelo La Estación,Grupo Castelo
+2436,SUC PENAMILLER,Grupo Castelo
+2344,ECOFAR,ECOFAR
+2345,Distribuidora Faga,DIST. FAGA
+2346,Sagrado Corazón Zacatecas,F. Sagrado Corazón Zacatecas
+2347,Kellertas,Kellertas
+2348,Dist. SYP Suplier,Dist. SYP Suplier
+2349,FARMACIA MEDICA,FARMACIA COMUNITARIA
+2350,Similia,Similia
+2413,Similia Palermo,Similia
+2414,Similia Belgrano,Similia
+2487,Similia 4614,Similia
+2351,Logis Pharma,Faro
+2748,Faro II,Faro
+2352,La Miniatura CEDIS,Super Farmacia La Miniatura
+2353,F. San José Morelia,F. SAN JOSÉ MORELIA
+2355,Farma Mayoreo Central de abastos,Farma Mayoreo Central Abasto Iztapa
+2361,ABP Pharma,ABP Pharma
+2362,FARMACIA DE FATIMA,FARMACIA DE FATIMA
+2363,Farmacia Genesis CDMX,Farmacia Genesis CDMX
+2364,Kevital Farma,Kevital Farma
+2365,Dist. Vera Generic,Dist. Vera Generic
+2369,Farmacia Rex SCS,Farmacia Rex
+2370,Farmacia Magallanes,Farmacia Magallanes
+2388,Xenerics Pharma,Xenerics Pharma
+2371,Farmacia medico plus,Farmacia medico plus
+2372,Farmacia free trial AR new Huspot,Farmacia free trial AR new Huspot
+2373,Farmacia free trial AR new Huspot1,Farmacia free trial AR new Huspot1
+2374,Farmacia free trial AR new Huspot2,Farmacia free trial AR new Huspot2
+2375,Farmacia free trial AR new Huspot3,Farmacia free trial AR new Huspot3
+2376,Farmacia free trial AR new Huspot4,Farmacia free trial AR new Huspot4
+2377,Plenafarm,Plenafarm
+2378,Farma Medica ED,Farma Medica ED
+2379,SUMFA,SUMFA COMPRAS
+2380,Farmacia free trial AR new Huspot5,Farmacia free trial AR new Huspot5
+2381,Farmacia Marin,Farmacia Marin
+2382,MEDICAL RAM,MEDICAL RAM
+2383,Botica Central Chihuahua Matríz,Botica Central Chihuahua
+2387,Farmacia DTB,Farmacia DTB
+2389,FARMACIA COMITAN,FARMACIA COMITAN
+2391,Neumocen Farma,Neumocen Farma
+2392,Farmacia San Juan,Farmacia San Juan
+2393,Droguerias el Mana,Droguerias el Mana
+2394,Cedis-MiFarmaciadelBajio,Mi Farmacia del Bajío
+2395,Almacen,Farmacia Distribuidora JMRD
+2396,Farmacia X,Farmacia X
+2397,Farmacia Prueba X,Farmacia Prueba X
+2398,Farmacia Prueba XYZ,Farmacia Prueba XYZ
+2399,Farmacia Test XYZ,Farmacia Test XYZ
+2400,QUIFAMESA,QUIFAMESA COMPRAS
+2401,Farmacia Test AZ,Farmacia Test AZ
+2402,Farmacia Test ABCD,Farmacia Test ABCD
+2410,CEDI-Cucuta,Farmanorte
+2731,CEDI-Barranquilla,Farmanorte
+2732,CEDI-Giron,Farmanorte
+2733,CEDI-Medellin,Farmanorte
+2411,Boreal Farmacéutica Tijuana,Boreal Farmacéutica
+2412,Boreal Farmacéutica León,Boreal Farmacéutica
+2415,Farmacia Test 123,Farmacia Test 123
+2416,FARMACIA CRISTO MEDICO,FARMACIA CRISTO MEDICO
+2417,Distribuidora,Diefsa
+2418,Bienestar,Diefsa
+2419,Coldescuentos de la 72,Drogueria Coldescuentos
+2420,FreetrialARnewHuspot6,FreetrialARnewHuspot6
+2421,freetrialARnewHuspot7,freetrialARnewHuspot7
+2422,freetrialARnewHuspot8,freetrialARnewHuspot8
+2423,Boticas Guadalupana Matriz,Boticas Guadalupana
+2424,freetrialARPROD1,freetrialARPROD1
+2426,Farma enchilada,Farma enchilada
+2427,PRODCO-QA,Prueba QA
+2428,FreeMX,FreeMX
+2429,FreePROD2CO,FreePROD2CO
+2430,FreePROD3CO,FreePROD3CO
+2431,FreePROD4CO,FreePROD4CO
+2432,MATRIZ,Bodegon Farmaceutico
+2664,Cosmo farmacias 9,Bodegon Farmaceutico
+2665,Bodegon Farmaceutico cortéz,Bodegon Farmaceutico
+2666,BODEGON FARMACEÚTICO RAMÍREZ MENDEZ,Bodegon Farmaceutico
+2667,BODEGÓN FARMACEUTICO OBREGÓN,Bodegon Farmaceutico
+2668,COSMO FARMACIAS SAN QUINTIN,Bodegon Farmaceutico
+2433,Drogueria Famisalud,Drogueria Famisalud
+2437,FARMATER,FARMATER
+2438,FreePROD5CO,FreePROD5CO
+2439,Farmacia Lainté,FARMACIA LAINTÉ
+2440,FreetrialABC,FreetrialABC
+2441,A ver ahora?,A ver ahora?
+2442,PLG PLG,PLG PLG
+2443,Cheap Pharma,Cheap Pharma
+2444,FreePROD,FreePROD
+2445,Altius Las Americas,Altius Las Americas
+2446,Drogueria La Promesa J,Drogueria La Promesa J
+2447,FARMACIAS ZEPPELIN,FARMACIAS ZEPPELIN
+2448,Drogueria del Cesar,Drogueria del Cesar
+2449,City Farma C. A. Iztap,City Farma Central de Abasto
+2450,Dist. Soluciones GZ,Distribuidora Soluciones GZ
+2451,DULCE ANGEL,DULCE ANGEL
+2452,F. Guadalupe Jalisco,F. Guadalupe Jalisco
+2453,F. Banderas Bay,F. Banderas Bay
+2454,EX7476_POS1,EX7476
+2455,EX7476_POS1,EX7476
+2491,EX7476_POS6,EX7476
+2492,EX7476_POS6_bis,EX7476
+2464,CLINISUMINISTROS SAS,CLINISUMINISTROS SAS
+2480,F. de Genéricos Puebla,F. de Genéricos Puebla
+2481,F. UNISALUD CEDIS,F. UNISALUD
+2482,Farmacia de Dios Qro,Farmacia de Dios Qro
+2483,Florifarmacias matriz,Florifarmacias
+2484,FARMACIAS DE JESÚS QRO,FARMACIA DE JESÚS QRO
+2486,Administradores,Droguerias de mi Barrio
+2681,Auxiliares,Droguerias de mi Barrio
+2488,FARMA MAS,Farma Mas
+2489,Farmacia Politecnica La Paz,Farmacia Politecnica La Paz
+2493,MIFARMA DROGUERIA PZA,MIFARMA DROGUERIA PZA
+2494,FNSJ Genéricos Gold,FNSJ Genéricos Gold
+2495,Farmacia Lupita,Farmacia Lupita
+2496,Farmacia alquimia MX,Farmacia alquimia MX
+2497,Drogueria AnaVital,Drogueria AnaVital
+2498,Droguerías Farmacenter Farma Uno,Droguerías Farmacenter Farma Uno
+2499,DR SANO MATRIZ,FARMACIAS DR SANO
+2500,DR SANO GRANJAS,FARMACIAS DR SANO
+2501,DR SANO FRANCISCO VILLA,FARMACIAS DR SANO
+2502,NUEVA TACUARI,Nueva Tacuari
+2503,DROGUERIAS Y MINI MARKET SONNY-PHAR,DROGUERIAS Y MINI MARKET SONNY-PHAR
+2504,Farmacia America Salta,Farmacia America Salta
+2507,Ley,Ley
+2508,DEA PHARMA,DEA Farmacias
+2509,Droguerias Pharma Jade,DROGUERIAS PHARMA JADE
+2528,Droguerias Pharma Jade 2,DROGUERIAS PHARMA JADE
+2529,Droguerias Pharma Jade Cota,DROGUERIAS PHARMA JADE
+2511,FARMACIA 9 DE JULIO,FARMACIA 9 DE JULIO
+2516,F. La Popular Morelia,F. La Popular Morelia
+2517,BM farma,BM
+2518,Del ahorro,Del ahorro
+2519,Farmacia Los Ángeles,Farmacia los angeles
+2520,Pharma XYZ Trial,Pharma XYZ Trial
+2521,Santa Rita,Santa Rita
+2522,EL BOTICARIO,EL BOTICARIO
+2523,EL BOTICARIO 2,EL BOTICARIO
+2524,El BOTICARIO 3,EL BOTICARIO
+2525,Mejor vida 2,Mejor vida 2
+2526,Productos Oncologicos,Productos Oncologicos
+2530,Pharma Prueba JM,Pharma Prueba JM
+2531,Pharma Prueba JM Trial,Pharma Prueba JM Trial
+2532,Farma Mujer,Farma Mujer
+2533,Farmacia Artega,Farmacia Arteaga
+2534,Distribución,Distribución
+2535,FreeQAExt,FreeQAExt
+2536,Torre diez,Torre diez
+2537,freeQAExt2,freeQAExt2
+2538,Prueba EX-7723,Prueba EX-7723
+2539,De los.santos,De los.santos
+2540,Farmacia Trinidad 1,Grupo Farmacom
+2542,Farmacia Parana,Grupo Farmacom
+2544,Fullfarma 1,Grupo Farmacom
+2554,Farmacia JR 2,Grupo Farmacom
+2555,Farmacia JR 1,Grupo Farmacom
+2556,Farmacom I,Grupo Farmacom
+2557,Trinidad II,Grupo Farmacom
+2558,Fullfarma II,Grupo Farmacom
+2559,ProSalud I,Grupo Farmacom
+2560,ProSalud II,Grupo Farmacom
+2655,Farmacom II,Grupo Farmacom
+2541,freeQA3,freeQA3
+2543,freeQA5,freeQA5
+2545,Inmaculada Concepción,Inmaculada Concepción
+2546,Drogueria VitaHelp,Drogueria VitaHelp
+2718,Drogueria VitaHelp Malambo,Drogueria VitaHelp
+2547,Farma Kukis,Farma Kukis
+2548,Santa Lucía,Santa Lucía
+2549,Bernabe,Bernabe
+2551,HN,HN
+2552,FARMACIA DEL SOL,FARMACIA DEL SOL QRO
+2553,FreeQAAle25,FreeQAAle25
+2561,Drogueria Farmaetica Mundifarma,Drogueria Farmaetica Mundifarma
+2564,MarketSHOP,MarketSHOP
+2565,San Rogelio,San Rogelio
+2566,San pablo,San pablo
+2567,Farmacias Guadalupana Valle,Farmacias Guadalupana Valle
+2568,Farmacia Providencia,Farmacia Providencia
+2571,Farmacia rayo de luz,Farmacia rayo de luz
+2572,Farma Azteca CEDIS,Grupo Farma Azteca
+2573,Farmacia San Rafael MS,Farmacia San Rafael MS
+2574,Grufaza,Grufaza
+2575,DNA Genomics,DNA Genomics
+2576,IQ SALUD,IQ SALUD
+2577,San José,San José
+2578,Farmanavi,Farmanavi
+2579,Farmalya,Farmalya
+2580,FARMACIAS DJES,FARMACIAS DJES
+2581,Farmacia GSC,Farmacia GSC
+2582,Farmacia Homeopática Naturapharma,Farmacia Homeopática Naturapharma
+2583,Farma fuerte,Farma fuerte
+2584,MM Pharma,MM Pharma
+2585,Farmacia el doctorcito del ahorro,Farmacia el doctorcito del ahorro
+2586,Farmacias Morelos,Farmacias Morelos
+2587,Farmacias sta monica,Farmacias sta monica
+2588,Exty free1,Exty free1
+2589,Exty free3,Exty free3
+2590,Exty free5,Exty free5
+2591,Exty free6,Exty free6
+2592,Ahorramax,Ahorramax
+2593,Farmacia Santa Marina,Farmacia Santa Marina
+2594,Farmacia 24 H.,Farmacia 24 horas
+2595,Grupo LOSA,Grupo LOSA
+2596,Farmacia Buenos Aires,Farmacia Buenos Aires
+2597,ures FARMACIA,ures FARMACIA
+2598,MQ,MQ
+2599,Farmaday,Farmaday
+2600,Farmacia GMA,Farmacia GMA
+2601,Farmacia gi,Farmacia gi
+2602,Cedis,Farmakosto
+2608,farmacia GUERRRERO,farmacia GUERRRERO
+2611,DISFARMAC,DISFARMAC
+2612,Superfarma Colmarket,Superfarma Colmarket
+2613,medicinas del carmen,medicinas del carmen
+2614,Farmacia Mely,Farmacia Mely
+2615,Farmacia belar,Farmacia belar
+2616,El Triunfo,El Triunfo
+2617,Leandro schestakow,Farmacia Schestakow
+2618,SIMAS,SIMAS
+2619,5574783430,Farmacia Valdes
+2620,Bienestar,Bienestar
+2621,Bienestar,Bienestar
+2625,GLYEMA RENAL,GLYEMA RENAL
+2626,Farmacia Medik,Farmacia Medik
+2627,Beroof,Beroof
+2628,Matriz,El Boticario Hidalgo
+2959,Boticario Querétaro,El Boticario Hidalgo
+2629,Farmacia Flores Gi,Farmacia Flores Gi
+2630,Farmacia Guerrero,Farmacia Guerrero
+2660,Farmacia Guerrero Matriz,Farmacia Guerrero
+2631,Consultorio del arco,Consultorio del arco
+2632,FARMACIA SUMFA,FARMACIA SUMFA
+2633,Pleia,Pleia
+2634,Central,Grupo Farmacia Central La Plata
+2635,Farmacias Genericos Hiram,Farmacias Genericos Hiram
+2636,Sucursal 1,3 Cerritos
+2637,Sucursal 2 - Portal,3 Cerritos
+2638,Frid Pharma Tlalpan,Frid Pharma Tlalpan
+2639,Frid Pharma Centro Médico,Frid Pharma Tlalpan
+2640,Frid Pharma Avivo,Frid Pharma Tlalpan
+2641,Farmacia Vital,Farmacia Vital
+2642,Farmacias Santa Fe,Farmacia Santa Fe (Posadas)
+2643,Exty FreeMXPRODHSs,Exty FreeMXPRODHSs
+2644,Prueba POS admin PROD,Exty FreeARPRODHSsADMIN1
+2656,Exty Test PROD EX7937 001,Exty Test PROD EX7937 001
+2657,Exty FreePRODVideo,Exty FreePRODVideo
+2658,FARMACIA CRISPINS,FARMACIA CRISPIN
+2661,Metepec 1,Farmacias Metepec
+2662,Matriz,Farmacias San diego
+2669,San Juditas,San Juditas
+2670,Farmacias farmahorro,Farmacias farmahorro
+2671,FreePRODplg,FreePRODplg
+2672,Nuevo Pipeline,Pedro Sabatte
+2673,Nuevo Pipeline 2,Pedro Sabatte
+2674,Farmacia San Rafael,Farmacia San Rafael
+2675,Osperyh,Osperyh
+2676,Exty Prueba PROD EX7983,Exty Prueba PROD EX7983
+2677,Farmacia las fuentes,Farmacia las fuentes
+2678,F. El número uno ventura Puente,Farmacias El Número uno
+2679,F. El Número Uno Lomas de Durazno,Farmacias El Número uno
+2680,Drogueria San Francisco,Drogueria San Francisco
+2682,Farmacia Nexus,Farmacia Nexus
+2700,Drogueria Rio Verde,Drogueria Rio Verde
+2683,Farmacia angel,Farmacia angel
+2684,Eco farmacia,Eco farmacia
+2685,Farmacia generica,Farmacia generica
+2686,VR Farmacias,VR Farmacias
+2687,Farmahorro Lázaro,Farmahorro Lázaro
+2688,Farmacia Mari,Farmacia Mari
+2689,Farmacia Regina,Farmacia Regina
+2690,Farmacia Bienestar,Farmacia Bienestar
+2692,Farmacéuticos del Sur,Farmacéuticos del Sur
+2694,POLO PHARMA,POLO PHARMA
+2695,FNSJ San Felipe,FNSJ San Felipe
+2696,Farmacias GI,Farmacias GI
+2697,JEMAXI,JEMAXI
+2698,Cedis,LodiFarma
+2701,FARMACIA DR SAORI,FARMACIA DR SAORI
+2702,Farmacia Spegazzini,Farmacia Spegazzini
+2703,Farmacia Bianchi,Farmacia Bianchi
+2704,Exty prueba EX7996 - 001,Exty prueba EX7996 - 001
+2705,Farmacias “Santa Fe”,Farmacias “Santa Fe”
+2706,FARMACIA NIX,FARMACIA NIX
+2707,farmacia polanco,farmacia polanco
+2708,San Francisco,San Francisco
+2709,Farma MexIt,Farma MexIt
+2710,Vitafarma,VITA FARMA
+2711,QA días,Exty QA días
+2717,San Cristóbal,San Cristóbal
+2719,Farmacia Fenix,Farmacia Fenix
+2763,5 de febrero,Farmacia Fenix
+2764,CDIS,Farmacia Fenix
+2765,Pachuca,Farmacia Fenix
+2766,Teotihuacan,Farmacia Fenix
+2767,Maquixco,Farmacia Fenix
+2720,FARMACIA SAN JUDAS TADEO,FARMACIA SAN JUDAS TADEO
+2721,Exty EX7954 001,Exty EX7954 001
+2722,Exty PROD 001 EX7963,Exty PROD 001 EX7963
+2723,Exty PROD 002 EX7963,Exty PROD 002 EX7963
+2724,Farmacia San Fernando,Farmacia San Fernando
+2725,Exty días de prueba,EXTY Días de prueba
+2902,Exty PROD 002,EXTY Días de prueba
+2726,Medicina Integral,Medicina Integral
+2727,Farmaprecio,Farmaprecio
+2728,Hunter,Hunter
+2729,Consultorio y Farmacia BUENAVISTA,Consultorio y Farmacia BUENAVISTA
+2730,Farmacia me lo ahorro,Farmacia me lo ahorro
+2734,Farmacia Demaria,Farmacia DeMaria
+2735,Meditek,Meditek
+2736,Drogueria Farma Fit,Drogueria Farma Fit
+2737,Suc Mary,Farmacia Medery Suc Mary
+2738,MEHL,MEHL
+2739,San angel,San angel
+2740,GEHC,GEHC
+2741,Farma fer,Farma fer
+2742,Farmacia el tridente,Farmacia el tridente
+2743,Skinklinik Med,Skinklinik Med
+2744,Victoria,Victoria
+2745,FARMAGEST,FARMAGEST
+2746,Farmacia Bosque Real,Farmacia Bosque Real
+2747,Farma 12,Farma 12
+2749,San Agustín,San Agustín
+2750,Exty prod,Exty prod
+2751,JJ’s,JJ’s
+2752,Farma 12,Farma 12
+2753,Exty prod,Exty prod
+2754,POS Exty QA 8131,Exty prueba QA 8131
+2755,SAN MATEO,SAN MATEO
+2756,M's,M's
+2757,San Rafael,San Rafael
+2758,Nurse center,Nurse center
+2759,Farmacias del Angel,Farmacias del Angel
+2760,Farmacia san Miguel,Farmacia san Miguel
+2761,C y f servicios médicos a tu alcance,C y f servicios médicos a tu alcance
+2762,FARMACIA FARMAPLUS,FARMACIA FARMAPLUS
+2768,La paz,La paz
+2769,Farmacia Descarrega,Farmacia Descarrega
+2770,F. La Esperanza Matriz,Farmacia La Esperanza Zinapécuaro
+2771,Drogas Cucuta,Drogas Cucuta
+2772,Farmacia San Matías,Farmacia San Matías
+2773,Farmacast,Farmacast
+2774,Santa Teresita,santa teresita
+2775,Farmacia Nueva Lima,Farmacia Nueva Lima
+2776,Farmacia El Trigo,Farmacia El Trigo
+2777,Plutarco,Plutarco
+2778,Distribuidora del pacífico,Distribuidora del pacífico
+2779,Niñito fundador,Niñito fundador
+2780,CentralFarma,Grupo Fransin
+2781,Guadalupana,Guadalupana
+2783,CANCUBA,CANCUBA
+2785,Farmacia Salmo 91,Farmacia Salmo 91
+2786,Centro Médico,Centro Médico
+2787,Farmacia la salud,Farmacia la salud
+2788,OmmiXPharma,OmmiXPharma
+2789,Farmacia PlasmaLab,Farmacia PlasmaLab
+2790,Farmacia San cosme y damian,Farmacia San cosme y damian
+2791,Farmapronto San Ángel Suc. Neza,Farmapronto San Angel Cd Nezahual
+2847,Farmapronto Los Ángeles,Farmapronto San Angel Cd Nezahual
+2848,Farmapronto La Imperial,Farmapronto San Angel Cd Nezahual
+2792,Suc Chiapas,Farmacias del Eje Suc Chiapas
+2793,Farmacia San Marcos,Farmacia San Marcos
+2794,Goretti,Goretti
+2795,Farmacia la mas barata,Farmacia la mas barata
+2796,Salvatori Selma,Farmacia Salvatori
+2881,San Isidro - Selma,Farmacia Salvatori
+2909,LA SUIZO,Farmacia Salvatori
+2797,farmacias Viera,farmacias Viera
+2798,Reyes,Reyes
+2799,Famacia Guasave,Famacia Guasave
+2801,Rencoret,Rencoret
+2802,VITALSUPPS,VITALSUPPS
+2803,Farmacias Reva,Farmacias Reva
+2804,Farmacia Ochoa,Farmacia Ochoa
+2805,Farmacia Nueva Fátima,Farmacia Nueva Fátima
+2806,"Farmacia ""El Divino Niño""","Farmacia ""El Divino Niño"""
+2807,Uriel,Uriel
+2808,Grupo medico García,Grupo medico García
+2809,Alpromedic,Alpromedic
+2810,Omar Tello Ibáñez,Omar Tello Ibáñez
+2811,GRUPO ARIPHA INTEGRAL,GRUPO ARIPHA INTEGRAL
+2812,Derma ae,Derma ae
+2813,Droguería mediplus del caribe,Droguería mediplus del caribe
+2814,Farmaconpoder,Farmaconpoder
+2815,Bertin,Bertin
+2816,FARMACIA CUITLÁHUAC,FARMACIA CUITLÁHUAC
+2817,FARMACIA CUITLÁHUAC,FARMACIA CUITLÁHUAC
+2818,FARMACIA CUITLÁHUAC,FARMACIA CUITLÁHUAC
+2819,Farma Medical,Farma Medical
+2821,Tu Farma,Tu Farma
+2822,Rayos Blink,Rayos Blink
+2823,FARMACIA FARMAYUDDA,FARMACIA FARMAYUDDA
+2824,MediAbi,MediAbi
+2825,Farmafam,Farmafam
+2840,Don Doctor,Don Doctor
+2841,FARMACIAS GI,FARMACIAS GI
+2842,Farmacia “Circunvalación Jqn”,Farmacia “Circunvalación Jqn”
+2843,Farmati,Farmati
+2844,FARMA DIUM,FARMA DIUM
+2845,Clínica fisio Aylin Hernández,Clínica fisio Aylin Hernández
+2846,MERAKI FARMACIA,MERAKI FARMACIA
+2849,El Paraiso,El Paraiso
+2850,FARMACIA G+,FARMACIA G+
+2851,Los Reyes,Farmacia Los Reyes
+2852,Del Potosi,Farmacia Del Potosi
+2853,vive ya,vive ya
+2854,Raúl,Raúl
+2855,Exty PROD 001 EX8470,Exty PROD 001 EX8470
+2856,"F. Isabel Actopan, Hgo.","F. Isabel Actopan, Hgo."
+2857,Farmacia Trisquel,farmacia Trisquel
+2858,M&M,M&M
+2859,El Camichin,El Camichin
+2860,farmacia alex,farmacia alex
+2861,San Juan,San Juan
+2862,Prueba,Management Pro
+2879,Farmavien,Farmavien
+2880,Farmacia aran,Farmacia aran
+2882,Exty,Exty
+2883,Farmacia del centro,Farmacia del centro
+2884,Prueba exty eka,Prueba exty eka
+2885,Farma y más Xiutepec,Farma y más Xiutepec
+2886,Farmacia Marchena,Farmacia Marchena
+2887,F. Hidalgo Tula,F. Hidalgo Tula
+2888,Si Prevenimos,Si Prevenimos
+2889,Farma Sana,Farma Sana
+2890,Farmacia San Rafael,Farmacia San Rafael
+2891,Farmacia familiar,Farmacia familiar
+2892,Integra Medica,Integra Medica
+2893,Farmacia Rey,Farmacia Rey
+2894,Farmacia,Farmacia
+2895,DermaFit,DermaFit
+2896,Vital Farma,Vital Farma
+2897,Farmacia Dos,Farmacia Dos
+2898,Farmacia Q,Farmacia Q
+2899,Magdalena,Magdalena
+2900,Extyprod,Extyprod
+2901,Exty prod 1,Extyprod
+2905,Clínica veterinaria,Clínica veterinaria
+2906,Marver,Marver
+2907,Ahorramax,Ahorramax Oaxaca
+2908,FARMACOS Y ABARROTES BCS,FARMACOS Y ABARROTES BCS
+2910,skanp,skanp
+2912,SUPER FARMACIAS PUEBLA,SUPER FARMACIAS PUEBLA
+2914,farmacia rey,farmacia rey
+2915,farmacia la asuncion,farmacia la asuncion
+2916,Magister Droguería,Magister Deogueria
+2917,Maxifarma,Maxifarma
+2918,Benavente,Benavente
+2919,Policlínica Coacalco,Policlínica Coacalco
+2920,Farmacia del Centro Guerrero,Farmacia del Centro Guerrero
+2921,CISNE,CISNE
+2922,Farmacia Yesi,Farmacia Yesi
+2923,FAROVA,FAROVA
+2924,San nicolas,San nicolas
+2925,raulh,raulh
+2926,Fcia de la clínica,Fcia de la clinica
+2927,Kuxtal,Kuxtal
+2928,Torres,Torres
+2929,CEA farmacia,CEA farmacia
+2930,Zoico Pharma,Zoico Pharma
+2931,Test Extendeal,Test Extendeal
+2932,Ditsar,Ditsar
+2933,Farmasuper,Farmasuper
+2934,DROGUERIA AMERICANA L.A,DROGUERIA AMERICANA L.A
+2935,Más salud,Más salud
+2936,Conafar,Conafar
+2937,RARME,RARME
+2938,Farmacia Obregón,Farmacia Obregón
+2939,Fervifarma Droguería,Fervifarma Droguería
+2940,Exty FreePRODDueno,Exty FreePRODDueno
+2941,Droguería farma ventas,Droguería farma ventas
+2942,Zarca Servicios interdiciplinarios,Zarca Servicios interdiciplinarios SAS
+2943,GL Farma,GL Farma
+2944,Farmacia unión,Farmacia unión
+2945,Exty free AC,Exty free AC
+2946,SALUD Y SANACION,SALUD Y SANACION
+2948,MI farmacia,MI farmacia
+2949,farmacia rosario,farmacia rosario
+2950,La esperanza,La esperanza
+2951,Suc Siloe,Farmacia Farma y Mas
+2953,Suc centro Tlaqui,Farmacia Farma y Mas
+2954,Suc Xoxocotla,Farmacia Farma y Mas
+2955,Zacatepec,Farmacia Farma y Mas
+2952,Alma médica,Alma médica
+2956,Fabio Chielli,Farmacia Fabio Chielli
+2957,Farmacias Maya,Farmacias Maya
+2958,Pastillero,Pastillero
+2960,Farmacia San Antonio,Farmacia San Antonio|Chaco
+2961,DIMALE,DIMALE
+2962,SAN JUDAS TADEO,SAN JUDAS TADEO
+2963,Farmacia suprema,Farmacia suprema
+2965,farmacia,farmacia
+2978,farmacia de similares san nicolas de bari,farmacia de similares san nicolas de bari
+2979,El remedio,El remedio
+2980,Los Ángeles,Los Ángeles
+2981,DROGUERIA MEDICA ARTURO,DROGUERIA MEDICA ARTURO
+2982,prodidsa,prodidsa
+2983,Farmacias marin,Farmacias marin
+2984,María Reina de la Paz,María Reina de la Paz
+2985,Farmabara,Farmabara
+2986,Farmacia Remo,Farmacia Remo
+2987,Farmavida,Farmavida
+2988,Tu espacio de salud,Tu espacio de salud
+2989,Virgo 1,Farmacias Virgo Nezahualcoyotl
+2990,Virgo 2,Farmacias Virgo Nezahualcoyotl
+2991,Virgo 3,Farmacias Virgo Nezahualcoyotl
+2992,FMV Apatzingán Matriz,Farmacias MV Apatzingán
+2993,Farmacia Sindical Luz Y Fuera,Farmacia Sindical Luz Y Fuerza
+2994,Distribuidora de medicamentos San sebastian,Distribuidora de medicamentos San sebastian
+2995,San juan,San juan
+2996,Farmacia Bambu,Farmacia Bambu
+3007,Ahorro mas,Farmacia ahorro mas
+3008,San Pedro,Farmacia ahorro mas
+3009,Farmacia La Salud 1,Farmacia La Salud 1
+3027,Farmacia La Salud 2,Farmacia La Salud 1
+3039,Farmacia La Salud 3,Farmacia La Salud 1
+3010,Deposito Anexo,Farmacias San Francisco
+3011,FNSJ Atenco,FNSJ Atenco
+3012,Droguería nueva Sión,Droguería nueva Sión
+3013,Farmacias de Chihuhua,Farmacias de Chihuhua
+3014,Farmacia la moderna,Farmacia la moderna
+3015,Macrofarma,Macrofarma
+3016,Biosafe co,Biosafe co
+3017,PROMEXSA,PROMEXSA
+3018,Cuiderm,Cuiderm
+3019,Cody-com,Cody-com
+3020,Farmacia la moderna,Farmacia la moderna
+3022,Sandy,Sandy
+3023,Farmacias Itati Sucursal N 2,Farmacias Itatu Sucursal N 2
+3024,La Fe,La Fe
+3025,FARMATOP,FARMATOP
+3026,FARMACIA NAVA,FARMACIA NAVA
+3028,Farma tecuala,Farma tecuala
+3029,ExtyQAPRODALe,ExtyQAPRODALe
+3030,F. La Esperanza Angie,Farmacia La Esperanza  Angie Zinapécuaro
+3031,BR,BR
+3032,Slim Vytox,Slim Vytox
+3033,El Benecio,El Benecio
+3034,Farmacia Eli,Farmacia Eli
+3035,farma salud,farma salud
+3036,Farmacia Salazar,Farmacia Salazar
+3037,FARMÁS,FARMÁS
+3038,Farmacia Esmeralda,Farmacia Esmeralda
+3040,Farmacia Martínez Gil,Farmacia Martínez Gil
+3041,Farmacia Nueva Falcon,Farmacia Nueva Falcon
+3042,Rubeal,Rubeal
+3043,Farmacia de los Ángeles Oaxaca,Farmacia De los Ángeles Oaxaca
+3044,PROMEDI drigueria,PROMEDI drigueria
+3045,Mariano Escobedo,Farmacia Ortega Jilotepec
+3046,FARMACIAS INTEGRAL,FARMACIAS INTEGRAL
+3047,Farmacia Libano,Farmacia Libano
+3048,Farmacia Contigo,Farmacia Contigo
+3049,Santa Fe,San ta fe
+3050,Medicamentos económicos,Medicamentos económicos
+3051,la escodida,la escodida
+3052,Farma Sabana,Farma Sabana
+3053,Dv pies podologia preventiva,Dv pies podologia preventiva
+3054,Sana sana,Sana sana
+3055,Farmacia Económica del norte,Farmacia Económica del norte
+3056,Farmacia Paulina,Farmacia Paulina
+3057,BOTICA CL,BOTICA CL
+3058,Zoe,Zoe
+3059,Farmacia,Farmacia
+3060,FARMASON,FARMASON
+3066,Novafarma,Grupo Novum
+3061,Sana sana,Sana sana
+3062,Farmacia Del Sur,Farmacia Del Sur
+3072,Farmacia La Paz,Farmacia Del Sur
+3063,Farmacia San Diego,Farmacia San Diego
+3064,Acanceh,Farmacia San Blas
+3071,Tepetlapa,Farmacia San Blas
+3065,Farmacia de genéricos intercambiables,Farmacia de genéricos intercambiables
+3067,Farmacia Generica,Farmacia Generica
+3068,MEDINA,MEDINA
+3069,FARMACIA BUENDÍA,FARMACIA BUEN DIA
+3070,Centro Quirurgico,Centro Quirurgico
+3073,Francisco san francisco,Francisco san francisco
+3074,Farmamax,Farmamax
+3075,Farmamax,Farmamax
+3076,Disred,Disred
+3077,Farmacia Sagrado Corazón de Jesús,Farmacia Sagrado Corazón de Jesús
+3078,POTENCIA INDUSTRIAL,POTENCIA INDUSTRIAL
+3079,FARMACIAS VOLIM,FARMACIAS VOLIM
+3080,Vitale Farmacia,Vitale Farmacia
+3081,San Román,San Román
+3082,FARMACIA,FARMACIA NECAXA
+3083,FARMAKAJEBELL,FARMAKAJEBELL
+3084,Demo,Demo Julio Carmona
+3085,monte sinai,monte sinai
+3086,FARMACIA MEGA,FARMACIA MEGA
+3087,Farmacia Grupo Médico García,Farmacia Grupo Médico García
+3088,Farmacia Galena,Farmacia Galena
+3089,Mega 1,Mega Ahorro
+3090,Farmacia Graciela Nuevo León,Farmacia Graciela
+3091,Cocono,Cocono
+3092,Farmacia san Rafael,Farmacia san Rafael
+3093,FVYS Sandy,Farmacias Vida y Salud Sandy
+3094,Farmacias Tequisquiapan,Farmacias Tequisquiapan
+3095,FVYS Ilusión,Farmacias Vida y Salud Ilusión
+3096,FUTUMEDICAL,FUTUMEDICAL
+3097,FVYS Cristo Rey,FVYS Cristo Rey
+3098,Farmacias Uruapan,Farmacias Uruapan
+3099,Farmacias villa,Farmacias villa
+3100,Mutual AM,Farmacia Mutual AM
+3101,FARMACIAS DE ESPECIALIDAD DEL SUR,FARMACIAS DE ESPECIALIDAD DEL SUR
+3102,F. LA ORIGINAL MATRIZ,"Farmacias La Original Zamora, Mich."
+3103,Farmacia Otal,Farmacia  Otal
+3104,Sagrado corazón,Sagrado corazón
