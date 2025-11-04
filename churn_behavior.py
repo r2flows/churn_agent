@@ -563,7 +563,34 @@ else:
 st.markdown("---")
 
 # ============================================
-# SECCION 3: ANALISIS DETALLADO DEL POS SELECCIONADO
+# SECCION 4: EVOLUCION SEMANAL
+# ============================================
+st.header(f"📅 Evolucion Semanal de la Distribucion de Compras - POS {selected_pos}")
+st.caption("📊 Mostrando todo el periodo historico para mejor visualizacion de tendencias")
+
+if not weekly_distribution.empty:
+    # Evolucion por POS seleccionado usando TODOS los datos (sin filtro de fechas)
+    fig_evolution = create_weekly_evolution_chart(weekly_distribution, selected_pos)
+    if fig_evolution:
+        st.plotly_chart(fig_evolution, use_container_width=True)
+
+        st.info("""
+        **💡 Interpretacion:** Este grafico muestra como evoluciona el porcentaje de compras a cada drogueria
+        semana a semana en todo el periodo historico. Lineas ascendentes indican que el POS esta aumentando
+        compras a esa drogueria, mientras que lineas descendentes indican reduccion.
+
+        **Nota:** Esta visualizacion muestra el periodo completo (no afectado por el filtro de fechas)
+        para facilitar la comparacion de tendencias a largo plazo.
+        """)
+    else:
+        st.warning(f"No hay datos de evolucion semanal para el POS {selected_pos}.")
+else:
+    st.warning("No hay datos de fechas disponibles para mostrar la evolucion semanal.")
+
+st.markdown("---")
+
+# ============================================
+# SECCION 5: ANALISIS DETALLADO DEL POS SELECCIONADO
 # ============================================
 st.header(f"🔍 Analisis Detallado - POS {selected_pos}")
 
@@ -713,33 +740,6 @@ if risk_analysis:
 
 else:
     st.warning(f"No hay suficientes datos historicos para evaluar el riesgo del POS {selected_pos}.")
-
-st.markdown("---")
-
-# ============================================
-# SECCION 4: EVOLUCION SEMANAL
-# ============================================
-st.header(f"📅 Evolucion Semanal de la Distribucion de Compras - POS {selected_pos}")
-st.caption("📊 Mostrando todo el periodo historico para mejor visualizacion de tendencias")
-
-if not weekly_distribution.empty:
-    # Evolucion por POS seleccionado usando TODOS los datos (sin filtro de fechas)
-    fig_evolution = create_weekly_evolution_chart(weekly_distribution, selected_pos)
-    if fig_evolution:
-        st.plotly_chart(fig_evolution, use_container_width=True)
-
-        st.info("""
-        **💡 Interpretacion:** Este grafico muestra como evoluciona el porcentaje de compras a cada drogueria
-        semana a semana en todo el periodo historico. Lineas ascendentes indican que el POS esta aumentando
-        compras a esa drogueria, mientras que lineas descendentes indican reduccion.
-
-        **Nota:** Esta visualizacion muestra el periodo completo (no afectado por el filtro de fechas)
-        para facilitar la comparacion de tendencias a largo plazo.
-        """)
-    else:
-        st.warning(f"No hay datos de evolucion semanal para el POS {selected_pos}.")
-else:
-    st.warning("No hay datos de fechas disponibles para mostrar la evolucion semanal.")
 
 st.markdown("---")
 
