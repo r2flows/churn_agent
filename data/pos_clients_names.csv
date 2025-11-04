@@ -43,6 +43,7 @@ pos_id,pos_name,client_name
 2358,Sofi 3,Extendeal Demo
 2359,Sofi 4,Extendeal Demo
 2800,QA Extendeal Duplicado,Extendeal Demo
+3131,Exty+EX9038,Extendeal Demo
 24,Marina,Farmacias Marina
 25,Rivadavia,Farmacias Marina
 26,Farmastore,Farmastore
@@ -650,6 +651,12 @@ pos_id,pos_name,client_name
 912,Villa Urquiza,Farma 365
 913,Zarate,Farma 365
 914,Acassuso,Farma 365
+3117,Maquinista savio,Farma 365
+3118,Martinez 1,Farma 365
+3119,Martinez 2,Farma 365
+3120,Palermo 1,Farma 365
+3121,Palermo 2,Farma 365
+3122,Florida Oeste,Farma 365
 501,Sucursal 39,Grupo Pizzolo
 502,Allemma,Grupo Pizzolo
 503,Farma Huinco,Grupo Pizzolo
@@ -1759,6 +1766,7 @@ pos_id,pos_name,client_name
 2269,ROMA SUR,Farma 360
 2562,LADERA,Farma 360
 2563,NICOLAS ROMERO,Farma 360
+3115,Viveros,Farma 360
 1600,Farma servicios de Dios,Isidro Sánchez Salvador
 1601,Farmacia Nueva San Juan,Farmacia Nueva San Juan - Artemio
 1602,Drogueria farma.salud,Drogueria farma. salud
@@ -2938,6 +2946,7 @@ pos_id,pos_name,client_name
 2933,Farmasuper,Farmasuper
 2934,DROGUERIA AMERICANA L.A,DROGUERIA AMERICANA L.A
 2935,Más salud,Más salud
+3124,Farmacia salud y vida,Más salud
 2936,Conafar,Conafar
 2937,RARME,RARME
 2938,Farmacia Obregón,Farmacia Obregón
@@ -3081,3 +3090,28 @@ pos_id,pos_name,client_name
 3102,F. LA ORIGINAL MATRIZ,"Farmacias La Original Zamora, Mich."
 3103,Farmacia Otal,Farmacia  Otal
 3104,Sagrado corazón,Sagrado corazón
+3105,Napoles,Mega Ahorro Suc Napoles
+3106,Cedis,Farmacias Integra
+3107,SAN JUAN,SAN JUAN
+3108,SIMAS,SIMAS
+3109,SIMAS,SIMAS
+3110,Suc Santa Maria,MF Salud
+3111,Calvagni,Norberto Calvagni
+3112,Santa Maria,Farmacia Susy
+3113,QuickMeds  Acaxochitlan,QuickMeds  Acaxochitlan
+3114,Unidad Medica del Valle,Unidad Medica del Valle
+3116,Farmacia San Pedro y San Pablo,Farmacia San Pedro y San Pablo
+3123,Carrera,Farmacias Lym
+3126,San Felipe de Jesús,Farmacias Lym
+3127,Zaragoza,Farmacias Lym
+3128,La Villa,Farmacias Lym
+3129,El Porvenir,Farmacias Lym
+3130,Muzquiz,Farmacias Lym
+3125,"Hidalgo, centro, palenque, Chiapa",Farmacias Salud y Vida
+3132,San Gabriel,San Gabriel
+3133,San diego,San diego
+3134,Med Sta María,Med Sta María
+3135,Mi bienestar plus,Mi bienestar plus
+3136,PHARMABAJIODH,PHARMABAJIODH
+3137,Farmacin,Farmacin
+3138,san francisco de asis,san francisco de asis
