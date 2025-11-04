@@ -507,7 +507,63 @@ pos_vendor_totals_filtered = calculate_pos_vendor_totals(df_orders_filtered)
 weekly_distribution_filtered = calculate_weekly_distribution(df_orders_filtered)
 
 # ============================================
-# SECCION 2: ANALISIS DETALLADO DEL POS SELECCIONADO
+
+# ============================================
+# SECCION 3: GRAFICOS DE TORTA POR POS
+# ============================================
+st.header(f"🥧 Distribucion de Compras por Drogueria - POS {selected_pos}")
+
+# Obtener datos del POS seleccionado con filtro de fechas
+pos_data = pos_vendor_totals_filtered[pos_vendor_totals_filtered['point_of_sale_id'] == selected_pos].copy()
+
+if not pos_data.empty:
+    pos_data = pos_data.sort_values('total_compra', ascending=False)
+
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        # Grafico de torta
+        fig_pie = create_pie_chart(pos_data, selected_pos)
+        st.plotly_chart(fig_pie, use_container_width=True)
+
+    with col2:
+        # Tabla de detalles
+        st.subheader(f"Detalle de Compras")
+
+        detail_table = pos_data[['vendor_id', 'total_compra', 'porcentaje']].copy()
+        detail_table.columns = ['Drogueria/Vendor ID', 'Total Comprado', 'Porcentaje']
+        detail_table['Porcentaje'] = detail_table['Porcentaje'].round(2)
+
+        st.dataframe(
+            detail_table.style.format({
+                'Total Comprado': '${:,.2f}',
+                'Porcentaje': '{:.2f}%'
+            }),
+            use_container_width=True,
+            hide_index=True
+        )
+
+        # Metricas adicionales
+        num_vendors = len(pos_data)
+        concentration = pos_data.iloc[0]['porcentaje'] if len(pos_data) > 0 else 0
+        total_compras_pos = pos_data['total_compra'].sum()
+
+        st.markdown("**Metricas del POS:**")
+        metric_col1, metric_col2, metric_col3 = st.columns(3)
+        with metric_col1:
+            st.metric("Droguerias", num_vendors)
+        with metric_col2:
+            st.metric("Concentracion", f"{concentration:.1f}%")
+        with metric_col3:
+            st.metric("Total", f"${total_compras_pos:,.0f}")
+else:
+    st.warning(f"No hay datos disponibles para el POS {selected_pos} en el rango de fechas seleccionado.")
+
+
+st.markdown("---")
+
+# ============================================
+# SECCION 3: ANALISIS DETALLADO DEL POS SELECCIONADO
 # ============================================
 st.header(f"🔍 Analisis Detallado - POS {selected_pos}")
 
@@ -661,61 +717,7 @@ else:
 st.markdown("---")
 
 # ============================================
-# SECCION 3: GRAFICOS DE TORTA POR POS
-# ============================================
-st.header(f"🥧 Distribucion de Compras por Drogueria - POS {selected_pos}")
-
-# Obtener datos del POS seleccionado con filtro de fechas
-pos_data = pos_vendor_totals_filtered[pos_vendor_totals_filtered['point_of_sale_id'] == selected_pos].copy()
-
-if not pos_data.empty:
-    pos_data = pos_data.sort_values('total_compra', ascending=False)
-
-    col1, col2 = st.columns([1, 1])
-
-    with col1:
-        # Grafico de torta
-        fig_pie = create_pie_chart(pos_data, selected_pos)
-        st.plotly_chart(fig_pie, use_container_width=True)
-
-    with col2:
-        # Tabla de detalles
-        st.subheader(f"Detalle de Compras")
-
-        detail_table = pos_data[['vendor_id', 'total_compra', 'porcentaje']].copy()
-        detail_table.columns = ['Drogueria/Vendor ID', 'Total Comprado', 'Porcentaje']
-        detail_table['Porcentaje'] = detail_table['Porcentaje'].round(2)
-
-        st.dataframe(
-            detail_table.style.format({
-                'Total Comprado': '${:,.2f}',
-                'Porcentaje': '{:.2f}%'
-            }),
-            use_container_width=True,
-            hide_index=True
-        )
-
-        # Metricas adicionales
-        num_vendors = len(pos_data)
-        concentration = pos_data.iloc[0]['porcentaje'] if len(pos_data) > 0 else 0
-        total_compras_pos = pos_data['total_compra'].sum()
-
-        st.markdown("**Metricas del POS:**")
-        metric_col1, metric_col2, metric_col3 = st.columns(3)
-        with metric_col1:
-            st.metric("Droguerias", num_vendors)
-        with metric_col2:
-            st.metric("Concentracion", f"{concentration:.1f}%")
-        with metric_col3:
-            st.metric("Total", f"${total_compras_pos:,.0f}")
-else:
-    st.warning(f"No hay datos disponibles para el POS {selected_pos} en el rango de fechas seleccionado.")
-
-
-st.markdown("---")
-
-# ============================================
-# SECCION 3: EVOLUCION SEMANAL
+# SECCION 4: EVOLUCION SEMANAL
 # ============================================
 st.header(f"📅 Evolucion Semanal de la Distribucion de Compras - POS {selected_pos}")
 st.caption("📊 Mostrando todo el periodo historico para mejor visualizacion de tendencias")
