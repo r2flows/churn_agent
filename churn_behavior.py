@@ -26,7 +26,6 @@ def load_data():
                 df_orders = pd.read_csv('data/orders_delivered_pos_vendor_geozone.csv',
                                        encoding=encoding,
                                        low_memory=False)
-                st.success(f"Datos cargados exitosamente con codificacion: {encoding}")
                 break
             except UnicodeDecodeError:
                 continue
@@ -459,148 +458,9 @@ else:
 st.markdown("---")
 
 # ============================================
-# SECCION 3: ANALISIS DE RIESGO
+# SECCION 3: ANALISIS DETALLADO DEL POS SELECCIONADO
 # ============================================
-st.header("⚠️ Analisis de Riesgo y Alertas - Todos los POS")
-st.markdown("""
-Esta seccion evalua el riesgo de dependencia basado en la evolucion temporal de todos los POS,
-comparando el inicio y fin del periodo para detectar concentracion de proveedores.
-""")
-
-# Descripcion del analisis
-with st.expander("📖 Criterios de Alerta", expanded=False):
-    st.markdown("""
-    **Sistema de Alertas Basado en Evolucion Temporal**
-
-    Las alertas se activan segun estos criterios:
-
-    **🔴 CRITICO - MONOPOLIO:**
-    - El POS tiene solo **1 drogueria** en la ultima semana del periodo
-
-    **🟠 ALTO - CONCENTRACION:**
-    - El POS paso de **3+ proveedores a 2** proveedores
-    - Y la diferencia entre el proveedor principal y el secundario es **mayor al 50%**
-
-    **🟡 MODERADO - MONITOREAR:**
-    - El POS tiene 2 proveedores con concentracion mayor al 70% en uno
-
-    **🟢 BAJO - SIN RIESGO:**
-    - Cualquier otra situacion indica diversificacion saludable
-    """)
-
-st.markdown("---")
-
-# Analizar riesgo para TODOS los POS
-all_pos_list = sorted(weekly_distribution['point_of_sale_id'].unique())
-all_alerts = []
-
-with st.spinner('Analizando riesgo en todos los POS...'):
-    for pos_id in all_pos_list:
-        risk_analysis = analyze_vendor_risk(weekly_distribution, pos_id)
-        if risk_analysis:
-            all_alerts.append(risk_analysis)
-
-# Filtrar solo POS con alertas
-pos_with_alerts = [alert for alert in all_alerts if alert['alert_type'] is not None]
-
-# Metricas generales de alertas
-st.subheader("📊 Resumen General de Alertas")
-col1, col2, col3, col4 = st.columns(4)
-
-total_pos_analyzed = len(all_alerts)
-total_with_alerts = len(pos_with_alerts)
-critico_count = len([a for a in pos_with_alerts if a['risk_level'] == '🔴 CRITICO'])
-alto_count = len([a for a in pos_with_alerts if a['risk_level'] == '🟠 ALTO'])
-moderado_count = len([a for a in pos_with_alerts if a['risk_level'] == '🟡 MODERADO'])
-
-with col1:
-    st.metric("Total POS Analizados", total_pos_analyzed)
-with col2:
-    st.metric(
-        "🔴 Critico",
-        critico_count,
-        delta="Monopolio" if critico_count > 0 else None,
-        delta_color="inverse" if critico_count > 0 else "off"
-    )
-with col3:
-    st.metric(
-        "🟠 Alto",
-        alto_count,
-        delta="Concentracion" if alto_count > 0 else None,
-        delta_color="inverse" if alto_count > 0 else "off"
-    )
-with col4:
-    st.metric(
-        "🟡 Moderado",
-        moderado_count,
-        delta="Monitorear" if moderado_count > 0 else None,
-        delta_color="off"
-    )
-
-st.markdown("---")
-
-# Tabla de todas las alertas
-if pos_with_alerts:
-    st.subheader(f"🚨 Lista de POS con Alertas Detectadas ({len(pos_with_alerts)} POS)")
-
-    # Crear DataFrame para mostrar
-    alerts_data = []
-    for alert in pos_with_alerts:
-        max_concentration = alert['vendors_last_week'].iloc[0]['porcentaje']
-
-        if len(alert['vendors_last_week']) >= 2:
-            diff = alert['vendors_last_week'].iloc[0]['porcentaje'] - alert['vendors_last_week'].iloc[1]['porcentaje']
-        else:
-            diff = 100  # Si solo hay 1 proveedor, diferencia es 100%
-
-        alerts_data.append({
-            'POS ID': alert['pos_id'],
-            'Nivel Riesgo': alert['risk_level'],
-            'Tipo Alerta': alert['alert_type'],
-            'Proveedores Inicial': alert['num_vendors_first'],
-            'Proveedores Final': alert['num_vendors_last'],
-            'Concentracion Max (%)': max_concentration,
-            'Diferencia 1°-2° (%)': diff,
-            'Descripcion': alert['alert_description']
-        })
-
-    alerts_df = pd.DataFrame(alerts_data)
-
-    # Ordenar por nivel de riesgo (Critico primero)
-    risk_order = {'🔴 CRITICO': 0, '🟠 ALTO': 1, '🟡 MODERADO': 2}
-    alerts_df['risk_order'] = alerts_df['Nivel Riesgo'].map(risk_order)
-    alerts_df = alerts_df.sort_values('risk_order').drop('risk_order', axis=1)
-
-    # Mostrar tabla con formato
-    st.dataframe(
-        alerts_df.style.format({
-            'Concentracion Max (%)': '{:.1f}%',
-            'Diferencia 1°-2° (%)': '{:.1f}%'
-        }).apply(lambda x: ['background-color: #ffebee' if v == '🔴 CRITICO'
-                            else 'background-color: #fff3e0' if v == '🟠 ALTO'
-                            else 'background-color: #fffde7' if v == '🟡 MODERADO'
-                            else '' for v in x], subset=['Nivel Riesgo']),
-        use_container_width=True,
-        hide_index=True,
-        height=400
-    )
-
-    # Opcion de exportar
-    csv = alerts_df.to_csv(index=False).encode('utf-8')
-    st.download_button(
-        label="📥 Descargar Alertas (CSV)",
-        data=csv,
-        file_name=f"alertas_riesgo_{pd.Timestamp.now().strftime('%Y%m%d_%H%M%S')}.csv",
-        mime="text/csv"
-    )
-
-else:
-    st.success("✅ No se detectaron alertas en ninguno de los POS. Todos mantienen diversificacion saludable.")
-
-st.markdown("---")
-
-# Analisis detallado del POS seleccionado
-st.subheader(f"🔍 Analisis Detallado - POS {selected_pos}")
+st.header(f"🔍 Analisis Detallado - POS {selected_pos}")
 
 risk_analysis = analyze_vendor_risk(weekly_distribution, selected_pos)
 
@@ -748,5 +608,146 @@ if risk_analysis:
 
 else:
     st.warning(f"No hay suficientes datos historicos para evaluar el riesgo del POS {selected_pos}.")
+
+st.markdown("---")
+
+# ============================================
+# SECCION 4: ANALISIS DE RIESGO
+# ============================================
+st.header("⚠️ Analisis de Riesgo y Alertas - Todos los POS")
+st.markdown("""
+Esta seccion evalua el riesgo de dependencia basado en la evolucion temporal de todos los POS,
+comparando el inicio y fin del periodo para detectar concentracion de proveedores.
+""")
+
+# Descripcion del analisis
+with st.expander("📖 Criterios de Alerta", expanded=False):
+    st.markdown("""
+    **Sistema de Alertas Basado en Evolucion Temporal**
+
+    Las alertas se activan segun estos criterios:
+
+    **🔴 CRITICO - MONOPOLIO:**
+    - El POS tiene solo **1 drogueria** en la ultima semana del periodo
+
+    **🟠 ALTO - CONCENTRACION:**
+    - El POS paso de **3+ proveedores a 2** proveedores
+    - Y la diferencia entre el proveedor principal y el secundario es **mayor al 50%**
+
+    **🟡 MODERADO - MONITOREAR:**
+    - El POS tiene 2 proveedores con concentracion mayor al 70% en uno
+
+    **🟢 BAJO - SIN RIESGO:**
+    - Cualquier otra situacion indica diversificacion saludable
+    """)
+
+st.markdown("---")
+
+# Analizar riesgo para TODOS los POS
+all_pos_list = sorted(weekly_distribution['point_of_sale_id'].unique())
+all_alerts = []
+
+with st.spinner('Analizando riesgo en todos los POS...'):
+    for pos_id in all_pos_list:
+        risk_analysis = analyze_vendor_risk(weekly_distribution, pos_id)
+        if risk_analysis:
+            all_alerts.append(risk_analysis)
+
+# Filtrar solo POS con alertas
+pos_with_alerts = [alert for alert in all_alerts if alert['alert_type'] is not None]
+
+# Metricas generales de alertas
+st.subheader("📊 Resumen General de Alertas")
+col1, col2, col3, col4 = st.columns(4)
+
+total_pos_analyzed = len(all_alerts)
+total_with_alerts = len(pos_with_alerts)
+critico_count = len([a for a in pos_with_alerts if a['risk_level'] == '🔴 CRITICO'])
+alto_count = len([a for a in pos_with_alerts if a['risk_level'] == '🟠 ALTO'])
+moderado_count = len([a for a in pos_with_alerts if a['risk_level'] == '🟡 MODERADO'])
+
+with col1:
+    st.metric("Total POS Analizados", total_pos_analyzed)
+with col2:
+    st.metric(
+        "🔴 Critico",
+        critico_count,
+        delta="Monopolio" if critico_count > 0 else None,
+        delta_color="inverse" if critico_count > 0 else "off"
+    )
+with col3:
+    st.metric(
+        "🟠 Alto",
+        alto_count,
+        delta="Concentracion" if alto_count > 0 else None,
+        delta_color="inverse" if alto_count > 0 else "off"
+    )
+with col4:
+    st.metric(
+        "🟡 Moderado",
+        moderado_count,
+        delta="Monitorear" if moderado_count > 0 else None,
+        delta_color="off"
+    )
+
+st.markdown("---")
+
+# Tabla de todas las alertas
+if pos_with_alerts:
+    st.subheader(f"🚨 Lista de POS con Alertas Detectadas ({len(pos_with_alerts)} POS)")
+
+    # Crear DataFrame para mostrar
+    alerts_data = []
+    for alert in pos_with_alerts:
+        max_concentration = alert['vendors_last_week'].iloc[0]['porcentaje']
+
+        if len(alert['vendors_last_week']) >= 2:
+            diff = alert['vendors_last_week'].iloc[0]['porcentaje'] - alert['vendors_last_week'].iloc[1]['porcentaje']
+        else:
+            diff = 100  # Si solo hay 1 proveedor, diferencia es 100%
+
+        alerts_data.append({
+            'POS ID': alert['pos_id'],
+            'Nivel Riesgo': alert['risk_level'],
+            'Tipo Alerta': alert['alert_type'],
+            'Proveedores Inicial': alert['num_vendors_first'],
+            'Proveedores Final': alert['num_vendors_last'],
+            'Concentracion Max (%)': max_concentration,
+            'Diferencia 1°-2° (%)': diff,
+            'Descripcion': alert['alert_description']
+        })
+
+    alerts_df = pd.DataFrame(alerts_data)
+
+    # Ordenar por nivel de riesgo (Critico primero)
+    risk_order = {'🔴 CRITICO': 0, '🟠 ALTO': 1, '🟡 MODERADO': 2}
+    alerts_df['risk_order'] = alerts_df['Nivel Riesgo'].map(risk_order)
+    alerts_df = alerts_df.sort_values('risk_order').drop('risk_order', axis=1)
+
+    # Mostrar tabla con formato
+    st.dataframe(
+        alerts_df.style.format({
+            'Concentracion Max (%)': '{:.1f}%',
+            'Diferencia 1°-2° (%)': '{:.1f}%'
+        }).apply(lambda x: ['background-color: #ffebee' if v == '🔴 CRITICO'
+                            else 'background-color: #fff3e0' if v == '🟠 ALTO'
+                            else 'background-color: #fffde7' if v == '🟡 MODERADO'
+                            else '' for v in x], subset=['Nivel Riesgo']),
+        use_container_width=True,
+        hide_index=True,
+        height=400
+    )
+
+    # Opcion de exportar
+    csv = alerts_df.to_csv(index=False).encode('utf-8')
+    st.download_button(
+        label="📥 Descargar Alertas (CSV)",
+        data=csv,
+        file_name=f"alertas_riesgo_{pd.Timestamp.now().strftime('%Y%m%d_%H%M%S')}.csv",
+        mime="text/csv"
+    )
+
+else:
+    st.success("✅ No se detectaron alertas en ninguno de los POS. Todos mantienen diversificacion saludable.")
 
 st.markdown("**Dashboard creado con Streamlit y Plotly**")
