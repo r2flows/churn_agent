@@ -5,30 +5,241 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
 from datetime import datetime, timedelta
-import paramiko
 import pymysql
-from sshtunnel import SSHTunnelForwarder
 from contextlib import contextmanager
 import logging
 import select
 import boto3
 import io
 import os
-# Configuracion de la pagina
+import requests
+#from sshtunnel import SSHTunnelForwarder
+from contextlib import contextmanager
+from requests_oauthlib import OAuth2Session
+import logging
+
+EMAILS_APROBADOS = [
+    "enric.castillo@extendeal.com", 
+    "marcos.nasillo@extendeal.com",
+    "pedro.sabatte@extendeal.com",
+    "arturo.gomez@extendeal.com",
+    "agostina.stefani@extendeal.com",
+]
+
+#==================== GOOGLE AUTH FUNCTIONS ====================
+def get_google_auth_url():
+    """Genera URL de autenticación de Google"""
+    google = OAuth2Session(
+        st.secrets["auth"]["client_id"],
+        scope=["email", "profile"],
+        redirect_uri=st.secrets["auth"]["redirect_uri"]
+    )
+    auth_url, _ = google.authorization_url(
+        "https://accounts.google.com/o/oauth2/v2/auth",
+        access_type="offline"
+    )
+    return auth_url
+
+def get_user_info(code):
+    """Obtiene información del usuario desde Google"""
+    google = OAuth2Session(
+        st.secrets["auth"]["client_id"], 
+        redirect_uri=st.secrets["auth"]["redirect_uri"]
+    )
+    token = google.fetch_token(
+        "https://oauth2.googleapis.com/token",
+        code=code,
+        client_secret=st.secrets["auth"]["client_secret"]
+    )
+    
+    response = requests.get(
+        "https://www.googleapis.com/oauth2/v2/userinfo",
+        headers={"Authorization": f"Bearer {token['access_token']}"}
+    )
+    return response.json()
+
+def check_email_approved(email):
+    """Verifica si el email está en la lista de aprobados"""
+    if not email:
+        return False
+    return email.lower().strip() in [e.lower().strip() for e in EMAILS_APROBADOS]
+
+#==================== INICIALIZAR SESSION STATE ====================
+if 'authenticated' not in st.session_state:
+    st.session_state.authenticated = False
+if 'user_data' not in st.session_state:
+    st.session_state.user_data = None
+if 'show_denied' not in st.session_state:
+    st.session_state.show_denied = False
+
+#==================== MANEJAR CALLBACK DE GOOGLE ====================
+query_params = st.experimental_get_query_params()
+if 'code' in query_params and not st.session_state.authenticated:
+    try:
+        with st.spinner("Verificando credenciales..."):
+            user_info = get_user_info(query_params['code'][0])  # Los query params vienen como listas
+            email = user_info.get('email', '')
+            
+            if check_email_approved(email):
+                # LOGIN EXITOSO
+                st.session_state.authenticated = True
+                st.session_state.user_data = user_info
+                st.session_state.show_denied = False
+                st.experimental_set_query_params()  # Limpiar query params
+                st.rerun()
+            else:
+                # EMAIL NO APROBADO
+                st.session_state.authenticated = False
+                st.session_state.show_denied = True
+                st.session_state.denied_email = email
+                st.experimental_set_query_params()  # Limpiar query params
+                st.rerun()
+                
+    except Exception as e:
+        st.error(f"Error en autenticación: {str(e)}")
+        st.session_state.authenticated = False
+
+#==================== PANTALLAS ====================
+
+def show_login():
+    """Pantalla de login"""
+    st.markdown("<div style='padding: 50px 0;'></div>", unsafe_allow_html=True)
+    
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.markdown("""
+        <h1 style='text-align: center; font-family: "Trebuchet MS", sans-serif;'>
+            CHURN Alerts & Analysis
+        </h1>
+        """, unsafe_allow_html=True)
+
+        # CSS personalizado para el botón
+        st.markdown("""
+            <style>
+            div.stButton > button:first-child {
+                background-color: #4285F4;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+            div.stButton > button:first-child:hover {
+                background-color: #3367D6;
+            }
+            </style>
+        """, unsafe_allow_html=True)
+
+        # Usar el botón de Streamlit pero con estilo personalizado
+        if st.button("🔒 Iniciar sesión con Google", type="primary", use_container_width=True):
+            auth_url = get_google_auth_url()
+            st.markdown(f'<meta http-equiv="refresh" content="0; url={auth_url}">', unsafe_allow_html=True)
+        
+        st.markdown("<p style='text-align: center; color: gray; margin-top: 20px;'>Acceso restringido a usuarios autorizados</p>", unsafe_allow_html=True)
+
+def show_access_denied():
+    """Pantalla de acceso denegado"""
+    st.markdown("<div style='padding: 50px 0;'></div>", unsafe_allow_html=True)
+    
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.error("🚫 **ACCESO DENEGADO**")
+        st.warning(f"El email **{st.session_state.denied_email}** no está autorizado.")
+        st.info("Contacta al administrador para solicitar acceso.")
+        
+        if st.button("🔙 Volver al login", use_container_width=True):
+            st.session_state.show_denied = False
+            if 'denied_email' in st.session_state:
+                del st.session_state.denied_email
+            st.rerun()
+
+#==================== LÓGICA PRINCIPAL ====================
+# Verificar autenticación antes de continuar con el dashboard
+if not st.session_state.authenticated:
+    if st.session_state.show_denied:
+        show_access_denied()
+    else:
+        show_login()
+    st.stop()  # Detener ejecución si no está autenticado
+
+# Configuración de la página
 st.set_page_config(
-    page_title="Dashboard de Comportamiento de Compras por Drogueria",
-    page_icon="📊",
-    layout="wide"
+    page_title="🎯 Churn Alert Dashboard",
+    page_icon="📈",
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
+# CSS personalizado
+st.markdown("""
+<style>
+    .main-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2rem;
+        border-radius: 15px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .section-header {
+        background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+        color: white;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 1.5rem 0 1rem 0;
+    }
+    .metric-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        border-left: 4px solid #667eea;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        text-align: center;
+        min-height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .conversion-card {
+        background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    .big-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    .small-text {
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+    .metric-card .small-text {
+        font-size: 1.05rem;
+    }
+    .metric-card .big-number {
+        font-size: 2.7rem;
+    }
+    .help-icon {
+        font-size: 1rem;
+        margin-left: 0.4rem;
+        cursor: help;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+
 # Constante para período de análisis
-ANALYSIS_PERIOD_DAYS = 100
+#days = 100
 
 # Variables de entorno requeridas para AWS S3:
 # AWS_ACCESS_KEY_ID: Clave de acceso de AWS
 # AWS_SECRET_ACCESS_KEY: Clave secreta de AWS  
 # AWS_DEFAULT_REGION: Región de AWS (opcional, por defecto us-east-1)
-
+days = 100
 def load_geo_data_from_s3():
     """Carga datos geográficos desde S3"""
     try:
@@ -95,11 +306,11 @@ def load_geo_data_from_s3():
 class DatabaseConnection:
     def __init__(self):
         """Inicializa la conexión a la base de datos con túnel SSH"""
-        self.ssh_host = 'ec2-35-167-135-88.us-west-2.compute.amazonaws.com'
-        self.ssh_port = 22
-        self.ssh_user = 'ec2-user'
-        self.ssh_pkey = '/home/dell/.ssh/id_rsa'
-        self.ssh_passphrase = 'hacker'
+        #self.ssh_host = 'ec2-35-167-135-88.us-west-2.compute.amazonaws.com'
+        #self.ssh_port = 22
+        #self.ssh_user = 'ec2-user'
+        #self.ssh_pkey = '/home/dell/.ssh/id_rsa'
+        #self.ssh_passphrase = 'hacker'
         
         self.db_host = 'pharma-instance-2.cyu0lneawokc.us-west-2.rds.amazonaws.com'
         self.db_port = 3306
@@ -113,34 +324,12 @@ class DatabaseConnection:
     @contextmanager
     def get_connection(self):
         """Context manager para obtener una conexión a la base de datos con túnel SSH"""
-        tunnel = None
         connection = None
-        
-        try:
-            # Configurar cliente SSH manualmente primero
-            ssh_client = paramiko.SSHClient()
-            ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-            
-            # Cargar solo clave RSA
-            rsa_key = paramiko.RSAKey.from_private_key_file(
-                self.ssh_pkey, 
-                password=self.ssh_passphrase
-            )
-            
-            # Crear túnel con el cliente configurado
-            tunnel = SSHTunnelForwarder(
-                (self.ssh_host, self.ssh_port),
-                ssh_username=self.ssh_user,
-                ssh_pkey=rsa_key,
-                remote_bind_address=(self.db_host, self.db_port),
-                local_bind_address=('127.0.0.1', 0)
-            )
-            
-            tunnel.start()
-            
+
+        try:    
             connection = pymysql.connect(
-                host='127.0.0.1',
-                port=tunnel.local_bind_port,
+                host=self.db_host,
+                port=self.db_port,
                 user=self.db_user,
                 password=self.db_password,
                 database=self.db_name,
@@ -156,10 +345,8 @@ class DatabaseConnection:
         finally:
             if connection:
                 connection.close()
-            if tunnel:
-                tunnel.stop()
 
-    def get_orders_100(self, days: int = ANALYSIS_PERIOD_DAYS) -> pd.DataFrame:
+    def get_orders_100(self, days: int = 100) -> pd.DataFrame:
         """Obtiene datos de órdenes de los últimos N días"""
         query = f"""
  SELECT 
@@ -178,7 +365,7 @@ JOIN order_products op ON o.id = op.order_id
 JOIN api_products ap ON op.id = ap.order_product_id 
 JOIN delivery_products dp ON dp.api_product_id = ap.id 
 JOIN deliveries d ON d.id = dp.delivery_id 
-WHERE o.created_at >= NOW() - INTERVAL 30 DAY 
+WHERE o.created_at >= NOW() - INTERVAL {days} DAY 
   AND op.deleted_at IS NULL 
   AND c.is_demo = 0 
   AND d.status_id != 1 
@@ -214,7 +401,7 @@ def load_and_process_data():
         
         # Obtener datos de la ETL
         st.info("📡 Cargando datos desde la base de datos...")
-        df_orders = etl_instance.get_orders_100(ANALYSIS_PERIOD_DAYS)
+        df_orders = etl_instance.get_orders_100(days)
         
         if df_orders.empty:
             st.error("❌ No se pudieron obtener datos de la base de datos")
