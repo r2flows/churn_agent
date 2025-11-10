@@ -7,6 +7,8 @@ import numpy as np
 from datetime import datetime, timedelta
 import pymysql
 from contextlib import contextmanager
+from sqlalchemy import create_engine
+import sqlalchemy
 import logging
 import select
 import boto3
@@ -42,21 +44,39 @@ def get_google_auth_url():
 
 def get_user_info(code):
     """Obtiene información del usuario desde Google"""
-    google = OAuth2Session(
-        st.secrets["auth"]["client_id"], 
-        redirect_uri=st.secrets["auth"]["redirect_uri"]
-    )
-    token = google.fetch_token(
-        "https://oauth2.googleapis.com/token",
-        code=code,
-        client_secret=st.secrets["auth"]["client_secret"]
-    )
-    
-    response = requests.get(
-        "https://www.googleapis.com/oauth2/v2/userinfo",
-        headers={"Authorization": f"Bearer {token['access_token']}"}
-    )
-    return response.json()
+    try:
+        google = OAuth2Session(
+            st.secrets["auth"]["client_id"], 
+            redirect_uri=st.secrets["auth"]["redirect_uri"]
+        )
+        
+        # Add timeout and better error handling for token fetch
+        token = google.fetch_token(
+            "https://oauth2.googleapis.com/token",
+            code=code,
+            client_secret=st.secrets["auth"]["client_secret"],
+            timeout=30  # Add timeout
+        )
+        
+        response = requests.get(
+            "https://www.googleapis.com/oauth2/v2/userinfo",
+            headers={"Authorization": f"Bearer {token['access_token']}"},
+            timeout=30  # Add timeout
+        )
+        
+        if response.status_code != 200:
+            raise Exception(f"Google API error: {response.status_code} - {response.text}")
+            
+        return response.json()
+        
+    except Exception as e:
+        error_msg = str(e)
+        if "invalid_grant" in error_msg.lower():
+            raise Exception(f"(invalid_grant) Bad Request - El código de autorización ha expirado o ya fue usado. Por favor, inicia sesión nuevamente.")
+        elif "timeout" in error_msg.lower():
+            raise Exception(f"Timeout en conexión con Google. Verifica tu conexión a internet.")
+        else:
+            raise Exception(f"Error OAuth: {error_msg}")
 
 def check_email_approved(email):
     """Verifica si el email está en la lista de aprobados"""
@@ -77,7 +97,10 @@ query_params = st.experimental_get_query_params()
 if 'code' in query_params and not st.session_state.authenticated:
     try:
         with st.spinner("Verificando credenciales..."):
-            user_info = get_user_info(query_params['code'][0])  # Los query params vienen como listas
+            # Handle both string and list formats for query params
+            code = query_params['code'][0] if isinstance(query_params['code'], list) else query_params['code']
+                
+            user_info = get_user_info(code)
             email = user_info.get('email', '')
             
             if check_email_approved(email):
@@ -98,6 +121,7 @@ if 'code' in query_params and not st.session_state.authenticated:
     except Exception as e:
         st.error(f"Error en autenticación: {str(e)}")
         st.session_state.authenticated = False
+        st.experimental_set_query_params()  # Limpiar query params en caso de error
 
 #==================== PANTALLAS ====================
 
@@ -257,11 +281,12 @@ def load_geo_data_from_s3():
         encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'cp1252']
         df_geo = None
         
+        # Leer el contenido una sola vez
+        csv_content = response['Body'].read()
+        
         for encoding in encodings:
             try:
-                # Resetear el stream antes de cada intento
-                response['Body'].seek(0) if hasattr(response['Body'], 'seek') else None
-                csv_content = response['Body'].read()
+                # Usar BytesIO con el contenido ya leído
                 df_geo = pd.read_csv(
                     io.BytesIO(csv_content), 
                     encoding=encoding, 
@@ -278,6 +303,16 @@ def load_geo_data_from_s3():
         return df_geo
         
     except Exception as e:
+        st.error(f"❌ Error al acceder a S3: {str(e)}")
+        st.error(f"❌ Tipo de error: {type(e).__name__}")
+        
+        # Verificar si es un error de permisos específico
+        if "AccessDenied" in str(e) or "Forbidden" in str(e):
+            st.error("🔒 Error de permisos S3 - Verificar IAM role del ECS task")
+        elif "NoCredentialsError" in str(e):
+            st.error("🔑 No se encontraron credenciales AWS")
+        elif "EndpointConnectionError" in str(e):
+            st.error("🌐 Error de conexión a S3")
         
         # Fallback a archivo local
         try:
@@ -305,40 +340,32 @@ def load_geo_data_from_s3():
 
 class DatabaseConnection:
     def __init__(self):
-        """Inicializa la conexión a la base de datos con túnel SSH"""
-        #self.ssh_host = 'ec2-35-167-135-88.us-west-2.compute.amazonaws.com'
-        #self.ssh_port = 22
-        #self.ssh_user = 'ec2-user'
-        #self.ssh_pkey = '/home/dell/.ssh/id_rsa'
-        #self.ssh_passphrase = 'hacker'
+        """Inicializa la conexión a la base de datos optimizada"""
+        self.db_host = st.secrets["database"]["host"]
+        self.db_port = int(st.secrets["database"]["port"])
+        self.db_user = st.secrets["database"]["username"]
+        self.db_password = st.secrets["database"]["password"]
+        self.db_name = st.secrets["database"]["database"]
         
-        self.db_host = 'pharma-instance-2.cyu0lneawokc.us-west-2.rds.amazonaws.com'
-        self.db_port = 3306
-        self.db_user = 'ai-user-ro'
-        self.db_password = '+fKJd5#9osfF'
-        self.db_name = 'extendeal_pharma'
+        # Create SQLAlchemy engine for better performance
+        self.engine = create_engine(
+            f"mysql+pymysql://{self.db_user}:{self.db_password}@{self.db_host}:{self.db_port}/{self.db_name}",
+            pool_pre_ping=True,
+            pool_recycle=3600,
+            pool_size=5,
+            max_overflow=10
+        )
         
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger(__name__)
 
     @contextmanager
     def get_connection(self):
-        """Context manager para obtener una conexión a la base de datos con túnel SSH"""
+        """Context manager para obtener una conexión optimizada SQLAlchemy"""
         connection = None
-
         try:    
-            connection = pymysql.connect(
-                host=self.db_host,
-                port=self.db_port,
-                user=self.db_user,
-                password=self.db_password,
-                database=self.db_name,
-                charset='utf8mb4',
-                autocommit=True
-            )
-            
+            connection = self.engine.connect()
             yield connection
-            
         except Exception as e:
             st.error(f"Error en conexión a base de datos: {e}")
             raise
@@ -350,7 +377,8 @@ class DatabaseConnection:
         """Obtiene datos de órdenes de los últimos N días"""
         query = f"""
  SELECT 
-    o.point_of_sale_id AS point_of_sale_id, 
+    o.point_of_sale_id AS point_of_sale_id,
+    pos.name AS pos_name,
     op.barcode AS super_catalog_id, 
     o.id AS order_id,
     o.created_at AS order_date,
@@ -373,17 +401,61 @@ WHERE o.created_at >= NOW() - INTERVAL {days} DAY
         """
         
         try:
-            with self.get_connection() as conn:
-                df = pd.read_sql(query, conn)
-                
-                if 'order_date' in df.columns:
-                    df['order_date'] = pd.to_datetime(df['order_date'])
-                
-                return df
-                
+            # Use engine directly with pandas for SQLAlchemy compatibility
+            df = pd.read_sql(query, self.engine)
+            
+            if 'order_date' in df.columns:
+                df['order_date'] = pd.to_datetime(df['order_date'])
+            
+            return df
+            
         except Exception as e:
             st.error(f"Error obteniendo datos de órdenes: {e}")
             return pd.DataFrame()
+
+    def get_currency_rates(self):
+        """Obtiene tasas de cambio para convertir MXN y ARS a USD"""
+        import requests
+        import datetime
+        
+        try:
+            # API gratuita para tasas de cambio
+            response = requests.get("https://api.exchangerate-api.com/v4/latest/USD", timeout=10)
+            
+            if response.status_code == 200:
+                data = response.json()
+                rates = {
+                    'USD_to_MXN': data['rates'].get('MXN', 20.0),  # Fallback por si falla
+                    'USD_to_ARS': data['rates'].get('ARS', 350.0),  # Fallback por si falla
+                    'date': datetime.datetime.now().strftime('%Y-%m-%d')
+                }
+                
+                # Convertir a tasas desde las monedas locales a USD
+                rates['MXN_to_USD'] = 1 / rates['USD_to_MXN']
+                rates['ARS_to_USD'] = 1 / rates['USD_to_ARS']
+                
+                return rates
+            else:
+                # Tasas de fallback si la API no funciona
+                return {
+                    'MXN_to_USD': 0.05,  # ~20 MXN por USD
+                    'ARS_to_USD': 0.003,  # ~350 ARS por USD
+                    'USD_to_MXN': 20.0,
+                    'USD_to_ARS': 350.0,
+                    'date': datetime.datetime.now().strftime('%Y-%m-%d'),
+                    'source': 'fallback'
+                }
+                
+        except Exception as e:
+            st.warning(f"No se pudieron obtener tasas de cambio actuales: {e}. Usando tasas predeterminadas.")
+            return {
+                'MXN_to_USD': 0.05,
+                'ARS_to_USD': 0.003,
+                'USD_to_MXN': 20.0,
+                'USD_to_ARS': 350.0,
+                'date': datetime.datetime.now().strftime('%Y-%m-%d'),
+                'source': 'fallback'
+            }
 
 
 
@@ -438,6 +510,39 @@ def load_and_process_data():
             on='point_of_sale_id', 
             how='left'
         )
+        
+        # Convertir monedas a USD
+        if 'total_compra' in df_final.columns and 'country_code' in df_final.columns:
+            try:
+                st.info("💱 Obteniendo tasas de cambio...")
+                rates = etl_instance.get_currency_rates()
+                
+                # Crear columna total_compra_usd con conversión basada en país
+                def convert_to_usd(row):
+                    if pd.isna(row['total_compra']) or pd.isna(row['country_code']):
+                        return row['total_compra']
+                    
+                    country_code = str(row['country_code']).upper()
+                    amount = float(row['total_compra'])
+                    
+                    if country_code == 'MX':  # México
+                        return amount * rates['MXN_to_USD']
+                    elif country_code == 'AR':  # Argentina  
+                        return amount * rates['ARS_to_USD']
+                    else:  # Asumir USD por defecto
+                        return amount
+                
+                df_final['total_compra_usd'] = df_final.apply(convert_to_usd, axis=1)
+                
+                # Mantener también la columna original por compatibilidad
+                if 'total_compra' not in df_final.columns:
+                    df_final['total_compra'] = df_final['total_compra_usd']
+                    
+                st.success(f"✅ Monedas convertidas a USD (Fecha: {rates.get('date', 'N/A')})")
+                
+            except Exception as e:
+                st.warning(f"⚠️ No se pudo convertir monedas: {e}. Usando valores originales.")
+                df_final['total_compra_usd'] = df_final.get('total_compra', 0)
         
         # Eliminar duplicados
         initial_count = len(df_final)
@@ -697,7 +802,7 @@ def consolidate_all_alerts(pos_with_alerts, pos_with_spending_alerts, pos_with_o
     return result
 
 
-def create_unified_alerts_dataframe(consolidated_alerts):
+def create_unified_alerts_dataframe(consolidated_alerts, pos_name_mapping=None):
     """
     Crea un DataFrame unificado para descarga con todas las alertas
     """
@@ -707,6 +812,9 @@ def create_unified_alerts_dataframe(consolidated_alerts):
         pos_id = pos_alert['pos_id']
         alertas_criticas = pos_alert['alertas_criticas']
         total_alertas = pos_alert['total_alertas']
+        
+        # Obtener nombre del POS si está disponible
+        pos_name = pos_name_mapping.get(pos_id, f"POS {pos_id}") if pos_name_mapping else f"POS {pos_id}"
         
         # Determinar nivel de prioridad
         if alertas_criticas >= 3:
@@ -748,6 +856,7 @@ def create_unified_alerts_dataframe(consolidated_alerts):
         
         unified_data.append({
             'POS_ID': pos_id,
+            'POS_NAME': pos_name,
             'PRIORIDAD': prioridad,
             'ALERTAS_CRITICAS': alertas_criticas,
             'TOTAL_ALERTAS': total_alertas,
@@ -1150,18 +1259,25 @@ weekly_distribution = calculate_weekly_distribution(df_orders)
 st.markdown("---")
 
 # ============================================
-# SECCION 1: ANALISIS DE RIESGO Y ALERTAS - TODOS LOS POS
+# SECCION 1: ANALISIS DE RIESGO Y ALERTAS - SOLO POS ACTIVOS
 # ============================================
-st.header("⚠️ Analisis de Riesgo y Alertas - Todos los POS")
+st.header("⚠️ Analisis de Riesgo y Alertas - POS Activos (últimos 10 días)")
 
-# Analizar riesgo para TODOS los POS
-all_pos_list = sorted(weekly_distribution['point_of_sale_id'].unique())
+# Obtener lista de POS activos en los últimos 10 días
+if not df_orders.empty and 'order_date' in df_orders.columns:
+    fecha_maxima = df_orders['order_date'].max()
+    fecha_limite = fecha_maxima - pd.Timedelta(days=10)
+    ordenes_recientes = df_orders[df_orders['order_date'] >= fecha_limite]
+    pos_activos_recientes = sorted(ordenes_recientes['point_of_sale_id'].unique())
+else:
+    pos_activos_recientes = sorted(weekly_distribution['point_of_sale_id'].unique())
+
 all_alerts = []
 all_spending_alerts = []
 all_orders_alerts = []
 
-with st.spinner('Analizando riesgo en todos los POS...'):
-    for pos_id in all_pos_list:
+with st.spinner(f'Analizando riesgo en {len(pos_activos_recientes)} POS activos...'):
+    for pos_id in pos_activos_recientes:
         # Analisis de riesgo de proveedores
         risk_analysis = analyze_vendor_risk(weekly_distribution, pos_id)
         if risk_analysis:
@@ -1282,6 +1398,7 @@ if critical_pos:
         critical_summary.append({
             'Ranking': len(critical_summary) + 1,
             'POS ID': pos_id,
+            'POS Name': pos_name_mapping.get(pos_id, f"POS {pos_id}"),
             'Prioridad': prioridad,
             'Alertas Críticas': alertas_criticas,
             'Total Alertas': total_alertas,
@@ -1306,7 +1423,7 @@ if critical_pos:
     
     # Botón de descarga unificado - sección prioritaria
     if consolidated_alerts:
-        unified_df = create_unified_alerts_dataframe(consolidated_alerts)
+        unified_df = create_unified_alerts_dataframe(consolidated_alerts, pos_name_mapping)
         csv_unified = unified_df.to_csv(index=False).encode('utf-8')
         st.download_button(
             label="📥 DESCARGAR TODAS LAS ALERTAS (Ranking Completo)",
@@ -1328,16 +1445,8 @@ tab1, tab2, tab3 = st.tabs(["🏪 Alertas de Proveedores", "💰 Alertas de Gast
 with tab1:
     col1, col2, col3, col4 = st.columns(4)
     
-    # Filtrar por POS con actividad en los últimos 10 días para mostrar solo 373
-    if not df_orders.empty and 'order_date' in df_orders.columns:
-        fecha_maxima = df_orders['order_date'].max()
-        fecha_limite = fecha_maxima - pd.Timedelta(days=10)
-        ordenes_recientes = df_orders[df_orders['order_date'] >= fecha_limite]
-        pos_activos_recientes = ordenes_recientes['point_of_sale_id'].unique()
-        all_alerts_filtered = [alert for alert in all_alerts if alert['pos_id'] in pos_activos_recientes]
-        total_pos_analyzed = len(all_alerts_filtered)
-    else:
-        total_pos_analyzed = len(all_alerts)
+    # Total de POS analizados (ya filtrados)
+    total_pos_analyzed = len(pos_activos_recientes)
     total_with_alerts = len(pos_with_alerts)
     critico_count = len([a for a in pos_with_alerts if a['risk_level'] == '🔴 CRITICO'])
     alto_count = len([a for a in pos_with_alerts if a['risk_level'] == '🟠 ALTO'])
@@ -1377,16 +1486,8 @@ with tab1:
 with tab2:
     col1, col2, col3, col4 = st.columns(4)
     
-    # Filtrar por POS con actividad en los últimos 10 días para mostrar solo 373
-    if not df_orders.empty and 'order_date' in df_orders.columns:
-        fecha_maxima = df_orders['order_date'].max()
-        fecha_limite = fecha_maxima - pd.Timedelta(days=10)
-        ordenes_recientes = df_orders[df_orders['order_date'] >= fecha_limite]
-        pos_activos_recientes = ordenes_recientes['point_of_sale_id'].unique()
-        all_spending_alerts_filtered = [alert for alert in all_spending_alerts if alert['pos_id'] in pos_activos_recientes]
-        total_spending_analyzed = len(all_spending_alerts_filtered)
-    else:
-        total_spending_analyzed = len(all_spending_alerts)
+    # Total de POS analizados para gasto (ya filtrados)
+    total_spending_analyzed = len(pos_activos_recientes)
     total_with_spending_alerts = len(pos_with_spending_alerts)
     gasto_cero_count = len([a for a in pos_with_spending_alerts if a['alert_type'] == 'GASTO_CERO'])
     disminucion_critica_count = len([a for a in pos_with_spending_alerts if a['alert_type'] == 'DISMINUCION_CRITICA'])
@@ -1445,6 +1546,7 @@ if pos_with_alerts or pos_with_spending_alerts or pos_with_orders_alerts:
 
                 alerts_data.append({
                     'POS ID': alert['pos_id'],
+                    'POS Name': pos_name_mapping.get(alert['pos_id'], f"POS {alert['pos_id']}"),
                     'Nivel Riesgo': alert['risk_level'],
                     'Tipo Alerta': alert['alert_type'],
                     'Proveedores Inicial': alert['num_vendors_first'],
@@ -1487,6 +1589,7 @@ if pos_with_alerts or pos_with_spending_alerts or pos_with_orders_alerts:
             for alert in pos_with_spending_alerts:
                 spending_alerts_data.append({
                     'POS ID': alert['pos_id'],
+                    'POS Name': pos_name_mapping.get(alert['pos_id'], f"POS {alert['pos_id']}"),
                     'Nivel Riesgo': alert['risk_level'],
                     'Tipo Alerta': alert['alert_type'],
                     'Ultimo Periodo': alert['last_period'],
@@ -1531,6 +1634,7 @@ if pos_with_alerts or pos_with_spending_alerts or pos_with_orders_alerts:
             for alert in pos_with_orders_alerts:
                 orders_alerts_data.append({
                     'POS ID': alert['pos_id'],
+                    'POS Name': pos_name_mapping.get(alert['pos_id'], f"POS {alert['pos_id']}"),
                     'Nivel Riesgo': alert['risk_level'],
                     'Tipo Alerta': alert['alert_type'],
                     'Ultimo Periodo': alert['last_period'],
@@ -1571,7 +1675,7 @@ if pos_with_alerts or pos_with_spending_alerts or pos_with_orders_alerts:
     st.markdown("### 📥 Descarga Consolidada")
     st.markdown("**Descarga todas las alertas en un solo archivo con ranking de prioridad:**")
     
-    unified_df = create_unified_alerts_dataframe(consolidated_alerts)
+    unified_df = create_unified_alerts_dataframe(consolidated_alerts, pos_name_mapping)
     csv_unified = unified_df.to_csv(index=False).encode('utf-8')
     st.download_button(
         label="📥 DESCARGAR REPORTE COMPLETO DE ALERTAS",
@@ -1585,16 +1689,8 @@ if pos_with_alerts or pos_with_spending_alerts or pos_with_orders_alerts:
 with tab3:
     col1, col2, col3, col4 = st.columns(4)
     
-    # Filtrar por POS con actividad en los últimos 10 días para mostrar solo 373
-    if not df_orders.empty and 'order_date' in df_orders.columns:
-        fecha_maxima = df_orders['order_date'].max()
-        fecha_limite = fecha_maxima - pd.Timedelta(days=10)
-        ordenes_recientes = df_orders[df_orders['order_date'] >= fecha_limite]
-        pos_activos_recientes = ordenes_recientes['point_of_sale_id'].unique()
-        all_orders_alerts_filtered = [alert for alert in all_orders_alerts if alert['pos_id'] in pos_activos_recientes]
-        total_orders_analyzed = len(all_orders_alerts_filtered)
-    else:
-        total_orders_analyzed = len(all_orders_alerts)
+    # Total de POS analizados para órdenes (ya filtrados)
+    total_orders_analyzed = len(pos_activos_recientes)
     total_with_orders_alerts = len(pos_with_orders_alerts)
     ordenes_cero_count = len([a for a in pos_with_orders_alerts if a['alert_type'] == 'ORDENES_CERO'])
     ordenes_disminucion_critica_count = len([a for a in pos_with_orders_alerts if a['alert_type'] == 'ORDENES_DISMINUCION_CRITICA'])
@@ -1687,34 +1783,38 @@ st.header("🎯 Seleccion de POS y Filtros")
 col1, col2 = st.columns([2, 3])
 
 with col1:
-    # Filtrar POS con órdenes en los últimos 10 días
-    if not df_orders.empty and 'order_date' in df_orders.columns:
-        # Obtener fecha máxima en los datos
-        fecha_maxima = df_orders['order_date'].max()
-        fecha_limite = fecha_maxima - pd.Timedelta(days=10)
-        
-        # Filtrar órdenes de los últimos 10 días
-        ordenes_recientes = df_orders[df_orders['order_date'] >= fecha_limite]
-        
-        # Obtener POS con actividad reciente
-        pos_activos_recientes = ordenes_recientes['point_of_sale_id'].unique()
-        
-        # Filtrar la lista de POS para incluir solo los activos en últimos 10 días
-        pos_list_completa = sorted(pos_vendor_totals['point_of_sale_id'].unique())
-        pos_list = sorted([pos for pos in pos_list_completa if pos in pos_activos_recientes])
-        
-        # Mostrar información del filtro
-        st.caption(f"🔍 Filtro: Solo POS con órdenes en los últimos 10 días ({len(pos_list)} de {len(pos_list_completa)} POS)")
+    # Crear mapeo de POS ID a nombre para visualización
+    if 'pos_name' in df_orders.columns:
+        pos_name_mapping = df_orders[['point_of_sale_id', 'pos_name']].drop_duplicates().set_index('point_of_sale_id')['pos_name'].to_dict()
     else:
-        pos_list = sorted(pos_vendor_totals['point_of_sale_id'].unique())
+        pos_name_mapping = {}
+    
+    # Usar la misma lista de POS activos ya calculada
+    pos_list_completa = sorted(pos_vendor_totals['point_of_sale_id'].unique())
+    pos_list = pos_activos_recientes
+    
+    # Crear opciones para selectbox con formato "ID - Nombre"
+    pos_options = []
+    for pos_id in pos_list:
+        pos_name = pos_name_mapping.get(pos_id, f"POS {pos_id}")
+        pos_options.append(f"{pos_id} - {pos_name}")
+    
+    # Crear mapeo inverso para recuperar el ID desde la selección
+    option_to_id = {option: pos_list[i] for i, option in enumerate(pos_options)}
+    
+    # Mostrar información del filtro
+    st.caption(f"🔍 Filtro: Solo POS con órdenes en los últimos 10 días ({len(pos_list)} de {len(pos_list_completa)} POS)")
     
     # Selector principal de POS
-    selected_pos = st.selectbox(
+    selected_option = st.selectbox(
         "Selecciona un POS para analizar:",
-        pos_list,
+        pos_options,
         key='main_pos_selector',
         help="Este POS sera analizado en todas las secciones del dashboard"
     )
+    
+    # Recuperar el POS ID seleccionado
+    selected_pos = option_to_id.get(selected_option, pos_list[0] if pos_list else None)
     
     # Mostrar fecha de última orden del POS seleccionado
     if selected_pos and not df_orders.empty:
